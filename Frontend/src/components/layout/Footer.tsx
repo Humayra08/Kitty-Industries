@@ -30,7 +30,7 @@ const Instagram = (props: React.SVGProps<SVGSVGElement>) => (
 export const Footer = () => {
   return (
     <footer className="bg-white text-gray-700 border-t border-gray-100">
-      <div className="container mx-auto px-4 md:px-6 pt-16 pb-12">
+      <div className="container mx-auto px-4 md:px-6 pt-8 pb-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
 
           {/* Logo & Description */}
@@ -115,7 +115,13 @@ export const Footer = () => {
               </div>
               <div className="flex items-start gap-3">
                  <MapPin className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
-                 <span>House # 12, Road # 06,<br/>Sector # 03, Uttara,<br/>Dhaka-1230, Bangladesh</span>
+                 <span>
+                   <strong className="text-gray-600">Head Office:</strong> Rosemont Tower (6th floor),<br/>
+                   House # 148, Road # 13, Block # E,<br/>
+                   Banani, Dhaka-1213<br/><br/>
+                   <strong className="text-gray-600">Factory:</strong> Taiyubpur, Ashulia,<br/>
+                   Savar, Dhaka
+                 </span>
               </div>
             </div>
           </div>
