@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Layout } from './components/layout/Layout';
 import { Home } from './pages/Home';
 import { ContactUs } from './pages/ContactUs';
+import { Gallery } from './pages/Gallery';
 
 // Placeholder components for other routes
 const Placeholder = ({ title }: { title: string }) => (
@@ -21,6 +22,7 @@ function App() {
           <Route path="industries" element={<Placeholder title="Industries" />} />
           <Route path="about" element={<Placeholder title="About Us" />} />
           <Route path="board-of-directors" element={<Placeholder title="Board of Directors" />} />
+          <Route path="gallery" element={<Gallery />} />
           <Route path="contact" element={<ContactUs />} />
           <Route path="*" element={<Placeholder title="404 Not Found" />} />
         </Route>
