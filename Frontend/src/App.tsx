@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Layout } from './components/layout/Layout';
 import { Home } from './pages/Home';
 import { ContactUs } from './pages/ContactUs';
+import { AboutUsPage } from './pages/AboutUs';
 import { Gallery } from './pages/Gallery';
 
 // Placeholder components for other routes
@@ -20,7 +21,7 @@ function App() {
           <Route path="products" element={<Placeholder title="Products" />} />
           <Route path="manufacturing" element={<Placeholder title="Manufacturing" />} />
           <Route path="industries" element={<Placeholder title="Industries" />} />
-          <Route path="about" element={<Placeholder title="About Us" />} />
+          <Route path="about" element={<AboutUsPage />} />
           <Route path="board-of-directors" element={<Placeholder title="Board of Directors" />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="contact" element={<ContactUs />} />
