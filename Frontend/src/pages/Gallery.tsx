@@ -20,7 +20,7 @@ export const Gallery = () => {
   );
 
   return (
-    <div className="relative overflow-hidden bg-white">
+    <div className="relative overflow-hidden bg-[#f8f8f8]">
       <GalleryBackdrop />
 
       {/* ── Header ─────────────────────────────────────────────── */}
@@ -32,7 +32,7 @@ export const Gallery = () => {
           <div className="mt-2 mb-4 h-0.5 w-8 bg-red-600" />
         </div>
 
-        <h1 className="mb-5 max-w-2xl text-4xl leading-[1.1] font-black tracking-tight text-gray-900 sm:text-5xl">
+        <h1 className="text-2xl md:text-3xl font-bold text-gray-400 leading-snug tracking-tight mb-10">
           Moments that
           <br />
           Bring Us <span className="text-red-600">Together</span>
