@@ -183,6 +183,16 @@ export const Navbar = () => {
               )}
             </div>
           ))}
+
+          {/* Contact CTA — only shown in the mobile menu, mirrors the desktop button */}
+          <Link to="/contact" className="block w-full mt-4 mb-2" onClick={() => setMobileMenuOpen(false)}>
+            <Button
+              variant="primary"
+              className="w-full h-11 rounded-xl text-[15px] font-bold text-white bg-gradient-to-b from-red-500 to-red-700 shadow-[0_6px_14px_-4px_rgba(220,38,38,0.5)] active:translate-y-0 transition-all duration-200"
+            >
+              Contact Us
+            </Button>
+          </Link>
         </div>
       )}
     </header>

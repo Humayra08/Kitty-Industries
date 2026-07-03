@@ -259,15 +259,15 @@ export const AboutUsPage = () => {
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 mb-16">
 
             {/* Mission */}
-            <div className="relative bg-white/55 backdrop-blur-md border border-[#f8f8f8]/60 rounded-2xl overflow-hidden shadow-[0_1px_0_rgba(255,255,255,0.8)_inset,0_10px_26px_-8px_rgba(220,38,38,0.1)] hover:shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_16px_32px_-8px_rgba(220,38,38,0.16)] hover:-translate-y-1 hover:bg-white/70 transition-all duration-300 p-7 flex items-center gap-0">
+            <div className="relative bg-white/55 backdrop-blur-md border border-[#f8f8f8]/60 rounded-2xl overflow-hidden shadow-[0_1px_0_rgba(255,255,255,0.8)_inset,0_10px_26px_-8px_rgba(220,38,38,0.1)] hover:shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_16px_32px_-8px_rgba(220,38,38,0.16)] hover:-translate-y-1 hover:bg-white/70 transition-all duration-300 p-7 flex flex-col sm:flex-row items-center gap-0 text-center sm:text-left">
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/50 via-white/0 to-transparent" />
-              <div className="flex-shrink-0 w-20 h-20 rounded-full bg-red-50 flex items-center justify-center overflow-hidden">
+              <div className="flex-shrink-0 w-20 h-20 rounded-full bg-red-50 flex items-center justify-center overflow-hidden mb-4 sm:mb-0">
                 <img src="/mission.png" alt="Mission" className="w-12 h-12 object-contain" />
               </div>
-              <div className="w-px bg-gray-100 self-stretch mx-6 flex-shrink-0" />
+              <div className="hidden sm:block w-px bg-gray-100 self-stretch mx-6 flex-shrink-0" />
               <div>
                 <p className="text-red-600 font-bold text-xs tracking-[0.18em] uppercase mb-1.5">Mission</p>
-                <div className="w-6 h-0.5 bg-red-600 mb-3" />
+                <div className="w-6 h-0.5 bg-red-600 mb-3 mx-auto sm:mx-0" />
                 <p className="text-gray-600 text-[15px] leading-relaxed">
                   To deliver safe, innovative electrical solutions that enhance everyday life.
                 </p>
@@ -275,15 +275,15 @@ export const AboutUsPage = () => {
             </div>
 
             {/* Vision */}
-            <div className="relative bg-white/55 backdrop-blur-md border border-[#f8f8f8]/60 rounded-2xl overflow-hidden shadow-[0_1px_0_rgba(255,255,255,0.8)_inset,0_10px_26px_-8px_rgba(220,38,38,0.1)] hover:shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_16px_32px_-8px_rgba(220,38,38,0.16)] hover:-translate-y-1 hover:bg-white/70 transition-all duration-300 p-7 flex items-center gap-0">
+            <div className="relative bg-white/55 backdrop-blur-md border border-[#f8f8f8]/60 rounded-2xl overflow-hidden shadow-[0_1px_0_rgba(255,255,255,0.8)_inset,0_10px_26px_-8px_rgba(220,38,38,0.1)] hover:shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_16px_32px_-8px_rgba(220,38,38,0.16)] hover:-translate-y-1 hover:bg-white/70 transition-all duration-300 p-7 flex flex-col sm:flex-row items-center gap-0 text-center sm:text-left">
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/50 via-white/0 to-transparent" />
-              <div className="flex-shrink-0 w-20 h-20 rounded-full bg-red-50 flex items-center justify-center overflow-hidden">
+              <div className="flex-shrink-0 w-20 h-20 rounded-full bg-red-50 flex items-center justify-center overflow-hidden mb-4 sm:mb-0">
                 <img src="/vision.png" alt="Vision" className="w-12 h-12 object-contain" />
               </div>
-              <div className="w-px bg-gray-100 self-stretch mx-6 flex-shrink-0" />
+              <div className="hidden sm:block w-px bg-gray-100 self-stretch mx-6 flex-shrink-0" />
               <div>
                 <p className="text-red-600 font-bold text-xs tracking-[0.18em] uppercase mb-1.5">Vision</p>
-                <div className="w-6 h-0.5 bg-red-600 mb-3" />
+                <div className="w-6 h-0.5 bg-red-600 mb-3 mx-auto sm:mx-0" />
                 <p className="text-gray-600 text-[15px] leading-relaxed">
                   To become Bangladesh's most trusted electrical brand, setting the benchmark for quality and innovation.
                 </p>

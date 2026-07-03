@@ -163,11 +163,11 @@ export const ContactUs = () => {
                 or any other inquiry — our team is ready to assist you.
               </p>
             </div>
-            <div className="hidden lg:flex justify-end">
+            <div className="flex justify-center lg:justify-end">
               <img
                 src="/contact.png"
                 alt="Contact Kitty Industries"
-                className="w-full max-w-[440px] h-auto object-contain"
+                className="w-full max-w-[240px] h-auto object-contain sm:max-w-[300px] lg:max-w-[440px]"
               />
             </div>
           </div>
@@ -326,10 +326,13 @@ export const ContactUs = () => {
               referrerPolicy="no-referrer-when-downgrade"
               className="absolute inset-0 w-full h-full"
             />
-            {/* Hidden overlay to cover Google's "Open in Maps" button at top-left */}
-            <div className="absolute top-0 left-0 w-52 h-12 bg-white z-20 pointer-events-none rounded-br-lg" />
-            {/* Visit card — flush with all 3 edges: top, bottom, left */}
-            <div className="absolute inset-y-0 left-0 w-56 bg-white rounded-r-xl shadow-md z-10 flex flex-col justify-center p-5">
+            {/* Hidden overlay to cover Google's "Open in Maps" button at top-left —
+                smaller on mobile since the narrower map makes the full-size patch
+                cover a disproportionate, oddly-placed chunk of it */}
+            <div className="absolute top-0 left-0 w-32 h-9 md:w-52 md:h-12 bg-white z-20 pointer-events-none rounded-br-lg" />
+            {/* Visit card — flush with all 3 edges: top, bottom, left. Hidden below md
+                since its fixed width would otherwise eat most of the map on mobile. */}
+            <div className="hidden md:flex absolute inset-y-0 left-0 w-56 bg-white rounded-r-xl shadow-md z-10 flex-col justify-center p-5">
               <div className="flex items-center gap-2.5 mb-1">
                 <div className="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-4 h-4 text-red-600" strokeWidth={1.5} />
@@ -337,6 +340,27 @@ export const ContactUs = () => {
                 <h3 className="font-bold text-gray-900 text-sm">Visit Our Office</h3>
               </div>
               <div className="h-0.5 w-7 bg-red-600 mb-3 ml-[42px]" />
+              <p className="text-gray-500 text-xs leading-relaxed mb-3">
+                We welcome you to visit our office and experience our commitment to quality and innovation.
+              </p>
+              <a
+                href="https://maps.google.com/?q=House+148,+Road+13,+Block+E,+Banani,+Dhaka+1213,+Bangladesh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-red-600 text-red-600 hover:bg-red-600 hover:text-white font-semibold text-xs rounded-lg transition-all duration-200 cursor-pointer w-fit"
+              >
+                Get Directions <ExternalLink className="w-3 h-3" />
+              </a>
+            </div>
+          </div>
+
+          {/* Visit card — mobile only, sits below the now fully-visible map */}
+          <div className="md:hidden mt-4 flex items-start gap-3 rounded-2xl bg-white shadow-md p-5">
+            <div className="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
+              <MapPin className="w-4 h-4 text-red-600" strokeWidth={1.5} />
+            </div>
+            <div>
+              <h3 className="font-bold text-gray-900 text-sm mb-1">Visit Our Office</h3>
               <p className="text-gray-500 text-xs leading-relaxed mb-3">
                 We welcome you to visit our office and experience our commitment to quality and innovation.
               </p>

@@ -47,11 +47,11 @@ export const Home = () => {
                 Our commitment to quality and safety is backed by national and international certifications that ensure reliability, compliance, and peace of mind.
               </p>
             </div>
-            <div className="grid grid-cols-3 gap-x-2 sm:gap-x-6">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-y-5 sm:gap-y-0 gap-x-2 sm:gap-x-6">
               {accreditations.map((item, i) => (
                 <div
                   key={item.title}
-                  className={`flex flex-col items-center text-center gap-3 px-2 ${i !== 0 ? 'border-l border-gray-300' : ''}`}
+                  className={`flex flex-row sm:flex-col items-center text-left sm:text-center gap-4 sm:gap-3 px-2 ${i !== 0 ? 'border-t sm:border-t-0 sm:border-l border-gray-300 pt-5 sm:pt-0' : ''}`}
                 >
                   {item.icon}
                   <div>
@@ -140,14 +140,14 @@ export const Home = () => {
 
       {/* ── Tagline Bar ─────────────────────────────────────────────── */}
       <div className="bg-[#fafafa] py-4">
-        <div className="container mx-auto px-4 md:px-6 flex items-center gap-4">
-          <div className="flex-1 h-px bg-red-400 opacity-50" />
-          <p className="text-sm font-semibold text-gray-400 tracking-wide whitespace-nowrap flex-shrink-0">
+        <div className="container mx-auto px-4 md:px-6 flex items-center justify-center gap-4">
+          <div className="hidden sm:block flex-1 h-px bg-red-400 opacity-50" />
+          <p className="text-sm font-semibold text-gray-400 tracking-wide text-center sm:whitespace-nowrap sm:flex-shrink-0">
             One Vision.&nbsp;&nbsp;
             <span className="text-red-600">Many Strengths.</span>
             &nbsp;&nbsp;Greater Impact.
           </p>
-          <div className="flex-1 h-px bg-red-400 opacity-50" />
+          <div className="hidden sm:block flex-1 h-px bg-red-400 opacity-50" />
         </div>
       </div>
     </div>
