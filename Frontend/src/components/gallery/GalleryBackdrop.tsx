@@ -13,16 +13,18 @@ export const GalleryBackdrop = () => (
     <div className="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-red-100/50 blur-3xl" />
     <div className="absolute -left-2 top-8 h-36 w-36 opacity-70" style={dotPattern} />
 
-    {/* top-right dotted grid + blobs */}
+    {/* top-right dotted grid + blobs — smaller on mobile, same as before from sm/md up */}
     <div className="absolute -right-24 -top-16 h-80 w-80 rounded-full bg-red-100/45 blur-3xl" />
-    <div className="hidden h-36 w-36 opacity-70 sm:block absolute right-8 top-10" style={dotPattern} />
-    <div className="hidden md:block absolute right-16 top-1/2 h-32 w-32 rounded-full bg-red-50 blur-2xl" />
+    <div className="absolute right-4 top-6 h-20 w-20 opacity-70 sm:right-8 sm:top-10 sm:h-36 sm:w-36" style={dotPattern} />
+    <div className="absolute right-6 top-1/2 h-20 w-20 rounded-full bg-red-50 blur-2xl md:right-16 md:h-32 md:w-32" />
 
-    {/* paper-plane + dashed flight trail (real artwork, cropped tight from /public/picon.png) */}
+    {/* celebration artwork tucked into the top-right corner — small on mobile so it
+        never overlaps the "GALLERY" label or the "Moments that..." title, then grows
+        into its full-size desktop spot from lg up. */}
     <img
-      src="/gallery/paper-plane.png"
+      src="/celebration.png"
       alt=""
-      className="absolute right-[6%] top-16 hidden w-[380px] max-w-[42vw] lg:block"
+      className="absolute -top-2 right-3 w-16 sm:top-0 sm:right-4 sm:w-24 lg:top-4 lg:right-[6%] lg:w-[300px] lg:max-w-[36vw]"
     />
   </div>
 );

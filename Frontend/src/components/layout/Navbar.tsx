@@ -63,9 +63,9 @@ export const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
           <img
-            src="/kitty_logo.png"
+            src="/n-logo.png"
             alt="Kitty — The Ultimate Safety"
-            className="h-12 md:h-16 w-auto object-contain"
+            className="h-14 md:h-16 w-auto object-contain"
           />
         </Link>
 
@@ -183,6 +183,16 @@ export const Navbar = () => {
               )}
             </div>
           ))}
+
+          {/* Contact CTA — only shown in the mobile menu, mirrors the desktop button */}
+          <Link to="/contact" className="block w-full mt-4 mb-2" onClick={() => setMobileMenuOpen(false)}>
+            <Button
+              variant="primary"
+              className="w-full h-11 rounded-xl text-[15px] font-bold text-white bg-gradient-to-b from-red-500 to-red-700 shadow-[0_6px_14px_-4px_rgba(220,38,38,0.5)] active:translate-y-0 transition-all duration-200"
+            >
+              Contact Us
+            </Button>
+          </Link>
         </div>
       )}
     </header>

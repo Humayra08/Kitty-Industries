@@ -37,9 +37,9 @@ export const Footer = () => {
           <div className="lg:col-span-1 flex flex-col">
             <Link to="/" className="mb-4">
               <img
-                src="/kitty_logo.png"
+                src="/n-logo.png"
                 alt="Kitty Industries"
-                className="h-16 w-auto object-contain"
+                className="h-20 w-auto object-contain"
               />
             </Link>
             <p className="text-gray-500 text-xs md:text-sm mb-6 leading-relaxed">

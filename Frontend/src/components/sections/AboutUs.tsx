@@ -12,10 +12,10 @@ const glanceItems = [
 ];
 
 const paragraphs = [
-  `KITTY Industries Limited is a leading manufacturer of electrical switches, accessories, and LED lighting solutions in Bangladesh. Since its establishment in 2014, the company has grown with a strong commitment to quality, innovation, and reliability, serving residential, commercial, and industrial sectors nationwide. Over the years, KITTY has established itself as a trusted brand known for delivering dependable products and consistent performance.`,
-  `At the heart of its operations is a state-of-the-art manufacturing facility spanning over 8 acres, equipped with advanced machinery, efficient production systems, and rigorous quality control processes. Supported by a dedicated workforce of more than 1,000 employees, KITTY combines technology, expertise, and continuous improvement to maintain the highest standards across every stage of production.`,
-  `With a robust network of over 300 distributors and a diverse portfolio of more than 600 products, KITTY has built a strong presence across Bangladesh, ensuring its solutions are accessible nationwide while meeting the evolving demands of modern electrical infrastructure.`,
-  `Driven by innovation, responsibility, and trust, KITTY Industries remains committed to delivering safe, reliable, and long-lasting electrical solutions—powering homes, businesses, and industries while shaping a brighter future for generations to come.`,
+  `KITTY Industries Limited is a leading manufacturer of electrical switches, accessories, and LED lighting solutions in Bangladesh. Since its establishment in 2014, the company has grown with a strong commitment to quality, innovation, and reliability, serving residential, commercial, and industrial sectors nationwide. Over the years, KITTY has established itself as a trusted brand known for delivering consistently performing products.`,
+  `At the heart of its operations is a world class manufacturing facility spanning over 8 acres, equipped with advanced machinery, efficient production systems, and rigorous quality control processes. Supported by a dedicated workforce of more than 1,000 employees, KITTY continues to maintain the highest standards across every stage of production.`,
+  `With a robust network of over 300 distributors and a diverse portfolio of more than 600 products, KITTY has built a strong presence across Bangladesh, ensuring its solutions are accessible nationwide.`,
+  `Driven by innovation, quality, and trust, KITTY Industries remains committed to delivering safe and long-lasting electrical solutions shaping a brighter future for generations to come.`,
 ];
 
 const GlanceCard = ({ item, className = '' }: { item: typeof glanceItems[number]; className?: string }) => {
@@ -57,14 +57,14 @@ export const AboutUs = () => {
           <div className="flex flex-col">
             {/* ABOUT US label */}
             <div className="mb-5">
-              <span className="text-red-600 font-bold text-sm tracking-[0.18em] uppercase">
+              <span className="text-red-600 font-bold text-2xl tracking-[0.10em] uppercase">
                 ABOUT US
               </span>
               <div className="w-8 h-0.5 bg-red-600 mt-1.5" />
             </div>
 
             {/* Heading — smaller and faded */}
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-400 leading-snug tracking-tight mb-10">
+            <h2 className="text-2xl md:text-xl font-bold text-gray-400 leading-snug tracking-tight mb-10">
               Building Connections,<br />Powering Progress
             </h2>
 
@@ -79,7 +79,7 @@ export const AboutUs = () => {
           </div>
 
           {/* Right column: paragraphs */}
-          <div className="space-y-5 text-gray-700 text-[15px] leading-[1.75] pt-1">
+          <div className="space-y-5 text-gray-700 text-[15px] leading-[1.75] pt-1 text-justify">
             {paragraphs.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
@@ -91,7 +91,7 @@ export const AboutUs = () => {
           {/* Centered label with single line */}
           <div className="flex items-center gap-6 mb-10">
             <div className="flex-1 h-px bg-red-200" />
-            <h3 className="text-red-600 font-bold text-lg tracking-[0.1em] uppercase whitespace-nowrap">
+            <h3 className="text-red-600 font-bold text-2xl tracking-[0.1em] uppercase whitespace-nowrap">
               AT A GLANCE
             </h3>
             <div className="flex-1 h-px bg-red-200" />
