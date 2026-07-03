@@ -119,7 +119,7 @@ export const Home = () => {
               {/* 4 copies for a seamless gap-free loop */}
               {[...Array(4)].flatMap((_, set) =>
                 [
-                  { src: '/KWALITY.jpg', alt: 'Kwality' },
+                  { src: '/KWALITY.png', alt: 'Kwality' },
                   { src: '/TAK.jpg',     alt: 'TAK' },
                   { src: '/Nandan.jpg',  alt: 'Nandan' },
                   { src: '/VINNYA.jpg',  alt: 'Vinnya' },
@@ -128,7 +128,7 @@ export const Home = () => {
                     <img
                       src={logo.src}
                       alt={logo.alt}
-                      className="h-16 md:h-20 w-auto object-contain"
+                      className={`w-auto object-contain ${logo.alt === 'Kwality' ? 'h-24 md:h-32' : 'h-16 md:h-20'}`}
                     />
                   </div>
                 ))
