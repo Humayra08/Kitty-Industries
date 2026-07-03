@@ -7,53 +7,27 @@ const fiveCsItems = [
   {
     label: 'Customer',
     desc: 'Our customers are at the heart of every decision we make.',
-    icon: (
-      <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-        <circle cx="9" cy="7" r="4"/>
-        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-      </svg>
-    ),
+    icon: <img src="/five-cs/customer.png" alt="Customer" className="w-9 h-9 object-contain" />,
   },
   {
     label: 'Commitment',
     desc: 'We deliver on our promises with dedication and responsibility.',
-    icon: (
-      <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-      </svg>
-    ),
+    icon: <img src="/five-cs/commitment.png" alt="Commitment" className="w-9 h-9 object-contain" />,
   },
   {
     label: 'Collaboration',
     desc: 'We achieve more by working together.',
-    icon: (
-      <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-        <circle cx="12" cy="8" r="3"/>
-        <path d="M6 20v-1a6 6 0 0 1 12 0v1"/>
-        <path d="M18 8h2m-1-1v2"/><path d="M4 8h2M5 7v2"/>
-      </svg>
-    ),
+    icon: <img src="/five-cs/collaboration.png" alt="Collaboration" className="w-9 h-9 object-contain" />,
   },
   {
     label: 'Creativity',
     desc: 'We embrace innovation and continuous improvement.',
-    icon: (
-      <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-        <path d="M9 18h6"/><path d="M10 22h4"/>
-        <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/>
-      </svg>
-    ),
+    icon: <img src="/five-cs/creativity.png" alt="Creativity" className="w-9 h-9 object-contain" />,
   },
   {
     label: 'Character',
     desc: 'We lead with integrity, respect, and accountability.',
-    icon: (
-      <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-        <polyline points="9 12 11 14 15 10"/>
-      </svg>
-    ),
+    icon: <img src="/five-cs/character.png" alt="Character" className="w-9 h-9 object-contain" />,
   },
 ];
 
