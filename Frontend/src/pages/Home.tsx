@@ -37,10 +37,10 @@ export const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div>
               <div className="inline-block">
-                <p className="text-red-600 font-bold text-xs sm:text-sm tracking-widest uppercase">Accreditations</p>
+                <p className="text-red-600 font-bold text-lg sm:text-2xl tracking-widest uppercase">Accreditations</p>
                 <div className="h-0.5 w-8 bg-red-600 mt-2 mb-4" />
               </div>
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-400 leading-snug mb-4">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-400 leading-snug mb-4">
                 Certified. Compliant.<br />Trusted.
               </h3>
               <p className="text-gray-500 text-sm sm:text-base leading-relaxed max-w-md">
@@ -84,17 +84,8 @@ export const Home = () => {
           }}
         />
         <div className="relative container mx-auto px-4 md:px-6 text-center max-w-3xl">
-          <p className="text-red-600 font-bold text-xs sm:text-sm tracking-widest uppercase">Sister Concerns</p>
+          <p className="text-red-600 font-bold text-lg sm:text-2xl tracking-widest uppercase">Sister Concerns</p>
           <div className="h-0.5 w-8 bg-red-600 mx-auto mt-2 mb-5" />
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-tight mb-4">
-            <span className="text-gray-400">Stronger Together, </span>
-            <span className="text-red-600">Building Greater Impact</span>
-          </h2>
-          <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
-            Our sister concerns share our commitment to excellence, innovation,
-            <br className="hidden sm:block" />
-            and customer satisfaction—working together to create smarter solutions for a better tomorrow.
-          </p>
         </div>
 
         {/* ── Scrolling logos ──────────────────────────────────────────── */}
@@ -142,7 +133,7 @@ export const Home = () => {
       <div className="bg-[#fafafa] py-4">
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-center gap-4">
           <div className="hidden sm:block flex-1 h-px bg-red-400 opacity-50" />
-          <p className="text-sm font-semibold text-gray-400 tracking-wide text-center sm:whitespace-nowrap sm:flex-shrink-0">
+          <p className="text-lg font-semibold text-gray-400 tracking-wide text-center sm:whitespace-nowrap sm:flex-shrink-0">
             One Vision.&nbsp;&nbsp;
             <span className="text-red-600">Many Strengths.</span>
             &nbsp;&nbsp;Greater Impact.

@@ -93,11 +93,3 @@ export const galleryImages: GalleryItem[] = [
     span: "wide",
   },
 ];
-
-export const galleryFilters: { key: "all" | GalleryCategory; label: string }[] = [
-  { key: "all", label: "All Moments" },
-  { key: "picnic-2024", label: "Picnic 2024" },
-  { key: "picnic-2023", label: "Picnic 2023" },
-  { key: "outdoor-fun", label: "Outdoor Fun" },
-  { key: "team-bonding", label: "Team Bonding" },
-];

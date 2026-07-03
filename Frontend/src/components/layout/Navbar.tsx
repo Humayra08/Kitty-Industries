@@ -63,9 +63,9 @@ export const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
           <img
-            src="/kitty_logo.png"
+            src="/n-logo.png"
             alt="Kitty — The Ultimate Safety"
-            className="h-12 md:h-16 w-auto object-contain"
+            className="h-14 md:h-16 w-auto object-contain"
           />
         </Link>
 

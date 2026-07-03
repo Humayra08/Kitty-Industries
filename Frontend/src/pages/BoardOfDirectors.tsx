@@ -50,17 +50,16 @@ export const BoardOfDirectorsPage = () => {
 
           {/* Content */}
           <div className="relative z-10">
-            <p className="text-red-600 font-bold text-sm tracking-[0.18em] uppercase mb-2">Leadership</p>
+            <p className="text-red-600 font-bold text-xl tracking-[0.18em] uppercase mb-2">Leadership</p>
             <div className="h-[2px] w-7 bg-red-600 mb-5" />
             <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-black leading-tight tracking-tight mb-4">
               <span className="text-gray-400">Board of </span>
               <span className="text-red-600">Directors</span>
             </h1>
-            <div className="h-[2px] w-7 bg-red-600 mb-5" />
-            <p className="text-gray-500 text-sm md:text-[15px] leading-relaxed">
+            {/* <p className="text-gray-500 text-sm md:text-[15px] leading-relaxed">
               Guided by experience. Driven by purpose.<br />
               Our Board provides strategic direction to ensure<br />long-term value for our stakeholders.
-            </p>
+            </p> */}
           </div>
         </div>
 

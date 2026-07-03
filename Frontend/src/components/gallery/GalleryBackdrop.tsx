@@ -18,14 +18,13 @@ export const GalleryBackdrop = () => (
     <div className="absolute right-4 top-6 h-20 w-20 opacity-70 sm:right-8 sm:top-10 sm:h-36 sm:w-36" style={dotPattern} />
     <div className="absolute right-6 top-1/2 h-20 w-20 rounded-full bg-red-50 blur-2xl md:right-16 md:h-32 md:w-32" />
 
-    {/* paper-plane + dashed flight trail (real artwork, cropped tight from /public/picon.png) —
-        shown at every size now: small and tucked into the empty strip above the heading on
-        mobile so it never overlaps the "GALLERY" label or the "Moments that..." title, then
-        grows into its original full-size desktop spot from lg up. */}
+    {/* celebration artwork tucked into the top-right corner — small on mobile so it
+        never overlaps the "GALLERY" label or the "Moments that..." title, then grows
+        into its full-size desktop spot from lg up. */}
     <img
-      src="/gallery/paper-plane.png"
+      src="/celebration.png"
       alt=""
-      className="absolute top-1 right-3 w-20 sm:top-3 sm:right-4 sm:w-28 lg:top-16 lg:right-[6%] lg:w-[380px] lg:max-w-[42vw]"
+      className="absolute -top-2 right-3 w-16 sm:top-0 sm:right-4 sm:w-24 lg:top-4 lg:right-[6%] lg:w-[300px] lg:max-w-[36vw]"
     />
   </div>
 );
