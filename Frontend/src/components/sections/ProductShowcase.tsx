@@ -54,7 +54,7 @@ export const ProductShowcase = () => {
   const product = products[currentIndex];
 
   return (
-    <section className="relative bg-[#C9302C] text-white flex items-center overflow-hidden py-12 md:py-16">
+    <section className="relative bg-[#BF2E2B] text-white flex items-center overflow-hidden py-12 md:py-16">
       {/* Background marquee */}
       <div className="absolute inset-0 flex items-center pointer-events-none overflow-hidden opacity-10">
         <div className="animate-marquee flex whitespace-nowrap">

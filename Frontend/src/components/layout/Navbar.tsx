@@ -16,7 +16,6 @@ const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'About Us', path: '/about' },
   { name: 'Board of Directors', path: '/board-of-directors' },
-  { name: 'Mission & Vission', path: '/mission-vision' },
   { name: 'Products', path: '/products', hasDropdown: true },
   { name: 'Gallery', path: '/gallery' },
 ];

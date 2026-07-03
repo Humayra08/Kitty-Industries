@@ -1,3 +1,62 @@
+import { useState, useEffect } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+
+// ─── 5 Cs data ────────────────────────────────────────────────────────────────
+
+const fiveCsItems = [
+  {
+    label: 'Customer',
+    desc: 'Our customers are at the heart of every decision we make.',
+    icon: (
+      <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+        <circle cx="9" cy="7" r="4"/>
+        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+      </svg>
+    ),
+  },
+  {
+    label: 'Commitment',
+    desc: 'We deliver on our promises with dedication and responsibility.',
+    icon: (
+      <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+      </svg>
+    ),
+  },
+  {
+    label: 'Collaboration',
+    desc: 'We achieve more by working together.',
+    icon: (
+      <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="3"/>
+        <path d="M6 20v-1a6 6 0 0 1 12 0v1"/>
+        <path d="M18 8h2m-1-1v2"/><path d="M4 8h2M5 7v2"/>
+      </svg>
+    ),
+  },
+  {
+    label: 'Creativity',
+    desc: 'We embrace innovation and continuous improvement.',
+    icon: (
+      <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+        <path d="M9 18h6"/><path d="M10 22h4"/>
+        <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/>
+      </svg>
+    ),
+  },
+  {
+    label: 'Character',
+    desc: 'We lead with integrity, respect, and accountability.',
+    icon: (
+      <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        <polyline points="9 12 11 14 15 10"/>
+      </svg>
+    ),
+  },
+];
+
 // ─── Board data ───────────────────────────────────────────────────────────────
 
 const boardMembers = [
@@ -31,6 +90,16 @@ const paragraphs = [
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export const AboutUsPage = () => {
+  const [fiveCsIndex, setFiveCsIndex] = useState(0);
+  const fiveCsTotal = 5;
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setFiveCsIndex((prev) => (prev + 1) % fiveCsTotal);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen bg-white">
 
@@ -95,7 +164,7 @@ export const AboutUsPage = () => {
       </section>
 
       {/* ── Leadership ────────────────────────────────────────────────── */}
-      <section className="relative bg-[#fdf8f8] pt-16 pb-20 overflow-hidden">
+      <section className="relative bg-[#f8f8f8] pt-16 pb-20 overflow-hidden">
         <div
           className="absolute right-0 top-0 w-72 h-full opacity-20 pointer-events-none"
           style={{ backgroundImage: 'radial-gradient(circle, #c0392b 1px, transparent 1px)', backgroundSize: '20px 20px' }}
@@ -122,15 +191,18 @@ export const AboutUsPage = () => {
             {boardMembers.map((member) => (
               <div
                 key={member.name}
-                className="relative bg-white/55 backdrop-blur-md border border-white/60 rounded-2xl overflow-hidden shadow-[0_1px_0_rgba(255,255,255,0.8)_inset,0_10px_26px_-8px_rgba(220,38,38,0.1)] hover:shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_16px_32px_-8px_rgba(220,38,38,0.16)] hover:-translate-y-1 hover:bg-white/70 transition-all duration-300 p-8 flex flex-col items-center text-center"
+                className="rounded-2xl overflow-hidden shadow-[0_1px_0_rgba(255,255,255,0.8)_inset,0_10px_26px_-8px_rgba(220,38,38,0.1)] hover:shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_16px_32px_-8px_rgba(220,38,38,0.16)] hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/50 via-white/0 to-transparent" />
-                <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-gray-100 shadow-sm mb-6 flex-shrink-0">
-                  <img src={member.photo} alt={member.name} className="w-full h-full object-cover" />
+                <div className="relative bg-white/55 backdrop-blur-md hover:bg-white/70 transition-colors duration-300 p-8 flex flex-col items-center text-center">
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/50 via-white/0 to-transparent" />
+                  <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-[#f8f8f8] shadow-sm mb-6 flex-shrink-0">
+                    <img src={member.photo} alt={member.name} className="w-full h-full object-cover" />
+                  </div>
+                  <h3 className="text-red-600 font-bold text-base mb-1">{member.name}</h3>
+                  <p className="text-gray-500 text-sm mb-2">{member.title}</p>
+                  <div className="w-7 h-0.5 bg-red-600 mb-4" />
+                  <p className="text-gray-500 text-sm leading-relaxed">{member.bio}</p>
                 </div>
-                <h3 className="text-red-600 font-bold text-base mb-1">{member.name}</h3>
-                <p className="text-gray-500 text-sm mb-4">{member.title}</p>
-                <p className="text-gray-500 text-sm leading-relaxed">{member.bio}</p>
               </div>
             ))}
           </div>
@@ -140,7 +212,7 @@ export const AboutUsPage = () => {
       {/* ── Chairman's Message ────────────────────────────────────────── */}
       <section className="bg-[#fafafa] pt-8 pb-16">
         <div className="container mx-auto px-6 md:px-10 max-w-6xl">
-          <div className="relative bg-white/55 backdrop-blur-md border border-white/60 rounded-2xl overflow-hidden shadow-[0_1px_0_rgba(255,255,255,0.8)_inset,0_10px_26px_-8px_rgba(220,38,38,0.1)] hover:shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_16px_32px_-8px_rgba(220,38,38,0.16)] hover:-translate-y-1 hover:bg-white/70 transition-all duration-300">
+          <div className="relative bg-white/55 backdrop-blur-md border border-[#f8f8f8]/60 rounded-2xl overflow-hidden shadow-[0_1px_0_rgba(255,255,255,0.8)_inset,0_10px_26px_-8px_rgba(220,38,38,0.1)] hover:shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_16px_32px_-8px_rgba(220,38,38,0.16)] hover:-translate-y-1 hover:bg-white/70 transition-all duration-300">
             {/* glass sheen */}
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/50 via-white/0 to-transparent z-0" />
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[100px_1fr_1fr]">
@@ -188,6 +260,139 @@ export const AboutUsPage = () => {
 
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ── Purpose & Values ──────────────────────────────────────────── */}
+      <section className="bg-[#f8f8f8] pt-16 pb-20">
+        <div className="container mx-auto px-6 md:px-10 max-w-6xl">
+
+          {/* Heading */}
+          <div className="text-center mb-12">
+            <p className="text-red-600 font-bold text-sm tracking-[0.18em] uppercase">Our Purpose</p>
+            <div className="h-0.5 w-8 bg-red-600 mx-auto mt-2 mb-3" />
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-400 leading-snug tracking-tight mb-3">
+              Purpose drives us.{' '}
+              <span className="text-red-600">Values define us.</span>
+            </h2>
+            <p className="text-gray-500 text-sm md:text-base leading-relaxed max-w-md mx-auto">
+              Our mission and vision guide our journey, while the 5 Cs shape
+              the way we think, act, and create impact every day.
+            </p>
+          </div>
+
+          {/* Mission & Vision — two separate cards, aligned with Board of Directors */}
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 mb-16">
+
+            {/* Mission */}
+            <div className="relative bg-white/55 backdrop-blur-md border border-[#f8f8f8]/60 rounded-2xl overflow-hidden shadow-[0_1px_0_rgba(255,255,255,0.8)_inset,0_10px_26px_-8px_rgba(220,38,38,0.1)] hover:shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_16px_32px_-8px_rgba(220,38,38,0.16)] hover:-translate-y-1 hover:bg-white/70 transition-all duration-300 p-7 flex items-center gap-0">
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/50 via-white/0 to-transparent" />
+              <div className="flex-shrink-0 w-20 h-20 rounded-full bg-red-50 flex items-center justify-center overflow-hidden">
+                <img src="/mission.png" alt="Mission" className="w-12 h-12 object-contain" />
+              </div>
+              <div className="w-px bg-gray-100 self-stretch mx-6 flex-shrink-0" />
+              <div>
+                <p className="text-red-600 font-bold text-xs tracking-[0.18em] uppercase mb-1.5">Mission</p>
+                <div className="w-6 h-0.5 bg-red-600 mb-3" />
+                <p className="text-gray-600 text-[15px] leading-relaxed">
+                  To deliver safe, innovative electrical solutions that enhance everyday life.
+                </p>
+              </div>
+            </div>
+
+            {/* Vision */}
+            <div className="relative bg-white/55 backdrop-blur-md border border-[#f8f8f8]/60 rounded-2xl overflow-hidden shadow-[0_1px_0_rgba(255,255,255,0.8)_inset,0_10px_26px_-8px_rgba(220,38,38,0.1)] hover:shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_16px_32px_-8px_rgba(220,38,38,0.16)] hover:-translate-y-1 hover:bg-white/70 transition-all duration-300 p-7 flex items-center gap-0">
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/50 via-white/0 to-transparent" />
+              <div className="flex-shrink-0 w-20 h-20 rounded-full bg-red-50 flex items-center justify-center overflow-hidden">
+                <img src="/vision.png" alt="Vision" className="w-12 h-12 object-contain" />
+              </div>
+              <div className="w-px bg-gray-100 self-stretch mx-6 flex-shrink-0" />
+              <div>
+                <p className="text-red-600 font-bold text-xs tracking-[0.18em] uppercase mb-1.5">Vision</p>
+                <div className="w-6 h-0.5 bg-red-600 mb-3" />
+                <p className="text-gray-600 text-[15px] leading-relaxed">
+                  To become Bangladesh's most trusted electrical brand, setting the benchmark for quality and innovation.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Our Values heading */}
+          <div className="text-center mb-6">
+            <p className="text-red-600 font-bold text-sm tracking-[0.18em] uppercase">Our Values</p>
+            <div className="h-0.5 w-8 bg-red-600 mx-auto mt-2 mb-3" />
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-400 leading-snug tracking-tight">
+              The 5 Cs of <span className="text-red-600">KITTY</span>
+            </h2>
+          </div>
+
+          {/* 5 Cs — mobile carousel */}
+          <div className="md:hidden max-w-5xl mx-auto mt-8 flex flex-col items-center">
+            <div className="relative w-full max-w-xs h-56">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={fiveCsIndex}
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -16 }}
+                  transition={{ duration: 0.35 }}
+                  className="absolute inset-0"
+                >
+                  {(() => {
+                    const item = fiveCsItems[fiveCsIndex];
+                    return (
+                      // Outer: clips children (overflow-hidden) without backdrop-blur interference
+                      <div className="rounded-2xl overflow-hidden border border-[#f8f8f8]/60 shadow-[0_1px_0_rgba(255,255,255,0.8)_inset,0_10px_26px_-8px_rgba(220,38,38,0.1)] w-full h-full">
+                        {/* Inner: backdrop-blur without overflow-hidden */}
+                        <div className="relative bg-white/55 backdrop-blur-md w-full h-full p-6 flex flex-col items-center justify-center text-center">
+                          <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/50 via-white/0 to-transparent" />
+                          {/* Bottom red bar — clipped cleanly by outer wrapper */}
+                          <div className="absolute bottom-0 inset-x-0 h-[3px] bg-gradient-to-r from-red-700/50 via-red-500/80 to-red-700/50" />
+                          <div className="w-14 h-14 rounded-full bg-red-50 flex items-center justify-center mb-4">{item.icon}</div>
+                          <p className="text-red-600 font-bold text-sm mb-1.5">{item.label}</p>
+                          <div className="w-6 h-0.5 bg-red-600 mb-3" />
+                          <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
+                        </div>
+                      </div>
+                    );
+                  })()}
+                </motion.div>
+              </AnimatePresence>
+            </div>
+            <div className="flex items-center gap-2 mt-6">
+              {fiveCsItems.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setFiveCsIndex(idx)}
+                  className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${idx === fiveCsIndex ? 'w-8 bg-red-600' : 'w-1.5 bg-gray-300 hover:bg-gray-400'}`}
+                  aria-label={`Go to ${fiveCsItems[idx].label}`}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* 5 Cs — desktop grid */}
+          <div className="hidden md:grid max-w-5xl mx-auto grid-cols-5 gap-4 mt-8">
+            {fiveCsItems.map((item) => (
+              // Outer: clips + hover lift
+              <div
+                key={item.label}
+                className="rounded-2xl overflow-hidden border border-[#f8f8f8]/60 shadow-[0_1px_0_rgba(255,255,255,0.8)_inset,0_10px_26px_-8px_rgba(220,38,38,0.1)] hover:shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_16px_32px_-8px_rgba(220,38,38,0.16)] hover:-translate-y-1 transition-all duration-300"
+              >
+                {/* Inner: backdrop-blur */}
+                <div className="relative bg-white/55 backdrop-blur-md hover:bg-white/70 transition-colors duration-300 p-5 flex flex-col items-center text-center h-full">
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/50 via-white/0 to-transparent" />
+                  <div className="absolute bottom-0 inset-x-0 h-[3px] bg-gradient-to-r from-red-700/50 via-red-500/80 to-red-700/50" />
+                  <div className="w-14 h-14 rounded-full bg-red-50 flex items-center justify-center mb-4">{item.icon}</div>
+                  <p className="text-red-600 font-bold text-sm mb-1.5">{item.label}</p>
+                  <div className="w-6 h-0.5 bg-red-600 mb-3" />
+                  <p className="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
         </div>
       </section>
 

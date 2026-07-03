@@ -91,8 +91,8 @@ export const AboutUs = () => {
           {/* Centered label with single line */}
           <div className="flex items-center gap-6 mb-10">
             <div className="flex-1 h-px bg-red-200" />
-            <h3 className="text-red-600 font-bold text-2xl md:text-3xl whitespace-nowrap tracking-tight">
-              At a glance
+            <h3 className="text-red-600 font-bold text-lg tracking-[0.1em] uppercase whitespace-nowrap">
+              AT A GLANCE
             </h3>
             <div className="flex-1 h-px bg-red-200" />
           </div>

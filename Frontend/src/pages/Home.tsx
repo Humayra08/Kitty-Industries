@@ -142,7 +142,7 @@ export const Home = () => {
       <div className="bg-[#fafafa] py-4">
         <div className="container mx-auto px-4 md:px-6 flex items-center gap-4">
           <div className="flex-1 h-px bg-red-400 opacity-50" />
-          <p className="text-sm font-semibold text-gray-600 tracking-wide whitespace-nowrap flex-shrink-0">
+          <p className="text-sm font-semibold text-gray-400 tracking-wide whitespace-nowrap flex-shrink-0">
             One Vision.&nbsp;&nbsp;
             <span className="text-red-600">Many Strengths.</span>
             &nbsp;&nbsp;Greater Impact.
