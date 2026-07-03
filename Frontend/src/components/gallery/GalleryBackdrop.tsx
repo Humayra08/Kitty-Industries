@@ -18,20 +18,11 @@ export const GalleryBackdrop = () => (
     <div className="hidden h-36 w-36 opacity-70 sm:block absolute right-8 top-10" style={dotPattern} />
     <div className="hidden md:block absolute right-16 top-1/2 h-32 w-32 rounded-full bg-red-50 blur-2xl" />
 
-    {/* curved dashed arrow pointing down toward the grid */}
-    <svg
-      className="absolute right-[10%] top-20 hidden h-56 w-40 text-red-300 lg:block"
-      viewBox="0 0 160 220"
-      fill="none"
-    >
-      <path
-        d="M18 14 C 66 12, 148 44, 138 112 C 130 166, 92 176, 72 202"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeDasharray="5 7"
-        strokeLinecap="round"
-      />
-      <polygon points="10,4 34,16 8,26" fill="#dc2626" transform="rotate(18 18 15)" />
-    </svg>
+    {/* paper-plane + dashed flight trail (real artwork, cropped tight from /public/picon.png) */}
+    <img
+      src="/gallery/paper-plane.png"
+      alt=""
+      className="absolute right-[6%] top-16 hidden w-[380px] max-w-[42vw] lg:block"
+    />
   </div>
 );
