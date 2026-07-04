@@ -29,20 +29,20 @@ const Instagram = (props: React.SVGProps<SVGSVGElement>) => (
 
 export const Footer = () => {
   return (
-    <footer className="bg-white text-gray-700 border-t border-gray-100">
-      <div className="container mx-auto px-4 md:px-6 pt-8 pb-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+    <footer className="text-white" style={{ backgroundColor: '#BF2E2B' }}>
+      <div className="container mx-auto px-4 md:px-6 pt-6 pb-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
 
           {/* Logo & Description */}
           <div className="lg:col-span-1 flex flex-col">
-            <Link to="/" className="mb-4">
+            <Link to="/" className="mb-3 -ml-2">
               <img
                 src="/n-logo.png"
                 alt="Kitty Industries"
-                className="h-20 w-auto object-contain"
+                className="h-11 w-auto object-contain brightness-0 invert"
               />
             </Link>
-            <p className="text-gray-500 text-xs md:text-sm mb-6 leading-relaxed">
+            <p className="text-white/70 text-sm md:text-sm mb-5 leading-relaxed">
               Your trusted partner for premium switches, accessories & lighting solutions.
             </p>
             <div className="flex items-center gap-3 mt-auto">
@@ -50,9 +50,9 @@ export const Footer = () => {
                 <a
                   key={i}
                   href="#"
-                  className="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center hover:bg-red-600 hover:border-red-600 transition-colors duration-200 group"
+                  className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/20 transition-colors duration-200"
                 >
-                  <Icon className="w-4 h-4 text-gray-500 group-hover:text-white transition-colors duration-200" />
+                  <Icon className="w-3.5 h-3.5 text-white/80" />
                 </a>
               ))}
             </div>
@@ -60,8 +60,8 @@ export const Footer = () => {
 
           {/* Quick Links */}
           <div className="lg:col-span-1">
-            <h4 className="text-gray-900 font-semibold mb-6 uppercase tracking-wider text-sm">Quick Links</h4>
-            <ul className="space-y-3 text-gray-500 text-sm">
+            <h4 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Quick Links</h4>
+            <ul className="space-y-2 text-white/70 text-sm">
               {[
                 { name: 'Home', path: '/' },
                 { name: 'About Us', path: '/about' },
@@ -71,7 +71,7 @@ export const Footer = () => {
                 { name: 'Gallery', path: '/gallery' },
               ].map((item) => (
                 <li key={item.name}>
-                  <Link to={item.path} className="hover:text-red-600 transition-colors">{item.name}</Link>
+                  <Link to={item.path} className="hover:text-white transition-colors">{item.name}</Link>
                 </li>
               ))}
             </ul>
@@ -79,11 +79,11 @@ export const Footer = () => {
 
           {/* Products */}
           <div className="lg:col-span-1">
-            <h4 className="text-gray-900 font-semibold mb-6 uppercase tracking-wider text-sm">Products</h4>
-            <ul className="space-y-3 text-gray-500 text-sm">
+            <h4 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Products</h4>
+            <ul className="space-y-2 text-white/70 text-sm">
               {['Switches', 'Accessories', 'Lighting', 'Modular Series'].map((item) => (
                 <li key={item}>
-                  <Link to="/" className="hover:text-red-600 transition-colors">{item}</Link>
+                  <Link to="/" className="hover:text-white transition-colors">{item}</Link>
                 </li>
               ))}
             </ul>
@@ -91,11 +91,11 @@ export const Footer = () => {
 
           {/* Our Group */}
           <div className="lg:col-span-1">
-            <h4 className="text-gray-900 font-semibold mb-6 uppercase tracking-wider text-sm">Our Group</h4>
-            <ul className="space-y-3 text-gray-500 text-sm">
+            <h4 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Our Group</h4>
+            <ul className="space-y-2 text-white/70 text-sm">
               {['Our Board Members', 'Our Team'].map((item) => (
                 <li key={item}>
-                  <Link to="/" className="hover:text-red-600 transition-colors">{item}</Link>
+                  <Link to="/" className="hover:text-white transition-colors">{item}</Link>
                 </li>
               ))}
             </ul>
@@ -103,25 +103,25 @@ export const Footer = () => {
 
           {/* Contact Us */}
           <div className="lg:col-span-1">
-            <h4 className="text-gray-900 font-semibold mb-6 uppercase tracking-wider text-sm">Contact Us</h4>
-            <div className="space-y-4 text-gray-500 text-sm">
-              <div className="flex items-center gap-3">
-                 <Phone className="w-4 h-4 text-red-600 flex-shrink-0" />
-                 <span>+880 1234 567890</span>
+            <h4 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Contact Us</h4>
+            <div className="space-y-3 text-white/70 text-sm">
+              <div className="flex items-center gap-2.5">
+                <Phone className="w-3.5 h-3.5 text-white/60 flex-shrink-0" />
+                <span className="text-sm">+880 1234 567890</span>
               </div>
-              <div className="flex items-center gap-3">
-                 <Mail className="w-4 h-4 text-red-600 flex-shrink-0" />
-                 <span>info@kittyindustriesbd.com</span>
+              <div className="flex items-center gap-2.5">
+                <Mail className="w-3.5 h-3.5 text-white/60 flex-shrink-0" />
+                <span>info@kittyindustriesbd.com</span>
               </div>
-              <div className="flex items-start gap-3">
-                 <MapPin className="w-4 h-4 text-red-600 flex-shrink-0 mt-0.5" />
-                 <span>
-                   <strong className="text-gray-600">Head Office:</strong> Rosemont Tower (6th floor),<br/>
-                   House # 148, Road # 13, Block # E,<br/>
-                   Banani, Dhaka-1213<br/><br/>
-                   <strong className="text-gray-600">Factory:</strong> Taiyubpur, Ashulia,<br/>
-                   Savar, Dhaka
-                 </span>
+              <div className="flex items-start gap-2.5">
+                <MapPin className="w-3.5 h-3.5 text-white/60 flex-shrink-0 mt-0.5" />
+                <span>
+                  <strong className="text-white/90">Head Office:</strong> Rosemont Tower (6th floor),<br/>
+                  House # 148, Road # 13, Block # E,<br/>
+                  Banani, Dhaka-1213<br/><br/>
+                  <strong className="text-white/90">Factory:</strong> Taiyubpur, Ashulia,<br/>
+                  Savar, Dhaka
+                </span>
               </div>
             </div>
           </div>
@@ -130,15 +130,15 @@ export const Footer = () => {
       </div>
 
       {/* Bottom bar */}
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="border-t border-gray-100 py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-xs md:text-sm text-gray-500">
+      <div style={{ backgroundColor: '#A02525' }}>
+        <div className="container mx-auto px-4 md:px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-2 text-xs md:text-sm text-white/60">
           <span>© 2026 Kitty Industries Ltd. All Rights Reserved.</span>
-          <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 tracking-widest text-gray-500 text-[10px] md:text-xs">
-            <span>DRIVEN BY <span className="text-gray-900">INNOVATION.</span></span>
-            <span className="text-gray-300">|</span>
-            <span>POWERED BY <span className="text-gray-900">TECHNOLOGY.</span></span>
-            <span className="text-gray-300">|</span>
-            <span>BUILT ON <span className="text-gray-900">TRUST.</span></span>
+          <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 tracking-widest text-[10px]">
+            <span>DRIVEN BY <span className="text-white/90">INNOVATION.</span></span>
+            <span className="text-white/30">|</span>
+            <span>POWERED BY <span className="text-white/90">TECHNOLOGY.</span></span>
+            <span className="text-white/30">|</span>
+            <span>BUILT ON <span className="text-white/90">TRUST.</span></span>
           </div>
         </div>
       </div>

@@ -85,7 +85,10 @@ export const Home = () => {
         />
         <div className="relative container mx-auto px-4 md:px-6 text-center max-w-3xl">
           <p className="text-red-600 font-bold text-lg sm:text-2xl tracking-widest uppercase">Sister Concerns</p>
-          <div className="h-0.5 w-8 bg-red-600 mx-auto mt-2 mb-5" />
+          <div className="h-0.5 w-8 bg-red-600 mx-auto mt-2 mb-4" />
+          <p className="text-sm font-semibold text-gray-400 tracking-wide">
+            One Vision.&nbsp;&nbsp;Many Strengths.&nbsp;&nbsp;Greater Impact.
+          </p>
         </div>
 
         {/* ── Scrolling logos ──────────────────────────────────────────── */}
@@ -129,18 +132,6 @@ export const Home = () => {
         </div>
       </div>
 
-      {/* ── Tagline Bar ─────────────────────────────────────────────── */}
-      <div className="bg-[#fafafa] py-4">
-        <div className="container mx-auto px-4 md:px-6 flex items-center justify-center gap-4">
-          <div className="hidden sm:block flex-1 h-px bg-red-400 opacity-50" />
-          <p className="text-lg font-semibold text-gray-400 tracking-wide text-center sm:whitespace-nowrap sm:flex-shrink-0">
-            One Vision.&nbsp;&nbsp;
-            <span className="text-red-600">Many Strengths.</span>
-            &nbsp;&nbsp;Greater Impact.
-          </p>
-          <div className="hidden sm:block flex-1 h-px bg-red-400 opacity-50" />
-        </div>
-      </div>
     </div>
   );
 };

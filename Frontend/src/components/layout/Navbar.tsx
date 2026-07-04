@@ -65,7 +65,7 @@ export const Navbar = () => {
           <img
             src="/n-logo.png"
             alt="Kitty — The Ultimate Safety"
-            className="h-14 md:h-16 w-auto object-contain"
+            className="h-11 md:h-13 w-auto object-contain"
           />
         </Link>
 
