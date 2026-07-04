@@ -1,4 +1,3 @@
-import { Images } from "lucide-react";
 import { galleryImages } from "../data/galleryData";
 import { GalleryImage } from "../components/gallery/GalleryImage";
 import { GalleryBackdrop } from "../components/gallery/GalleryBackdrop";
