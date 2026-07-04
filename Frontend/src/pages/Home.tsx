@@ -84,16 +84,10 @@ export const Home = () => {
           }}
         />
         <div className="relative container mx-auto px-4 md:px-6 text-center max-w-3xl">
-          <p className="text-red-600 font-bold text-xs sm:text-sm tracking-widest uppercase">Sister Concerns</p>
-          <div className="h-0.5 w-8 bg-red-600 mx-auto mt-2 mb-5" />
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-tight mb-4">
-            <span className="text-gray-400">Stronger Together, </span>
-            <span className="text-red-600">Building Greater Impact</span>
-          </h2>
-          <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
-            Our sister concerns share our commitment to excellence, innovation,
-            <br className="hidden sm:block" />
-            and customer satisfaction—working together to create smarter solutions for a better tomorrow.
+          <p className="text-red-600 font-bold text-lg sm:text-2xl tracking-widest uppercase">Sister Concerns</p>
+          <div className="h-0.5 w-8 bg-red-600 mx-auto mt-2 mb-4" />
+          <p className="text-sm font-semibold text-gray-400 tracking-wide">
+            One Vision.&nbsp;&nbsp;Many Strengths.&nbsp;&nbsp;Greater Impact.
           </p>
         </div>
 
@@ -138,18 +132,6 @@ export const Home = () => {
         </div>
       </div>
 
-      {/* ── Tagline Bar ─────────────────────────────────────────────── */}
-      <div className="bg-[#fafafa] py-4">
-        <div className="container mx-auto px-4 md:px-6 flex items-center gap-4">
-          <div className="flex-1 h-px bg-red-400 opacity-50" />
-          <p className="text-sm font-semibold text-gray-400 tracking-wide whitespace-nowrap flex-shrink-0">
-            One Vision.&nbsp;&nbsp;
-            <span className="text-red-600">Many Strengths.</span>
-            &nbsp;&nbsp;Greater Impact.
-          </p>
-          <div className="flex-1 h-px bg-red-400 opacity-50" />
-        </div>
-      </div>
     </div>
   );
 };
