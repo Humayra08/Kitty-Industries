@@ -4,14 +4,14 @@ import { ArrowRight, Play } from 'lucide-react';
 export const Hero = () => {
   return (
     <section className="relative w-full h-screen bg-black overflow-hidden">
-      {/* Background video — swap src for the Cloudinary URL once uploaded */}
+      {/* Background video */}
       <video
         autoPlay
         loop
         muted
         playsInline
         className="absolute inset-0 z-0 h-full w-full object-cover"
-        src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+        src="https://res.cloudinary.com/dcdo4venk/video/upload/q_auto,f_auto/v1783166575/Kitty_hero_lzupmy.mp4"
       />
 
       {/* Red gradient overlay — left-heavy so the headline stays readable */}
