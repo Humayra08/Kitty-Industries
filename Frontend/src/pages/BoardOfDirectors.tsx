@@ -1,23 +1,52 @@
 const boardMembers = [
   {
-    name: 'Mr. Rashed Mahmud',
+    name: 'Mr. Hasan Mahmud',
     title: 'Chairman',
-    bio: 'Visionary leader with over 30 years of experience in the electrical industry and corporate management.',
-    photo: 'https://ui-avatars.com/api/?name=Rashed+Mahmud&background=f8f8f8&color=c0392b&size=200&font-size=0.4&bold=true',
+    company: 'KITTY Industries Ltd.',
+    photo: '/BOD/Hasan Mahmud.png',
+    bio: "Mr. Hasan Mahmud is the Chairman of KITTY Industries Ltd. He holds extensive experience in business leadership and strategic management. Under his guidance, the company continues to grow with strength, innovation, and integrity.",
+    roles: [
+      { title: 'Chairman', company: 'Nandan Kanon Housing Ltd.' },
+      { title: 'Chairman', company: 'NBP Kwality Chemical Industries Ltd.' },
+      { title: 'Chairman', company: 'TAK Chemical Industries Ltd.' },
+    ],
   },
   {
-    name: 'Mr. Hasan Mahmud',
-    title: 'Director',
-    bio: 'Expert in finance and strategic planning with a strong track record in driving sustainable growth.',
-    photo: 'https://ui-avatars.com/api/?name=Hasan+Mahmud&background=f8f8f8&color=c0392b&size=200&font-size=0.4&bold=true',
+    name: 'Mr. Rashed Mahmud',
+    title: 'Managing Director',
+    company: 'KITTY Industries Ltd.',
+    photo: '/BOD/Rashed Mahmud.png',
+    bio: "Mr. Rashed Mahmud is the Managing Director of KITTY Industries Ltd. He holds a Bachelor of Commerce in Finance and an MBA from the University of Dhaka. He oversees international procurement, business development, finance, and overall group operations.",
+    roles: [
+      { title: 'Chairman', company: 'Nandan Kanon Housing Ltd.' },
+      { title: 'Managing Director', company: 'NBP Kwality Chemical Industries Ltd.' },
+      { title: 'Managing Director', company: 'TAK Chemical Industries Ltd.' },
+    ],
   },
   {
     name: 'Mr. Shahed Mahmud',
     title: 'Director',
-    bio: 'Operations and modernisation specialist focused on innovation, efficiency, and excellence.',
-    photo: 'https://ui-avatars.com/api/?name=Shahed+Mahmud&background=f8f8f8&color=c0392b&size=200&font-size=0.4&bold=true',
+    company: 'KITTY Industries Ltd.',
+    photo: '/BOD/Shahed Mahmud.png',
+    bio: "Mr. Shahed Mahmud is a Director of KITTY Industries Ltd. He plays a key role in supporting the company's strategic initiatives and operational excellence with his experience and commitment.",
+    roles: [
+      { title: 'Director', company: 'Nandan Kanon Housing Ltd.' },
+      { title: 'Director', company: 'NBP Kwality Chemical Industries Ltd.' },
+      { title: 'Director', company: 'TAK Chemical Industries Ltd.' },
+    ],
   },
 ];
+
+const BuildingIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5 text-red-600">
+    <path
+      d="M4 21V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v17M4 21h16M4 21H2m14 0V9a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v12m-5 0h5M7 7h2M7 10h2M7 13h2M7 16h2"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+    />
+  </svg>
+);
 
 export const BoardOfDirectorsPage = () => {
   return (
@@ -83,37 +112,73 @@ className="relative z-20 order-1 w-[62%] sm:w-[52%] md:w-[42%] flex-shrink-0 fle
       </section>
 
       {/* ── Board of Directors ────────────────────────────────────────── */}
-      <section className="relative bg-[#f8f8f8] pt-16 pb-20 overflow-hidden">
-        <div
-          className="absolute right-0 top-0 w-72 h-full opacity-20 pointer-events-none"
-          style={{ backgroundImage: 'radial-gradient(circle, #c0392b 1px, transparent 1px)', backgroundSize: '20px 20px' }}
-        />
-        <div
-          className="absolute left-0 top-0 w-72 h-full opacity-20 pointer-events-none"
-          style={{ backgroundImage: 'radial-gradient(circle, #c0392b 1px, transparent 1px)', backgroundSize: '20px 20px' }}
-        />
+      <section className="relative bg-[#fafafa] pt-16 pb-8">
+        <div className="container mx-auto px-6 md:px-10 max-w-6xl flex flex-col items-center">
+          {boardMembers.map((member) => (
+            <div
+              key={member.name}
+              className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-8 md:gap-24 items-center justify-center py-10 border-b border-gray-200 last:border-b-0 w-full max-w-5xl mx-auto"
+            >
+              {/* Photo with decorative backdrop */}
+              <div className="relative mx-auto md:mx-0 md:-ml-6 w-72 flex-shrink-0">
+                <div
+                  className="absolute left-0 top-16 w-44 h-44 rounded-full"
+                  style={{
+                    backgroundImage: 'radial-gradient(circle, #e11d2e 1.5px, transparent 1.5px)',
+                    backgroundSize: '9px 9px',
+                    maskImage: 'radial-gradient(circle, black 25%, transparent 75%)',
+                    WebkitMaskImage: 'radial-gradient(circle, black 25%, transparent 75%)',
+                    opacity: 0.5,
+                  }}
+                />
+                <div className="absolute -right-3 top-20 w-28 h-40 rounded-full bg-red-50/80" />
+                <svg
+                  className="absolute -right-3 top-24 w-8 h-40 text-red-200"
+                  viewBox="0 0 32 160"
+                  fill="none"
+                >
+                  <path d="M2 2 C 26 40, 26 120, 2 158" stroke="currentColor" strokeWidth="1.5" />
+                </svg>
+                <img
+                  src={member.photo}
+                  alt={member.name}
+                  className="relative w-full h-auto"
+                />
+              </div>
 
-        <div className="relative container mx-auto px-6 md:px-10 max-w-5xl">
+              {/* Name / title + bio + directorships */}
+              <div>
+                <div className="text-center md:text-left mb-5">
+                  <h3 className="text-2xl font-bold text-gray-900 leading-snug mb-1">
+                    {member.name}
+                  </h3>
+                  <p className="text-red-600 font-bold text-sm uppercase tracking-wide mb-1">
+                    {member.title}
+                  </p>
+                  <p className="text-gray-400 text-base mb-3">{member.company}</p>
+                  <div className="w-8 h-0.5 bg-red-600 mx-auto md:mx-0" />
+                </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {boardMembers.map((member) => (
-              <div
-                key={member.name}
-                className="rounded-2xl overflow-hidden shadow-[0_1px_0_rgba(255,255,255,0.8)_inset,0_10px_26px_-8px_rgba(220,38,38,0.1)] hover:shadow-[0_1px_0_rgba(255,255,255,0.9)_inset,0_16px_32px_-8px_rgba(220,38,38,0.16)] hover:-translate-y-1 transition-all duration-300"
-              >
-                <div className="relative bg-white/55 backdrop-blur-md hover:bg-white/70 transition-colors duration-300 p-8 flex flex-col items-center text-center">
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/50 via-white/0 to-transparent" />
-                  <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-[#f8f8f8] shadow-sm mb-6 flex-shrink-0">
-                    <img src={member.photo} alt={member.name} className="w-full h-full object-cover" />
-                  </div>
-                  <h3 className="text-red-600 font-bold text-base mb-1">{member.name}</h3>
-                  <p className="text-gray-500 text-sm mb-2">{member.title}</p>
-                  <div className="w-7 h-0.5 bg-red-600 mb-4" />
-                  <p className="text-gray-500 text-sm leading-relaxed">{member.bio}</p>
+                <p className="text-gray-500 text-base leading-relaxed mb-6">{member.bio}</p>
+                <div className="divide-y divide-gray-100">
+                  {member.roles.map((role) => (
+                    <div
+                      key={role.title + role.company}
+                      className="flex items-center gap-3 py-3 first:pt-0"
+                    >
+                      <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
+                        <BuildingIcon />
+                      </div>
+                      <div>
+                        <p className="text-red-600 font-semibold text-base">{role.title}</p>
+                        <p className="text-gray-400 text-sm">{role.company}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </section>
 
