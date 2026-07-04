@@ -37,7 +37,7 @@ export const Footer = () => {
           <div className="lg:col-span-1 flex flex-col">
             <Link to="/" className="mb-3 -ml-2">
               <img
-                src="/kitty_logo.png"
+                src="/n-logo.png"
                 alt="Kitty Industries"
                 className="h-11 w-auto object-contain brightness-0 invert"
               />

@@ -37,21 +37,21 @@ export const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div>
               <div className="inline-block">
-                <p className="text-red-600 font-bold text-xs sm:text-sm tracking-widest uppercase">Accreditations</p>
+                <p className="text-red-600 font-bold text-lg sm:text-2xl tracking-widest uppercase">Accreditations</p>
                 <div className="h-0.5 w-8 bg-red-600 mt-2 mb-4" />
               </div>
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-400 leading-snug mb-4">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-400 leading-snug mb-4">
                 Certified. Compliant.<br />Trusted.
               </h3>
               <p className="text-gray-500 text-sm sm:text-base leading-relaxed max-w-md">
                 Our commitment to quality and safety is backed by national and international certifications that ensure reliability, compliance, and peace of mind.
               </p>
             </div>
-            <div className="grid grid-cols-3 gap-x-2 sm:gap-x-6">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-y-5 sm:gap-y-0 gap-x-2 sm:gap-x-6">
               {accreditations.map((item, i) => (
                 <div
                   key={item.title}
-                  className={`flex flex-col items-center text-center gap-3 px-2 ${i !== 0 ? 'border-l border-gray-300' : ''}`}
+                  className={`flex flex-row sm:flex-col items-center text-left sm:text-center gap-4 sm:gap-3 px-2 ${i !== 0 ? 'border-t sm:border-t-0 sm:border-l border-gray-300 pt-5 sm:pt-0' : ''}`}
                 >
                   {item.icon}
                   <div>
