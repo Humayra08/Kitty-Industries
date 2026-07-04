@@ -49,16 +49,16 @@ export const Gallery = () => {
       {/* ── Footer note ────────────────────────────────────────── */}
       <section className="relative container mx-auto max-w-7xl px-6 pt-4 pb-20 md:px-10">
         <div className="flex flex-col items-center gap-4 text-center">
-          <div className="flex h-14 w-14 items-center justify-center rounded-full border border-red-100 bg-red-50">
+          {/* <div className="flex h-14 w-14 items-center justify-center rounded-full border border-red-100 bg-red-50">
             <Images className="h-6 w-6 text-red-500" strokeWidth={1.5} />
-          </div>
+          </div> */}
           <div>
-            <p className="text-[15px] font-bold text-gray-900">
+            {/* <p className="text-[15px] font-bold text-gray-900">
               More memories coming soon!
             </p>
             <p className="mt-0.5 text-sm text-gray-500">
               We're always creating moments worth sharing.
-            </p>
+            </p> */}
           </div>
         </div>
       </section>
