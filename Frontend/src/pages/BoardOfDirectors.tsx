@@ -53,61 +53,25 @@ export const BoardOfDirectorsPage = () => {
     <div className="flex flex-col min-h-screen bg-white">
 
       {/* ── Hero ──────────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-white">
-        <div className="relative flex flex-row h-[340px] sm:h-[400px] md:h-[460px] lg:h-[520px]">
+      <section className="relative overflow-hidden h-[340px] sm:h-[400px] md:h-[460px] lg:h-[520px]">
+        <img
+          src="/bod bg image.png"
+          alt="KITTY Industries boardroom"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/10 to-transparent" />
 
-          {/* Left: red angular panel */}
-          <div
-className="relative z-20 order-1 w-[62%] sm:w-[52%] md:w-[42%] flex-shrink-0 flex flex-col justify-center px-4 sm:px-8 md:pl-14 md:pr-16 lg:pl-20 lg:pr-20 bg-gradient-to-br from-[#7A0008] via-[#B30012] to-[#89000D] [clip-path:polygon(0_0,100%_0,82%_50%,100%_100%,0_100%)]"          >
-            {/* Layered abstract geometry */}
-            <div
-              className="pointer-events-none absolute inset-0"
-              style={{ background: 'radial-gradient(ellipse 90% 70% at 55% 35%, rgba(196,0,20,0.55) 0%, rgba(196,0,20,0) 65%)' }}
-            />
-            <div
-              className="pointer-events-none absolute -top-16 -left-10 w-64 h-64 opacity-[0.08]"
-              style={{ background: '#000', clipPath: 'polygon(0% 0%, 100% 0%, 0% 100%)' }}
-            />
-            <div
-              className="pointer-events-none absolute bottom-0 right-0 w-72 h-72 opacity-[0.10]"
-              style={{ background: '#4d0006', clipPath: 'polygon(100% 100%, 0% 100%, 100% 0%)' }}
-            />
-            {/* Diagonal glass sheen */}
-            <div
-              className="pointer-events-none absolute inset-0"
-              style={{
-                background: 'linear-gradient(115deg, rgba(255,255,255,0) 22%, rgba(255,255,255,0.14) 42%, rgba(255,255,255,0.03) 54%, rgba(255,255,255,0) 68%)',
-              }}
-            />
-            {/* Edge vignette */}
-            <div
-              className="pointer-events-none absolute inset-0"
-              style={{ boxShadow: 'inset 0 0 90px 20px rgba(0,0,0,0.35)' }}
-            />
-
-            <div className="relative z-10">
-              <p className="text-white font-semibold text-[8px] sm:text-xs uppercase mb-2 sm:mb-4" style={{ letterSpacing: '3px' }}>
-                Leadership That Builds The Future
-              </p>
-              <h1 className="text-white font-black text-lg sm:text-3xl md:text-5xl lg:text-6xl xl:text-[4.25rem] leading-[1.05] tracking-tight mb-3 sm:mb-6">
-                Board of<br />Directors
-              </h1>
-              <div className="h-1 w-[30px] sm:w-[60px] bg-white rounded-full mb-3 sm:mb-6" />
-              <p className="text-[#F5F5F5] text-[10px] sm:text-sm md:text-base leading-relaxed max-w-md">
-                Our Board of Directors brings together visionary leaders with extensive experience and a shared commitment to excellence, innovation, and sustainable growth.
-              </p>
-            </div>
-          </div>
-
-          {/* Right: boardroom photo */}
-          <div className="relative z-10 order-2 flex-1 h-full -ml-[22%] sm:-ml-[16%] md:-ml-[14%] lg:-ml-[12%]">
-            <img
-              src="/bod bg image.png"
-              alt="KITTY Industries boardroom"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
+        <div className="relative z-10 h-full flex flex-col justify-center container mx-auto px-4 md:px-6">
+          <p className="text-white font-semibold text-[8px] sm:text-xs uppercase mb-2 sm:mb-4" style={{ letterSpacing: '3px' }}>
+            Leadership That Builds The Future
+          </p>
+          <h1 className="text-white font-black text-lg sm:text-3xl md:text-5xl lg:text-6xl xl:text-[4.25rem] leading-[1.05] tracking-tight mb-3 sm:mb-6">
+            Board of<br />Directors
+          </h1>
+          <div className="h-1 w-[30px] sm:w-[60px] bg-white rounded-full mb-3 sm:mb-6" />
+          <p className="text-[#F5F5F5] text-[10px] sm:text-sm md:text-base leading-relaxed max-w-md">
+            Our Board of Directors brings together visionary leaders with extensive experience and a shared commitment to excellence, innovation, and sustainable growth.
+          </p>
         </div>
       </section>
 

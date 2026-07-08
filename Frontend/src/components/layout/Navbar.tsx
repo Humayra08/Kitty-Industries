@@ -5,11 +5,10 @@ import { cn } from '../../lib/utils';
 import { Button } from '../ui/Button';
 
 const productDropdownItems = [
+  { name: 'LED Lighting', path: '/products/led-lighting' },
   { name: 'Switch & Socket', path: '/products/switch-socket' },
-  { name: 'Distribution Box', path: '/products/distribution-box' },
-  { name: 'Travel Adapter', path: '/products/travel-adapter' },
-  { name: 'Lights', path: '/products/lights' },
-  { name: 'Lamp Holder', path: '/products/lamp-holder' },
+  { name: 'Circuit Breakers', path: '/products/circuit-breakers' },
+  { name: 'Accessories', path: '/products/accessories' },
 ];
 
 const navLinks = [

@@ -3,7 +3,7 @@ import { ArrowRight, Play } from 'lucide-react';
 
 export const Hero = () => {
   return (
-    <section className="relative w-full h-screen bg-black overflow-hidden">
+    <section className="relative w-full h-[calc(100vh-4rem)] md:h-[calc(100vh-5rem)] bg-black overflow-hidden">
       {/* Background video */}
       <video
         autoPlay

@@ -1,0 +1,137 @@
+import { Link } from 'react-router-dom';
+import { ChevronRight, ArrowRight } from 'lucide-react';
+
+const categories = [
+  {
+    title: 'Gang Switch Socket',
+    path: '/products/switch-socket/gang-switch-socket',
+    icon: (
+      <svg viewBox="0 0 140 140" className="w-full h-full drop-shadow-md">
+        <defs>
+          <linearGradient id="plate-gang" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#ffffff" />
+            <stop offset="100%" stopColor="#f2f2f2" />
+          </linearGradient>
+          <linearGradient id="paddle-gang" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#ffffff" />
+            <stop offset="100%" stopColor="#e9e9e9" />
+          </linearGradient>
+        </defs>
+        <rect x="8" y="8" width="124" height="124" rx="16" fill="url(#plate-gang)" stroke="#e0e0e0" strokeWidth="1.5" />
+        <rect x="26" y="30" width="38" height="78" rx="7" fill="url(#paddle-gang)" stroke="#d4d4d4" strokeWidth="1.5" />
+        <rect x="39" y="40" width="12" height="26" rx="3" fill="#1f2937" />
+        <rect x="76" y="30" width="38" height="78" rx="7" fill="url(#paddle-gang)" stroke="#d4d4d4" strokeWidth="1.5" />
+        <circle cx="95" cy="55" r="5" fill="#1f2937" />
+        <path d="M87 76 q8 -9 16 0" stroke="#1f2937" strokeWidth="3.5" fill="none" strokeLinecap="round" />
+        <path d="M87 90 q8 -9 16 0" stroke="#1f2937" strokeWidth="3.5" fill="none" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Piano Switch Socket',
+    path: '/products/switch-socket/piano-switch-socket',
+    icon: (
+      <svg viewBox="0 0 140 140" className="w-full h-full drop-shadow-md">
+        <defs>
+          <linearGradient id="plate-piano" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#ffffff" />
+            <stop offset="100%" stopColor="#f2f2f2" />
+          </linearGradient>
+          <linearGradient id="paddle-piano" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#ffffff" />
+            <stop offset="100%" stopColor="#e9e9e9" />
+          </linearGradient>
+        </defs>
+        <rect x="8" y="8" width="124" height="124" rx="16" fill="url(#plate-piano)" stroke="#e0e0e0" strokeWidth="1.5" />
+        <rect x="20" y="30" width="27" height="78" rx="6" fill="url(#paddle-piano)" stroke="#d4d4d4" strokeWidth="1.5" />
+        <rect x="29" y="40" width="9" height="22" rx="3" fill="#1f2937" />
+        <rect x="51" y="30" width="27" height="78" rx="6" fill="url(#paddle-piano)" stroke="#d4d4d4" strokeWidth="1.5" />
+        <rect x="60" y="40" width="9" height="22" rx="3" fill="#1f2937" />
+        <rect x="84" y="30" width="36" height="78" rx="7" fill="url(#paddle-piano)" stroke="#d4d4d4" strokeWidth="1.5" />
+        <circle cx="102" cy="55" r="5" fill="#1f2937" />
+        <path d="M94 76 q8 -9 16 0" stroke="#1f2937" strokeWidth="3.5" fill="none" strokeLinecap="round" />
+        <path d="M94 90 q8 -9 16 0" stroke="#1f2937" strokeWidth="3.5" fill="none" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+];
+
+export const SwitchSocketPage = () => {
+  return (
+    <div className="flex flex-col min-h-screen bg-white">
+
+      {/* ── Hero ──────────────────────────────────────────────────────── */}
+      <section className="relative bg-[#f8f7f5] overflow-hidden">
+        <div className="container mx-auto px-4 sm:px-6 md:px-10 max-w-7xl py-6 sm:py-8 md:py-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 items-center">
+
+            {/* Left — text */}
+            <div className="relative">
+              <div className="flex items-center gap-1.5 text-xs sm:text-sm mb-3 sm:mb-5">
+                <Link to="/" className="text-gray-500 hover:text-red-600 transition-colors">Home</Link>
+                <ChevronRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gray-400" />
+                <span className="text-red-600 font-medium">Switch &amp; Socket</span>
+              </div>
+
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-red-600 leading-tight tracking-tight mb-3 sm:mb-4">
+                Switch &amp; Socket
+              </h1>
+              <div className="h-1 w-10 sm:w-14 bg-red-600 rounded-full" />
+            </div>
+
+            {/* Right — banner image */}
+            <img
+              src="/Products/Switch & Socket.png"
+              alt="Switch & Socket products"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ── Choose your category ─────────────────────────────────────── */}
+      <section className="bg-white py-10 sm:py-14 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6 md:px-10 max-w-7xl">
+
+          <div className="flex items-center justify-center gap-2 sm:gap-4 w-full max-w-3xl mx-auto mb-10 sm:mb-14 md:mb-20">
+            <span className="h-px flex-1 bg-red-300" />
+            <h2 className="text-red-600 font-bold text-[11px] sm:text-sm md:text-base tracking-[0.12em] sm:tracking-[0.2em] md:tracking-[0.25em] uppercase whitespace-nowrap">
+              Choose Your Category
+            </h2>
+            <span className="h-px flex-1 bg-red-300" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 max-w-5xl mx-auto">
+            {categories.map((cat) => (
+              <Link
+                key={cat.title}
+                to={cat.path}
+                className="group relative overflow-hidden flex flex-col sm:flex-row items-center text-center sm:text-left gap-3 sm:gap-6 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-[0_10px_24px_-10px_rgba(220,38,38,0.18)] transition-all duration-300 pl-6 pr-6 sm:pl-10 sm:pr-8 py-6 sm:py-8"
+              >
+                <span className="absolute left-0 top-0 bottom-0 w-[6px] bg-red-600 rounded-l-2xl" />
+
+                <div className="flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36">
+                  {cat.icon}
+                </div>
+
+                <span className="hidden sm:block w-px self-stretch bg-gray-200" />
+
+                <div className="flex-1 pb-8 sm:pb-0">
+                  <h3 className="font-bold text-gray-700 text-base sm:text-lg md:text-xl uppercase tracking-tight leading-tight">
+                    {cat.title}
+                  </h3>
+                  <div className="h-px w-8 bg-red-600 rounded-full mt-2.5 mx-auto sm:mx-0" />
+                </div>
+
+                <span className="absolute right-4 bottom-4 sm:right-6 sm:bottom-6 w-9 h-9 sm:w-11 sm:h-11 flex-shrink-0 rounded-full border border-red-500 text-red-600 flex items-center justify-center group-hover:bg-red-600 group-hover:text-white transition-colors duration-300">
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+    </div>
+  );
+};

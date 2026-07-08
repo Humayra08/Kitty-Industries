@@ -5,6 +5,7 @@ import { ContactUs } from './pages/ContactUs';
 import { AboutUsPage } from './pages/AboutUs';
 import { Gallery } from './pages/Gallery';
 import { BoardOfDirectorsPage } from './pages/BoardOfDirectors';
+import { SwitchSocketPage } from './pages/SwitchSocket';
 
 // Placeholder components for other routes
 const Placeholder = ({ title }: { title: string }) => (
@@ -20,6 +21,9 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="products" element={<Placeholder title="Products" />} />
+          <Route path="products/switch-socket" element={<SwitchSocketPage />} />
+          <Route path="products/switch-socket/gang-switch-socket" element={<Placeholder title="Gang Switch Socket" />} />
+          <Route path="products/switch-socket/piano-switch-socket" element={<Placeholder title="Piano Switch Socket" />} />
           <Route path="manufacturing" element={<Placeholder title="Manufacturing" />} />
           <Route path="industries" element={<Placeholder title="Industries" />} />
           <Route path="about" element={<AboutUsPage />} />
