@@ -3,7 +3,7 @@ import { ChevronRight } from 'lucide-react';
 import { SeriesPickerGrid } from '../components/products/SeriesPickerGrid';
 import { switchSeriesList } from '../data/switchSeries';
 
-export const GangSwitchSocket = () => {
+export const PianoSwitchSocket = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       {/* ── Breadcrumbs & Hero Section ─────────────────────────────────── */}
@@ -24,7 +24,7 @@ export const GangSwitchSocket = () => {
             <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
             <Link to="/products/switch-socket" className="hover:text-red-600 transition-colors">Switch &amp; Socket</Link>
             <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
-            <span className="text-[#E3000F] font-semibold">Gang Switch Socket</span>
+            <span className="text-[#E3000F] font-semibold">Piano Switch Socket</span>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 items-center">
@@ -32,7 +32,7 @@ export const GangSwitchSocket = () => {
             <div className="flex flex-col items-start text-left">
               {/* Heading */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[45px] font-black text-[#E3000F] leading-tight mb-3 sm:mb-4 tracking-tight">
-                Gang Switch Socket
+                Piano Switch Socket
               </h1>
 
               {/* Decorative Accent Line */}
@@ -40,14 +40,14 @@ export const GangSwitchSocket = () => {
 
               {/* Description */}
               <p className="text-sm sm:text-base text-gray-500 max-w-lg leading-relaxed">
-                Explore our wide range of premium gang switch socket series designed for safety, durability and modern living.
+                Explore our wide range of premium piano switch socket series designed for safety, durability and modern living.
               </p>
             </div>
 
             {/* Right Content - 3D Composition Banner */}
             <img
               src="/Products/Switch & Socket.png"
-              alt="KITTY Gang Switch & Socket Collection"
+              alt="KITTY Piano Switch & Socket Collection"
               className="w-full h-auto drop-shadow-xl"
             />
           </div>
@@ -59,8 +59,8 @@ export const GangSwitchSocket = () => {
         <div className="container mx-auto px-4 sm:px-6 md:px-10 max-w-7xl">
           <SeriesPickerGrid
             seriesList={switchSeriesList}
-            basePath="/products/switch-socket/gang-switch-socket"
-            variant="gang"
+            basePath="/products/switch-socket/piano-switch-socket"
+            variant="piano"
           />
         </div>
       </section>

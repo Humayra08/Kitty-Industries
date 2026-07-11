@@ -1,0 +1,142 @@
+import { buildSeriesCatalog, type CatalogProduct, type RawSeriesProduct, type SeriesConfig } from '../catalog';
+
+export const blankoGoldenConfig: SeriesConfig = {
+  seriesName: 'Blanko Golden',
+  seriesPath: '/products/switch-socket/gang-switch-socket/blanko/golden',
+  categoryName: 'Gang Switch Socket',
+  categoryPath: '/products/switch-socket/gang-switch-socket',
+  imageFolder: '',
+};
+
+const rawBlankoGoldenProducts: RawSeriesProduct[] = [
+  {
+    id: 1,
+    title: '1 GANG SWITCH',
+    subtitle: '1 Gang Switch',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757530/BG8111_ts08hw.png',
+    modelNo: 'BG8111',
+    productType: '1 Gang Switch',
+    features: ['With Switch'],
+  },
+  {
+    id: 2,
+    title: '2 GANG SWITCH',
+    subtitle: '2 Gang Switch',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757529/BG8112_udbxkp.png',
+    modelNo: 'BG8112',
+    productType: '2 Gang Switch',
+    features: ['With Switch'],
+  },
+  {
+    id: 3,
+    title: '3 GANG SWITCH',
+    subtitle: '3 Gang Switch',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757531/BG8113_akrcyn.png',
+    modelNo: 'BG8113',
+    productType: '3 Gang Switch',
+    features: ['With Switch'],
+  },
+  {
+    id: 4,
+    title: '4 GANG SWITCH',
+    subtitle: '4 Gang Switch',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757531/BG8114_tcfe05.png',
+    modelNo: 'BG8114',
+    productType: '4 Gang Switch',
+    features: ['With Switch'],
+  },
+  {
+    id: 5,
+    title: 'UNIVERSAL SOCKET SWITCH WITH NEON',
+    subtitle: 'Universal Socket with Neon',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757528/BG8113S_swagud.png',
+    modelNo: 'BG8113S',
+    socketType: 'Universal Socket',
+    features: ['With Neon', 'With Switch'],
+  },
+  {
+    id: 6,
+    title: 'ROUND SOCKET SWITCH WITH NEON',
+    subtitle: 'Round Socket with Neon',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757534/BG8115S_ucdi7l.png',
+    modelNo: 'BG8115S',
+    socketType: 'Round Socket',
+    features: ['With Neon', 'With Switch'],
+  },
+  {
+    id: 7,
+    title: 'UNIVERSAL SOCKET WITH SWITCH',
+    subtitle: 'Universal Socket',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757547/BG8116-US_sbxwa9.png',
+    modelNo: 'BG8116-US',
+    socketType: 'Universal Socket',
+    features: ['With Switch'],
+  },
+  {
+    id: 8,
+    title: 'TELEVISION/DISH SOCKET SINGLE',
+    subtitle: 'Television / Dish Socket',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757535/BG8119-TV_fewib5.png',
+    modelNo: 'BG8119-TV',
+    socketType: 'TV / Dish Socket',
+    features: [],
+  },
+  {
+    id: 9,
+    title: 'BELL PUSH SWITCH',
+    subtitle: 'Bell Push Switch',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757528/BG811B_umyjbq.png',
+    modelNo: 'BG811B',
+    features: ['With Switch'],
+  },
+  {
+    id: 10,
+    title: 'WATER HEATER DP SWITCH WITH NEON',
+    subtitle: 'DP Switch with Neon',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757536/BG8120L_fszglu.png',
+    modelNo: 'BG8120L',
+    features: ['With Neon'],
+  },
+  {
+    id: 11,
+    title: 'MULTI-PIN UNIVERSAL SOCKET WITH SWITCH',
+    subtitle: 'Universal Socket',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757545/BG8125_f6adnd.png',
+    modelNo: 'BG8125',
+    socketType: 'Universal Socket',
+    features: ['With Switch'],
+  },
+  {
+    id: 12,
+    title: 'TELEPHONE SOCKET',
+    subtitle: 'Telephone Socket',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757545/BG8130-PC_sh67cl.png',
+    modelNo: 'BG8130-PC',
+    socketType: 'Telephone Socket',
+    features: [],
+  },
+  {
+    id: 13,
+    title: 'FAN SPEED CONTROLLER WITH SWITCH',
+    subtitle: 'Fan Speed Controller',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757539/BG816S-M3_c9capi.png',
+    modelNo: 'BG816S-M3',
+    productType: 'Fan Speed Controller',
+    features: ['With Switch', 'Fan Speed Control'],
+  },
+  {
+    id: 14,
+    title: 'TELEPHONE SOCKET 4-WIRE',
+    subtitle: 'Telephone Socket',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757547/BG818-4TU_zpw6s8.png',
+    modelNo: 'BG818-4TU',
+    socketType: 'Telephone Socket',
+    features: [],
+  },
+];
+
+export const blankoGoldenProductTypes = ['1 Gang Switch', '2 Gang Switch', '3 Gang Switch', '4 Gang Switch', 'Fan Speed Controller'];
+export const blankoGoldenSocketTypes = ['Universal Socket', 'Round Socket', 'Telephone Socket', 'TV / Dish Socket'];
+export const blankoGoldenFeatureList = ['With Neon', 'With Switch', 'Fan Speed Control'];
+
+export const blankoGoldenCatalog: CatalogProduct[] = buildSeriesCatalog(rawBlankoGoldenProducts, blankoGoldenConfig);

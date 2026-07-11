@@ -9,6 +9,11 @@ import { SwitchSocketPage } from './pages/SwitchSocket';
 import { GangSwitchSocket } from './pages/GangSwitchSocket';
 import { ArtSeriesPage } from './pages/ArtSeries';
 import { ProductDetailPage } from './pages/ProductDetail';
+import { PianoSwitchSocket } from './pages/PianoSwitchSocket';
+import { BlankoLanding } from './pages/BlankoLanding';
+import { BlankoGoldenPage } from './pages/BlankoGolden';
+import { BlankoWhitePage } from './pages/BlankoWhite';
+import { GloriaSeriesPage } from './pages/GloriaSeries';
 
 // Placeholder components for other routes
 const Placeholder = ({ title }: { title: string }) => (
@@ -28,7 +33,14 @@ function App() {
           <Route path="products/switch-socket/gang-switch-socket" element={<GangSwitchSocket />} />
           <Route path="products/switch-socket/gang-switch-socket/art-series" element={<ArtSeriesPage />} />
           <Route path="products/switch-socket/gang-switch-socket/art-series/:slug" element={<ProductDetailPage />} />
-          <Route path="products/switch-socket/piano-switch-socket" element={<Placeholder title="Piano Switch Socket" />} />
+          <Route path="products/switch-socket/gang-switch-socket/blanko" element={<BlankoLanding />} />
+          <Route path="products/switch-socket/gang-switch-socket/blanko/golden" element={<BlankoGoldenPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/blanko/golden/:slug" element={<ProductDetailPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/blanko/white" element={<BlankoWhitePage />} />
+          <Route path="products/switch-socket/gang-switch-socket/blanko/white/:slug" element={<ProductDetailPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/gloria-series" element={<GloriaSeriesPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/gloria-series/:slug" element={<ProductDetailPage />} />
+          <Route path="products/switch-socket/piano-switch-socket" element={<PianoSwitchSocket />} />
           <Route path="manufacturing" element={<Placeholder title="Manufacturing" />} />
           <Route path="industries" element={<Placeholder title="Industries" />} />
           <Route path="about" element={<AboutUsPage />} />

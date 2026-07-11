@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ChevronRight, ChevronLeft, ArrowRight } from 'lucide-react';
-import { getCatalogProductBySlug, getRelatedCatalogProducts, type CatalogProduct } from '../data/artSeriesProducts';
+import { getCatalogProductByPath, getRelatedCatalogProducts } from '../data/productRegistry';
+import type { CatalogProduct } from '../data/catalog';
+import { getSpecSheetRows } from '../data/specSheet';
 
 const ZOOM = 2;
 const LENS_WIDTH = 220;
@@ -66,6 +68,9 @@ const ZoomableImage = ({ src, alt }: { src: string; alt: string }) => {
 
 /** Pulls a leading rating (e.g. "20A", "13A") off the title, defaulting to the standard rating. */
 const buildSpecs = (product: CatalogProduct) => {
+  const fromSheet = getSpecSheetRows(product.modelNo, product.socketType);
+  if (fromSheet) return fromSheet;
+
   const ratingMatch = product.title.match(/^(\d+A)\b/);
   const rating = ratingMatch ? `${ratingMatch[1]}~250V~` : '10A~250V~';
   const hasSwitch = product.features.includes('With Switch') || !!product.productType;
@@ -122,7 +127,7 @@ const useRelatedPerPage = () => {
 };
 
 export const ProductDetailPage = () => {
-  const { slug } = useParams();
+  const { pathname } = useLocation();
   const [relatedPage, setRelatedPage] = useState(1);
   const [direction, setDirection] = useState(1);
   const relatedPerPage = useRelatedPerPage();
@@ -135,7 +140,7 @@ export const ProductDetailPage = () => {
     });
   };
 
-  const product = slug ? getCatalogProductBySlug(slug) : undefined;
+  const product = getCatalogProductByPath(pathname);
 
   if (!product) {
     return (
