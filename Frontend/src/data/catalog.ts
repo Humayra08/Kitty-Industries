@@ -51,13 +51,27 @@ export interface SeriesConfig {
 
 const isUrl = (image: string) => /^https?:\/\//i.test(image);
 
+/**
+ * Cloudinary-hosted source photos come straight off a phone camera (often 3000px+,
+ * several MB each) — undersized for nothing, since they only ever render into a
+ * thumbnail or a single product image. Inserting a transformation segment makes
+ * Cloudinary serve a resized, auto-compressed, auto-format (WebP/AVIF) version
+ * instead of the raw original, without needing to re-upload or store anything
+ * locally. ~1000px is generous enough for the product-detail zoom view while still
+ * cutting multi-MB originals down to tens of KB.
+ */
+const CLOUDINARY_TRANSFORM = 'f_auto,q_auto,w_1000';
+
+const optimizeImageUrl = (url: string): string =>
+  url.includes('res.cloudinary.com') ? url.replace('/image/upload/', `/image/upload/${CLOUDINARY_TRANSFORM}/`) : url;
+
 /** Maps a series' raw product list into the shared CatalogProduct shape. */
 export const buildSeriesCatalog = (products: RawSeriesProduct[], config: SeriesConfig): CatalogProduct[] =>
   products.map((p) => ({
     slug: slugify(p.title),
     title: p.title,
     subtitle: p.subtitle,
-    imageSrc: isUrl(p.image) ? p.image : `${config.imageFolder}/${p.image}`,
+    imageSrc: isUrl(p.image) ? optimizeImageUrl(p.image) : `${config.imageFolder}/${p.image}`,
     modelNo: p.modelNo ?? getModelNo(p.image),
     seriesName: config.seriesName,
     seriesPath: config.seriesPath,
