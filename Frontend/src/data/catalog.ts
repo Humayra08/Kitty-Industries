@@ -54,13 +54,20 @@ const isUrl = (image: string) => /^https?:\/\//i.test(image);
 /**
  * Cloudinary-hosted source photos come straight off a phone camera (often 3000px+,
  * several MB each) — undersized for nothing, since they only ever render into a
- * thumbnail or a single product image. Inserting a transformation segment makes
+ * thumbnail or a single product image. Inserting a transformation chain makes
  * Cloudinary serve a resized, auto-compressed, auto-format (WebP/AVIF) version
  * instead of the raw original, without needing to re-upload or store anything
  * locally. ~1000px is generous enough for the product-detail zoom view while still
  * cutting multi-MB originals down to tens of KB.
+ *
+ * The shoots are inconsistently framed — the product fills anywhere from ~9% to
+ * ~45% of the frame depending on the photo — so on a fixed-size square box some
+ * products render tiny with a sea of background around them. `e_trim` crops each
+ * photo down to its actual content bounding box first, then `c_pad` re-centers
+ * that trimmed content into a uniform square on a white backdrop, so every product
+ * fills its box consistently regardless of how the original was framed.
  */
-const CLOUDINARY_TRANSFORM = 'f_auto,q_auto,w_1000';
+const CLOUDINARY_TRANSFORM = 'e_trim/c_pad,w_1000,h_1000,b_white/f_auto,q_auto';
 
 const optimizeImageUrl = (url: string): string =>
   url.includes('res.cloudinary.com') ? url.replace('/image/upload/', `/image/upload/${CLOUDINARY_TRANSFORM}/`) : url;

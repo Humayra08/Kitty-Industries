@@ -1,0 +1,142 @@
+import { buildSeriesCatalog, type CatalogProduct, type RawSeriesProduct, type SeriesConfig } from '../catalog';
+
+export const dorenGoldenSeriesConfig: SeriesConfig = {
+  seriesName: 'Doren Series Golden',
+  seriesPath: '/products/switch-socket/gang-switch-socket/doren-series-golden',
+  categoryName: 'Gang Switch Socket',
+  categoryPath: '/products/switch-socket/gang-switch-socket',
+  imageFolder: '',
+};
+
+const rawDorenGoldenSeriesProducts: RawSeriesProduct[] = [
+  {
+    id: 1,
+    title: '1 GANG 1 WAY SWITCH',
+    subtitle: '1 Gang 1 Way Switch',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783852894/1_GANG_1_WAY_SWITCH._DG2811_rvuzc8.png',
+    modelNo: 'DG2811',
+    productType: '1 Gang Switch',
+    features: ['With Switch'],
+  },
+  {
+    id: 2,
+    title: '2 GANG 1 WAY SWITCH',
+    subtitle: '2 Gang 1 Way Switch',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783852894/2_GANG_1_WAY_SWITCH._DG2812_esodpk.png',
+    modelNo: 'DG2812',
+    productType: '2 Gang Switch',
+    features: ['With Switch'],
+  },
+  {
+    id: 3,
+    title: '3 GANG 1 WAY SWITCH',
+    subtitle: '3 Gang 1 Way Switch',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783852883/3_GANG_1_WAY_SWITCH._DG2813_imbucx.png',
+    modelNo: 'DG2813',
+    productType: '3 Gang Switch',
+    features: ['With Switch'],
+  },
+  {
+    id: 4,
+    title: '4 GANG 1 WAY SWITCH',
+    subtitle: '4 Gang 1 Way Switch',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783852888/4_GANG_1_WAY_SWITCH._DG2814_bydfie.png',
+    modelNo: 'DG2814',
+    productType: '4 Gang Switch',
+    features: ['With Switch'],
+  },
+  {
+    id: 5,
+    title: 'FAN SPEED CONTROLLER',
+    subtitle: 'Fan Speed Controller',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783852857/FAN_SPEED_CONTROLLER._DG2830-M3_oi3p4z.png',
+    modelNo: 'DG2830-M3',
+    productType: 'Fan Speed Controller',
+    features: ['With Switch', 'Fan Speed Control'],
+  },
+  {
+    id: 6,
+    title: 'BELL PUSH SWITCH',
+    subtitle: 'Bell Push Switch',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783852867/BELLPUSH_SWITCH._DG2828B_h7cdu9.png',
+    modelNo: 'DG2828B',
+    features: ['With Switch'],
+  },
+  {
+    id: 7,
+    title: '13A 5PIN UNIVERSAL SOCKET',
+    subtitle: 'Universal Socket with Neon',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783852892/13A_9PIN_UNIVERSAL_SOCKET._DG2850_jnswaq.png',
+    modelNo: 'DG285',
+    socketType: 'Universal Socket',
+    features: ['With Neon'],
+  },
+  {
+    id: 8,
+    title: '13A 3PIN UNIVERSAL SOCKET WITH SWITCH',
+    subtitle: 'Universal Socket',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783852890/13A_3PIN_UNIVERSAL_SOCKET_WITH_SWITCH._DG2813S_kbws02.png',
+    modelNo: 'DG2813S',
+    socketType: 'Universal Socket',
+    features: ['With Switch'],
+  },
+  {
+    id: 9,
+    title: '15A 3PIN ROUND SOCKET',
+    subtitle: 'Round Socket',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783852872/15A_3PIN_ROUND_SOCKET._DG2815_tiz3ve.png',
+    modelNo: 'DG2815',
+    socketType: 'Round Socket',
+    features: ['With Switch'],
+  },
+  {
+    id: 10,
+    title: '16A 2PIN UNIVERSAL SOCKET WITH SWITCH',
+    subtitle: 'Universal Socket',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783852872/16A_2PIN_UNIVERSAL_SOCKET_WITH_SWITCH._DG2816US_cca0n2.png',
+    modelNo: 'DG2816US',
+    socketType: 'Universal Socket',
+    features: ['With Switch'],
+  },
+  {
+    id: 11,
+    title: '2PIN & 13A UNIVERSAL SOCKET WITH USB PORT',
+    subtitle: 'Universal Socket with USB',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783852899/2PIN___13A_UNIVERSAL_SOCKET_WITH_USB_PORT._DG2880-USB_cswwj4.png',
+    modelNo: 'DG2880-USB',
+    socketType: 'Universal Socket',
+    features: ['USB Port'],
+  },
+  {
+    id: 12,
+    title: '20A DP SWITCH WITH NEON',
+    subtitle: 'DP Switch with Neon',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783852860/20A_DP_SWITCH_WITH_NEON._DG2820L_c4vtvz.png',
+    modelNo: 'DG2820L',
+    features: ['With Neon'],
+  },
+  {
+    id: 13,
+    title: 'TELEPHONE SOCKET',
+    subtitle: 'Telephone Socket',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783852866/TELEPHONE_SOCKET._DG2822-4TU_fp3b9w.png',
+    modelNo: 'DG2822-4TU',
+    socketType: 'Telephone Socket',
+    features: [],
+  },
+  {
+    id: 14,
+    title: 'TV/DISH SOCKET',
+    subtitle: 'Television / Dish Socket',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783852854/TV_DISH_SOCKET._DG2824TV_fgqjji.png',
+    modelNo: 'DG2824TV',
+    socketType: 'TV / Dish Socket',
+    features: [],
+  },
+];
+
+export const dorenGoldenSeriesProductTypes = ['1 Gang Switch', '2 Gang Switch', '3 Gang Switch', '4 Gang Switch', 'Fan Speed Controller'];
+export const dorenGoldenSeriesSocketTypes = ['Universal Socket', 'Round Socket', 'Telephone Socket', 'TV / Dish Socket'];
+export const dorenGoldenSeriesFeatureList = ['With Neon', 'With Switch', 'Fan Speed Control', 'USB Port'];
+
+export const dorenGoldenSeriesCatalog: CatalogProduct[] = buildSeriesCatalog(rawDorenGoldenSeriesProducts, dorenGoldenSeriesConfig);
