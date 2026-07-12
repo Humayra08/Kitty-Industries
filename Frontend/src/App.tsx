@@ -14,6 +14,10 @@ import { BlankoLanding } from './pages/BlankoLanding';
 import { BlankoGoldenPage } from './pages/BlankoGolden';
 import { BlankoWhitePage } from './pages/BlankoWhite';
 import { GloriaSeriesPage } from './pages/GloriaSeries';
+import { VenusSeriesPage } from './pages/VenusSeries';
+import { VeronaSeriesPage } from './pages/VeronaSeries';
+import { DorenWhiteSeriesPage } from './pages/DorenWhiteSeries';
+import { DorenGoldenSeriesPage } from './pages/DorenGoldenSeries';
 
 // Placeholder components for other routes
 const Placeholder = ({ title }: { title: string }) => (
@@ -40,6 +44,14 @@ function App() {
           <Route path="products/switch-socket/gang-switch-socket/blanko/white/:slug" element={<ProductDetailPage />} />
           <Route path="products/switch-socket/gang-switch-socket/gloria-series" element={<GloriaSeriesPage />} />
           <Route path="products/switch-socket/gang-switch-socket/gloria-series/:slug" element={<ProductDetailPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/venus-series" element={<VenusSeriesPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/venus-series/:slug" element={<ProductDetailPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/verona-series" element={<VeronaSeriesPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/verona-series/:slug" element={<ProductDetailPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/doren-series-white" element={<DorenWhiteSeriesPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/doren-series-white/:slug" element={<ProductDetailPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/doren-series-golden" element={<DorenGoldenSeriesPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/doren-series-golden/:slug" element={<ProductDetailPage />} />
           <Route path="products/switch-socket/piano-switch-socket" element={<PianoSwitchSocket />} />
           <Route path="manufacturing" element={<Placeholder title="Manufacturing" />} />
           <Route path="industries" element={<Placeholder title="Industries" />} />
