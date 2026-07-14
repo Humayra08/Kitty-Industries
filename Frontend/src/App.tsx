@@ -60,6 +60,7 @@ function App() {
           <Route path="products/switch-socket/gang-switch-socket/opple-series" element={<OppleSeriesPage />} />
           <Route path="products/switch-socket/gang-switch-socket/opple-series/:slug" element={<ProductDetailPage />} />
           <Route path="products/switch-socket/piano-switch-socket" element={<PianoSwitchSocket />} />
+          <Route path="products/switch-socket/piano-switch-socket/:slug" element={<ProductDetailPage />} />
           <Route path="manufacturing" element={<Placeholder title="Manufacturing" />} />
           <Route path="industries" element={<Placeholder title="Industries" />} />
           <Route path="about" element={<AboutUsPage />} />

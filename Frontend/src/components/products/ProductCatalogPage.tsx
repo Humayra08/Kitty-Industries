@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, ChevronUp, ChevronDown, Search, LayoutGrid, List, ChevronLeft, SlidersHorizontal, X, ArrowRight } from 'lucide-react';
 import type { CatalogProduct } from '../../data/catalog';
@@ -124,6 +124,15 @@ export const ProductCatalogPage = ({ breadcrumbs, heroTitle, heroDescription, pr
   const pageItems = filtered.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
   const rangeStart = filtered.length === 0 ? 0 : (currentPage - 1) * itemsPerPage + 1;
   const rangeEnd = Math.min(currentPage * itemsPerPage, filtered.length);
+
+  const isFirstRender = useRef(true);
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [currentPage, selections]);
 
   const resetAll = () => {
     setSearch('');

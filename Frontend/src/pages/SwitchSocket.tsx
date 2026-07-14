@@ -31,27 +31,11 @@ const categories = [
     title: 'Piano Switch Socket',
     path: '/products/switch-socket/piano-switch-socket',
     icon: (
-      <svg viewBox="0 0 140 140" className="w-full h-full drop-shadow-md">
-        <defs>
-          <linearGradient id="plate-piano" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#ffffff" />
-            <stop offset="100%" stopColor="#f2f2f2" />
-          </linearGradient>
-          <linearGradient id="paddle-piano" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#ffffff" />
-            <stop offset="100%" stopColor="#e9e9e9" />
-          </linearGradient>
-        </defs>
-        <rect x="8" y="8" width="124" height="124" rx="16" fill="url(#plate-piano)" stroke="#e0e0e0" strokeWidth="1.5" />
-        <rect x="20" y="30" width="27" height="78" rx="6" fill="url(#paddle-piano)" stroke="#d4d4d4" strokeWidth="1.5" />
-        <rect x="29" y="40" width="9" height="22" rx="3" fill="#1f2937" />
-        <rect x="51" y="30" width="27" height="78" rx="6" fill="url(#paddle-piano)" stroke="#d4d4d4" strokeWidth="1.5" />
-        <rect x="60" y="40" width="9" height="22" rx="3" fill="#1f2937" />
-        <rect x="84" y="30" width="36" height="78" rx="7" fill="url(#paddle-piano)" stroke="#d4d4d4" strokeWidth="1.5" />
-        <circle cx="102" cy="55" r="5" fill="#1f2937" />
-        <path d="M94 76 q8 -9 16 0" stroke="#1f2937" strokeWidth="3.5" fill="none" strokeLinecap="round" />
-        <path d="M94 90 q8 -9 16 0" stroke="#1f2937" strokeWidth="3.5" fill="none" strokeLinecap="round" />
-      </svg>
+      <img
+        src="https://res.cloudinary.com/dcdo4venk/image/upload/v1784020531/Piano_Banner_ggeuzd.png"
+        alt="Piano Switch Socket"
+        className="w-full h-full object-contain rounded-2xl drop-shadow-md scale-125"
+      />
     ),
   },
 ];
