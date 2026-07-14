@@ -7,6 +7,7 @@ import { venusSeriesCatalog } from './series/venusSeries';
 import { veronaSeriesCatalog } from './series/veronaSeries';
 import { dorenWhiteSeriesCatalog } from './series/dorenWhiteSeries';
 import { dorenGoldenSeriesCatalog } from './series/dorenGoldenSeries';
+import { pianoIconSeriesCatalog } from './series/pianoIconSeries';
 
 /** Central registry — add other series' catalogs here as they're built. */
 export const allCatalogProducts: CatalogProduct[] = [
@@ -18,6 +19,7 @@ export const allCatalogProducts: CatalogProduct[] = [
   ...veronaSeriesCatalog,
   ...dorenWhiteSeriesCatalog,
   ...dorenGoldenSeriesCatalog,
+  ...pianoIconSeriesCatalog,
 ];
 
 export const getCatalogProductBySlug = (slug: string) =>

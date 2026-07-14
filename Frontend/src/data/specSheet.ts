@@ -12,6 +12,13 @@ export interface SpecRow {
 }
 
 export const modelSpecSheet: Record<string, SpecRow[]> = {
+  "K3551": [{ label: "Rating", value: "6A-250V~" }, { label: "Switching", value: "40,000+" }, { label: "Case Material", value: "PC (Virgin)" }, { label: "Component Material", value: "Brass" }],
+  "K3551-2": [{ label: "Rating", value: "6A-250V~" }, { label: "Switching", value: "40,000+" }, { label: "Case Material", value: "PC (Virgin)" }, { label: "Component Material", value: "Brass" }],
+  "K3553B": [{ label: "Rating", value: "6A-250V~" }, { label: "Switching", value: "40,000+" }, { label: "Case Material", value: "PC (Virgin)" }, { label: "Component Material", value: "Brass" }],
+  "K3552": [{ label: "Rating", value: "6A-250V~" }, { label: "Plugging", value: "5,000+" }, { label: "Case Material", value: "PC (Virgin)" }, { label: "Component Material", value: "Brass" }, { label: "Socket Type", value: "2 Pin" }],
+  "K3554L": [{ label: "Rating", value: "6A-250V~" }, { label: "Case Material", value: "PC (Virgin)" }, { label: "Component Material", value: "Brass" }],
+  "K3556": [{ label: "Rating", value: "6A-250V~" }, { label: "Case Material", value: "PC (Virgin)" }, { label: "Component Material", value: "Brass" }],
+  "K3560": [{ label: "Rating", value: "200W-230V~" }, { label: "Rotation", value: "5,000+" }, { label: "Case Material", value: "PC (Virgin)" }, { label: "Component Material", value: "Brass" }],
   "DG2811": [{ label: "Rating", value: "10A-250V~" }, { label: "Switching", value: "40,000+" }, { label: "Case Material", value: "PC" }, { label: "Component Material", value: "Brass" }],
   "DG2811-2": [{ label: "Rating", value: "10A-250V~" }, { label: "Switching", value: "40,000+" }, { label: "Case Material", value: "PC" }, { label: "Component Material", value: "Brass" }],
   "DG2812": [{ label: "Rating", value: "10A-250V~" }, { label: "Switching", value: "40,000+" }, { label: "Case Material", value: "PC" }, { label: "Component Material", value: "Brass" }],
