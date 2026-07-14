@@ -12,11 +12,11 @@ export const SeriesSwitchIcon = ({ series, variant }: SeriesSwitchIconProps) => 
   const width = 140;
   const height = 140;
 
-  let plateFill = 'url(#blanko-plate)';
+  let plateFill = 'url(#blanco-plate)';
   let strokeColor = '#e5e7eb';
   let strokeW = 1.2;
   let bottomTrim: React.ReactNode = null;
-  let paddleFill = 'url(#blanko-paddle)';
+  let paddleFill = 'url(#blanco-paddle)';
   let paddleStroke = '#d1d5db';
   let accentColor = '#4b5563'; // Dark grey
 
@@ -28,10 +28,17 @@ export const SeriesSwitchIcon = ({ series, variant }: SeriesSwitchIconProps) => 
       paddleStroke = '#4b5563';
       accentColor = '#c2a679'; // Gold dots/accents
       break;
-    case 'Blanko':
-      plateFill = 'url(#blanko-plate)';
+    case 'BLANCO SERIES GOLDEN':
+      plateFill = 'url(#doren-gold-plate)';
+      strokeColor = '#c2a679';
+      paddleFill = 'url(#doren-gold-paddle)';
+      paddleStroke = '#b5996c';
+      accentColor = '#4b3c25';
+      break;
+    case 'BLANCO SERIES WHITE':
+      plateFill = 'url(#blanco-plate)';
       strokeColor = '#e5e7eb';
-      paddleFill = 'url(#blanko-paddle)';
+      paddleFill = 'url(#blanco-paddle)';
       paddleStroke = '#d1d5db';
       accentColor = '#9ca3af';
       break;
@@ -46,7 +53,7 @@ export const SeriesSwitchIcon = ({ series, variant }: SeriesSwitchIconProps) => 
       plateFill = '#ffffff';
       strokeColor = '#c2a679'; // Golden frame
       strokeW = 2;
-      paddleFill = 'url(#blanko-paddle)';
+      paddleFill = 'url(#blanco-paddle)';
       paddleStroke = '#e5e7eb';
       accentColor = '#9ca3af';
       break;
@@ -60,7 +67,7 @@ export const SeriesSwitchIcon = ({ series, variant }: SeriesSwitchIconProps) => 
     case 'OPPLE SERIES':
       plateFill = '#ffffff';
       strokeColor = '#e5e7eb';
-      paddleFill = 'url(#blanko-paddle)';
+      paddleFill = 'url(#blanco-paddle)';
       paddleStroke = '#e5e7eb';
       accentColor = '#9ca3af';
       // Gold trim line at the bottom of the plate
@@ -92,7 +99,7 @@ export const SeriesSwitchIcon = ({ series, variant }: SeriesSwitchIconProps) => 
       plateFill = '#ffffff';
       strokeColor = '#d4af37'; // Thick Gold border
       strokeW = 2.5;
-      paddleFill = 'url(#blanko-paddle)';
+      paddleFill = 'url(#blanco-paddle)';
       paddleStroke = '#e5e7eb';
       accentColor = '#9ca3af';
       break;
@@ -107,7 +114,7 @@ export const SeriesSwitchIcon = ({ series, variant }: SeriesSwitchIconProps) => 
       plateFill = '#ffffff';
       strokeColor = '#cbd5e1'; // Chrome/silver border
       strokeW = 2;
-      paddleFill = 'url(#blanko-paddle)';
+      paddleFill = 'url(#blanco-paddle)';
       paddleStroke = '#e5e7eb';
       accentColor = '#64748b';
       break;
@@ -127,12 +134,12 @@ export const SeriesSwitchIcon = ({ series, variant }: SeriesSwitchIconProps) => 
           <stop offset="100%" stopColor="#1f1f1f" />
         </linearGradient>
 
-        {/* Blanko (Minimalist White) */}
-        <linearGradient id="blanko-plate" x1="0" y1="0" x2="0" y2="1">
+        {/* Blanco (Minimalist White) */}
+        <linearGradient id="blanco-plate" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stopColor="#ffffff" />
           <stop offset="100%" stopColor="#f3f4f6" />
         </linearGradient>
-        <linearGradient id="blanko-paddle" x1="0" y1="0" x2="0" y2="1">
+        <linearGradient id="blanco-paddle" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stopColor="#ffffff" />
           <stop offset="100%" stopColor="#eaeaea" />
         </linearGradient>
