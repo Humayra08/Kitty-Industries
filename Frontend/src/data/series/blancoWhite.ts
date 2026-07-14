@@ -1,14 +1,14 @@
 import { buildSeriesCatalog, type CatalogProduct, type RawSeriesProduct, type SeriesConfig } from '../catalog';
 
-export const blankoWhiteConfig: SeriesConfig = {
-  seriesName: 'Blanko White',
-  seriesPath: '/products/switch-socket/gang-switch-socket/blanko/white',
+export const blancoWhiteSeriesConfig: SeriesConfig = {
+  seriesName: 'Blanco Series White',
+  seriesPath: '/products/switch-socket/gang-switch-socket/blanco-series-white',
   categoryName: 'Gang Switch Socket',
   categoryPath: '/products/switch-socket/gang-switch-socket',
   imageFolder: '',
 };
 
-const rawBlankoWhiteProducts: RawSeriesProduct[] = [
+const rawBlancoWhiteSeriesProducts: RawSeriesProduct[] = [
   {
     id: 1,
     title: '1 GANG SWITCH',
@@ -117,8 +117,8 @@ const rawBlankoWhiteProducts: RawSeriesProduct[] = [
   },
 ];
 
-export const blankoWhiteProductTypes = ['1 Gang Switch', '2 Gang Switch', '3 Gang Switch', '4 Gang Switch', 'Fan Speed Controller'];
-export const blankoWhiteSocketTypes = ['Universal Socket', 'Round Socket', 'TV / Dish Socket'];
-export const blankoWhiteFeatureList = ['With Neon', 'With Switch', 'Fan Speed Control'];
+export const blancoWhiteSeriesProductTypes = ['1 Gang Switch', '2 Gang Switch', '3 Gang Switch', '4 Gang Switch', 'Fan Speed Controller'];
+export const blancoWhiteSeriesSocketTypes = ['Universal Socket', 'Round Socket', 'TV / Dish Socket'];
+export const blancoWhiteSeriesFeatureList = ['With Neon', 'With Switch', 'Fan Speed Control'];
 
-export const blankoWhiteCatalog: CatalogProduct[] = buildSeriesCatalog(rawBlankoWhiteProducts, blankoWhiteConfig);
+export const blancoWhiteSeriesCatalog: CatalogProduct[] = buildSeriesCatalog(rawBlancoWhiteSeriesProducts, blancoWhiteSeriesConfig);

@@ -35,11 +35,11 @@ export const Hero = () => {
       <div className="relative z-20 h-full flex items-center">
         <div className="container mx-auto max-w-7xl px-6 md:px-10">
           <div className="max-w-2xl">
-            <h1 className="text-6xl md:text-6xl lg:text-6xl font-black text-white leading-tight tracking-tight mb-5">
-  <span className="whitespace-nowrap">Building Connections,</span>
-  <br />
-  Powering Progress.
-</h1>
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight mb-5">
+              Building Connections,
+              <br />
+              Powering Progress.
+            </h1>
             {/* <p className="text-white/80 text-base md:text-lg leading-relaxed max-w-xl mb-8">
               From switches to full lighting systems, we partner with homes,
               businesses, and industries nationwide — engineered on spec,
