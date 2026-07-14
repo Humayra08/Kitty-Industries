@@ -22,6 +22,14 @@ import { extensionSocketCatalog } from './series/extensionSocket';
 import { lampHoldersCeilingRoseCatalog } from './series/lampHoldersCeilingRose';
 import { switchBoxCatalog } from './series/switchBox';
 import { fanCapacitorCatalog } from './series/fanCapacitor';
+import { ledABulbCatalog } from './series/ledABulb';
+import { ledTBulbCatalog } from './series/ledTBulb';
+import { ledSolarDcBulbCatalog } from './series/ledSolarDcBulb';
+import { ledEmergencyBulbCatalog } from './series/ledEmergencyBulb';
+import { ledLinearTubeBattenLightCatalog } from './series/ledLinearTubeBattenLight';
+import { ledFloodLightCatalog } from './series/ledFloodLight';
+import { ledDownLightCatalog } from './series/ledDownLight';
+import { ledSpotLightCatalog } from './series/ledSpotLight';
 
 /** Central registry — add other series' catalogs here as they're built. */
 export const allCatalogProducts: CatalogProduct[] = [
@@ -48,6 +56,14 @@ export const allCatalogProducts: CatalogProduct[] = [
   ...lampHoldersCeilingRoseCatalog,
   ...switchBoxCatalog,
   ...fanCapacitorCatalog,
+  ...ledABulbCatalog,
+  ...ledTBulbCatalog,
+  ...ledSolarDcBulbCatalog,
+  ...ledEmergencyBulbCatalog,
+  ...ledLinearTubeBattenLightCatalog,
+  ...ledFloodLightCatalog,
+  ...ledDownLightCatalog,
+  ...ledSpotLightCatalog,
 ];
 
 export const getCatalogProductBySlug = (slug: string) =>

@@ -30,6 +30,15 @@ import { ExtensionSocketPage } from './pages/ExtensionSocket';
 import { LampHoldersCeilingRosePage } from './pages/LampHoldersCeilingRose';
 import { SwitchBoxPage } from './pages/SwitchBox';
 import { FanCapacitorPage } from './pages/FanCapacitor';
+import { LedLightingPage } from './pages/LedLighting';
+import { LedABulbPage } from './pages/LedABulb';
+import { LedTBulbPage } from './pages/LedTBulb';
+import { LedSolarDcBulbPage } from './pages/LedSolarDcBulb';
+import { LedEmergencyBulbPage } from './pages/LedEmergencyBulb';
+import { LedLinearTubeBattenLightPage } from './pages/LedLinearTubeBattenLight';
+import { LedFloodLightPage } from './pages/LedFloodLight';
+import { LedDownLightPage } from './pages/LedDownLight';
+import { LedSpotLightPage } from './pages/LedSpotLight';
 import { VipGoldenSeriesPage } from './pages/VipGoldenSeries';
 import { VipWhiteSeriesPage } from './pages/VipWhiteSeries';
 import { OppleSeriesPage } from './pages/OppleSeries';
@@ -98,6 +107,23 @@ function App() {
           <Route path="products/accessories/others/switch-box/:slug" element={<ProductDetailPage />} />
           <Route path="products/accessories/others/fan-capacitor" element={<FanCapacitorPage />} />
           <Route path="products/accessories/others/fan-capacitor/:slug" element={<ProductDetailPage />} />
+          <Route path="products/led-lighting" element={<LedLightingPage />} />
+          <Route path="products/led-lighting/a-bulb" element={<LedABulbPage />} />
+          <Route path="products/led-lighting/a-bulb/:slug" element={<ProductDetailPage />} />
+          <Route path="products/led-lighting/t-bulb" element={<LedTBulbPage />} />
+          <Route path="products/led-lighting/t-bulb/:slug" element={<ProductDetailPage />} />
+          <Route path="products/led-lighting/solar-dc-bulb" element={<LedSolarDcBulbPage />} />
+          <Route path="products/led-lighting/solar-dc-bulb/:slug" element={<ProductDetailPage />} />
+          <Route path="products/led-lighting/emergency-bulb" element={<LedEmergencyBulbPage />} />
+          <Route path="products/led-lighting/emergency-bulb/:slug" element={<ProductDetailPage />} />
+          <Route path="products/led-lighting/linear-tube-batten-light" element={<LedLinearTubeBattenLightPage />} />
+          <Route path="products/led-lighting/linear-tube-batten-light/:slug" element={<ProductDetailPage />} />
+          <Route path="products/led-lighting/flood-light" element={<LedFloodLightPage />} />
+          <Route path="products/led-lighting/flood-light/:slug" element={<ProductDetailPage />} />
+          <Route path="products/led-lighting/down-light" element={<LedDownLightPage />} />
+          <Route path="products/led-lighting/down-light/:slug" element={<ProductDetailPage />} />
+          <Route path="products/led-lighting/spot-light" element={<LedSpotLightPage />} />
+          <Route path="products/led-lighting/spot-light/:slug" element={<ProductDetailPage />} />
           <Route path="manufacturing" element={<Placeholder title="Manufacturing" />} />
           <Route path="industries" element={<Placeholder title="Industries" />} />
           <Route path="about" element={<AboutUsPage />} />
