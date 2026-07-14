@@ -2,7 +2,7 @@
  * Model-number -> spec-row lookup, generated from
  * `public/Products/ART SERIES/Specification All.xlsx` (sheet: GANG SWITCH SOCKET).
  * Covers ART (KJ...), Opple (KE...), Zhilik (ZLW.../ZLG...), and Doren & VIP (DN.../DG.../V.../VG...)
- * model codes. Blanko (BG.../BC...) is not in the workbook, so it is not covered here.
+ * model codes. Blanco (BG.../BC...) is not in the workbook, so it is not covered here.
  *
  * Regenerate by re-parsing the workbook if it is updated.
  */
@@ -124,7 +124,9 @@ export const modelSpecSheet: Record<string, SpecRow[]> = {
   "KW1V1215": [{ label: "Rating", value: "13A-250V~" }, { label: "Plugging", value: "5,000+" }, { label: "Case Material", value: "PC" }, { label: "Component Material", value: "Copper+ Brass" }, { label: "Socket Type", value: "Universal" }],
   "V8110": [{ label: "Rating", value: "10A-250V~" }, { label: "Switching", value: "40,000+" }, { label: "Case Material", value: "PC" }, { label: "Component Material", value: "Brass" }],
   "V8111": [{ label: "Rating", value: "10A-250V~" }, { label: "Switching", value: "40,000+" }, { label: "Case Material", value: "PC" }, { label: "Component Material", value: "Brass" }],
+  "V8111-2": [{ label: "Rating", value: "10A-250V~" }, { label: "Switching", value: "40,000+" }, { label: "Case Material", value: "PC" }, { label: "Component Material", value: "Brass" }],
   "V8112": [{ label: "Rating", value: "10A-250V~" }, { label: "Switching", value: "40,000+" }, { label: "Case Material", value: "PC" }, { label: "Component Material", value: "Brass" }],
+  "V8112-2": [{ label: "Rating", value: "10A-250V~" }, { label: "Switching", value: "40,000+" }, { label: "Case Material", value: "PC" }, { label: "Component Material", value: "Brass" }],
   "V8113": [{ label: "Rating", value: "10A-250V~" }, { label: "Switching", value: "40,000+" }, { label: "Case Material", value: "PC" }, { label: "Component Material", value: "Brass" }],
   "V8113S": [{ label: "Rating", value: "13A-250V~" }, { label: "Plugging", value: "5,000+" }, { label: "Switching", value: "40,000+" }, { label: "Case Material", value: "PC" }, { label: "Component Material", value: "Brass" }, { label: "Socket Type", value: "Universal" }],
   "V8114": [{ label: "Rating", value: "10A-250V~" }, { label: "Switching", value: "40,000+" }, { label: "Case Material", value: "PC" }, { label: "Component Material", value: "Brass" }],

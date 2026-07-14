@@ -1,14 +1,14 @@
 import { buildSeriesCatalog, type CatalogProduct, type RawSeriesProduct, type SeriesConfig } from '../catalog';
 
-export const blankoGoldenConfig: SeriesConfig = {
-  seriesName: 'Blanko Golden',
-  seriesPath: '/products/switch-socket/gang-switch-socket/blanko/golden',
+export const blancoGoldenSeriesConfig: SeriesConfig = {
+  seriesName: 'Blanco Series Golden',
+  seriesPath: '/products/switch-socket/gang-switch-socket/blanco-series-golden',
   categoryName: 'Gang Switch Socket',
   categoryPath: '/products/switch-socket/gang-switch-socket',
   imageFolder: '',
 };
 
-const rawBlankoGoldenProducts: RawSeriesProduct[] = [
+const rawBlancoGoldenSeriesProducts: RawSeriesProduct[] = [
   {
     id: 1,
     title: '1 GANG SWITCH',
@@ -135,8 +135,8 @@ const rawBlankoGoldenProducts: RawSeriesProduct[] = [
   },
 ];
 
-export const blankoGoldenProductTypes = ['1 Gang Switch', '2 Gang Switch', '3 Gang Switch', '4 Gang Switch', 'Fan Speed Controller'];
-export const blankoGoldenSocketTypes = ['Universal Socket', 'Round Socket', 'Telephone Socket', 'TV / Dish Socket'];
-export const blankoGoldenFeatureList = ['With Neon', 'With Switch', 'Fan Speed Control'];
+export const blancoGoldenSeriesProductTypes = ['1 Gang Switch', '2 Gang Switch', '3 Gang Switch', '4 Gang Switch', 'Fan Speed Controller'];
+export const blancoGoldenSeriesSocketTypes = ['Universal Socket', 'Round Socket', 'Telephone Socket', 'TV / Dish Socket'];
+export const blancoGoldenSeriesFeatureList = ['With Neon', 'With Switch', 'Fan Speed Control'];
 
-export const blankoGoldenCatalog: CatalogProduct[] = buildSeriesCatalog(rawBlankoGoldenProducts, blankoGoldenConfig);
+export const blancoGoldenSeriesCatalog: CatalogProduct[] = buildSeriesCatalog(rawBlancoGoldenSeriesProducts, blancoGoldenSeriesConfig);

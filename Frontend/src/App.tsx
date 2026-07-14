@@ -10,14 +10,16 @@ import { GangSwitchSocket } from './pages/GangSwitchSocket';
 import { ArtSeriesPage } from './pages/ArtSeries';
 import { ProductDetailPage } from './pages/ProductDetail';
 import { PianoSwitchSocket } from './pages/PianoSwitchSocket';
-import { BlankoLanding } from './pages/BlankoLanding';
-import { BlankoGoldenPage } from './pages/BlankoGolden';
-import { BlankoWhitePage } from './pages/BlankoWhite';
+import { BlancoGoldenSeriesPage } from './pages/BlancoGoldenSeries';
+import { BlancoWhiteSeriesPage } from './pages/BlancoWhiteSeries';
 import { GloriaSeriesPage } from './pages/GloriaSeries';
 import { VenusSeriesPage } from './pages/VenusSeries';
 import { VeronaSeriesPage } from './pages/VeronaSeries';
 import { DorenWhiteSeriesPage } from './pages/DorenWhiteSeries';
 import { DorenGoldenSeriesPage } from './pages/DorenGoldenSeries';
+import { VipGoldenSeriesPage } from './pages/VipGoldenSeries';
+import { VipWhiteSeriesPage } from './pages/VipWhiteSeries';
+import { OppleSeriesPage } from './pages/OppleSeries';
 
 // Placeholder components for other routes
 const Placeholder = ({ title }: { title: string }) => (
@@ -37,11 +39,10 @@ function App() {
           <Route path="products/switch-socket/gang-switch-socket" element={<GangSwitchSocket />} />
           <Route path="products/switch-socket/gang-switch-socket/art-series" element={<ArtSeriesPage />} />
           <Route path="products/switch-socket/gang-switch-socket/art-series/:slug" element={<ProductDetailPage />} />
-          <Route path="products/switch-socket/gang-switch-socket/blanko" element={<BlankoLanding />} />
-          <Route path="products/switch-socket/gang-switch-socket/blanko/golden" element={<BlankoGoldenPage />} />
-          <Route path="products/switch-socket/gang-switch-socket/blanko/golden/:slug" element={<ProductDetailPage />} />
-          <Route path="products/switch-socket/gang-switch-socket/blanko/white" element={<BlankoWhitePage />} />
-          <Route path="products/switch-socket/gang-switch-socket/blanko/white/:slug" element={<ProductDetailPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/blanco-series-golden" element={<BlancoGoldenSeriesPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/blanco-series-golden/:slug" element={<ProductDetailPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/blanco-series-white" element={<BlancoWhiteSeriesPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/blanco-series-white/:slug" element={<ProductDetailPage />} />
           <Route path="products/switch-socket/gang-switch-socket/gloria-series" element={<GloriaSeriesPage />} />
           <Route path="products/switch-socket/gang-switch-socket/gloria-series/:slug" element={<ProductDetailPage />} />
           <Route path="products/switch-socket/gang-switch-socket/venus-series" element={<VenusSeriesPage />} />
@@ -52,6 +53,12 @@ function App() {
           <Route path="products/switch-socket/gang-switch-socket/doren-series-white/:slug" element={<ProductDetailPage />} />
           <Route path="products/switch-socket/gang-switch-socket/doren-series-golden" element={<DorenGoldenSeriesPage />} />
           <Route path="products/switch-socket/gang-switch-socket/doren-series-golden/:slug" element={<ProductDetailPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/vip-series-golden" element={<VipGoldenSeriesPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/vip-series-golden/:slug" element={<ProductDetailPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/vip-series-white" element={<VipWhiteSeriesPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/vip-series-white/:slug" element={<ProductDetailPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/opple-series" element={<OppleSeriesPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/opple-series/:slug" element={<ProductDetailPage />} />
           <Route path="products/switch-socket/piano-switch-socket" element={<PianoSwitchSocket />} />
           <Route path="products/switch-socket/piano-switch-socket/:slug" element={<ProductDetailPage />} />
           <Route path="manufacturing" element={<Placeholder title="Manufacturing" />} />

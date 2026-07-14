@@ -23,10 +23,16 @@ export const SeriesPickerGrid = ({ seriesList, basePath, variant }: SeriesPicker
           key={series.name}
           className="group bg-white border border-gray-100 rounded-2xl p-6 sm:p-8 flex flex-col items-center justify-between text-center transition-all duration-300 hover:shadow-[0_10px_24px_-10px_rgba(227,0,15,0.18)] hover:-translate-y-1 shadow-sm"
         >
-          {/* Switch Plate SVG */}
-          <div className="w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 flex items-center justify-center mb-6">
-            <SeriesSwitchIcon series={series.name} variant={variant} />
-          </div>
+          {/* Switch Plate SVG, or a real product photo when the series has one */}
+          {series.cardImage ? (
+            <div className="w-full aspect-[5/2] flex items-center justify-center mb-6">
+              <img src={series.cardImage} alt={series.name} className="w-full h-full object-contain" />
+            </div>
+          ) : (
+            <div className="w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 flex items-center justify-center mb-6">
+              <SeriesSwitchIcon series={series.name} variant={variant} />
+            </div>
+          )}
 
           {/* Series Title */}
           <div className="mb-6">
