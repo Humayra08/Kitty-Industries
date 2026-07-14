@@ -21,7 +21,6 @@ import { CircuitBreakerPage } from './pages/CircuitBreaker';
 import { CircuitBreakerSPPage } from './pages/CircuitBreakerSP';
 import { CircuitBreakerDPPage } from './pages/CircuitBreakerDP';
 import { CircuitBreakerTPPage } from './pages/CircuitBreakerTP';
-<<<<<<< HEAD
 import { AccessoriesPage } from './pages/Accessories';
 import { CableTiePage } from './pages/CableTie';
 import { CableClipPage } from './pages/CableClip';
@@ -31,11 +30,9 @@ import { ExtensionSocketPage } from './pages/ExtensionSocket';
 import { LampHoldersCeilingRosePage } from './pages/LampHoldersCeilingRose';
 import { SwitchBoxPage } from './pages/SwitchBox';
 import { FanCapacitorPage } from './pages/FanCapacitor';
-=======
 import { VipGoldenSeriesPage } from './pages/VipGoldenSeries';
 import { VipWhiteSeriesPage } from './pages/VipWhiteSeries';
 import { OppleSeriesPage } from './pages/OppleSeries';
->>>>>>> 6c48a4f25b34c85b8f8ce3ceaff5ade00708e4bf
 
 // Placeholder components for other routes
 const Placeholder = ({ title }: { title: string }) => (
