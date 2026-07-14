@@ -11,6 +11,14 @@ import { pianoIconSeriesCatalog } from './series/pianoIconSeries';
 import { circuitBreakerSPCatalog } from './series/circuitBreakerSP';
 import { circuitBreakerDPCatalog } from './series/circuitBreakerDP';
 import { circuitBreakerTPCatalog } from './series/circuitBreakerTP';
+import { cableTieCatalog } from './series/cableTie';
+import { cableClipCatalog } from './series/cableClip';
+import { sixPinSocketsCatalog } from './series/sixPinSockets';
+import { plugAdaptersCatalog } from './series/plugAdapters';
+import { extensionSocketCatalog } from './series/extensionSocket';
+import { lampHoldersCeilingRoseCatalog } from './series/lampHoldersCeilingRose';
+import { switchBoxCatalog } from './series/switchBox';
+import { fanCapacitorCatalog } from './series/fanCapacitor';
 
 /** Central registry — add other series' catalogs here as they're built. */
 export const allCatalogProducts: CatalogProduct[] = [
@@ -26,6 +34,14 @@ export const allCatalogProducts: CatalogProduct[] = [
   ...circuitBreakerSPCatalog,
   ...circuitBreakerDPCatalog,
   ...circuitBreakerTPCatalog,
+  ...cableTieCatalog,
+  ...cableClipCatalog,
+  ...sixPinSocketsCatalog,
+  ...plugAdaptersCatalog,
+  ...extensionSocketCatalog,
+  ...lampHoldersCeilingRoseCatalog,
+  ...switchBoxCatalog,
+  ...fanCapacitorCatalog,
 ];
 
 export const getCatalogProductBySlug = (slug: string) =>
