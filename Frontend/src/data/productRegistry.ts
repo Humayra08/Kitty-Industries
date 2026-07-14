@@ -11,6 +11,9 @@ import { vipGoldenSeriesCatalog } from './series/vipGoldenSeries';
 import { vipWhiteSeriesCatalog } from './series/vipWhiteSeries';
 import { oppleSeriesCatalog } from './series/oppleSeries';
 import { pianoIconSeriesCatalog } from './series/pianoIconSeries';
+import { circuitBreakerSPCatalog } from './series/circuitBreakerSP';
+import { circuitBreakerDPCatalog } from './series/circuitBreakerDP';
+import { circuitBreakerTPCatalog } from './series/circuitBreakerTP';
 
 /** Central registry — add other series' catalogs here as they're built. */
 export const allCatalogProducts: CatalogProduct[] = [
@@ -26,6 +29,9 @@ export const allCatalogProducts: CatalogProduct[] = [
   ...vipWhiteSeriesCatalog,
   ...oppleSeriesCatalog,
   ...pianoIconSeriesCatalog,
+  ...circuitBreakerSPCatalog,
+  ...circuitBreakerDPCatalog,
+  ...circuitBreakerTPCatalog,
 ];
 
 export const getCatalogProductBySlug = (slug: string) =>

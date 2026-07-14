@@ -17,6 +17,10 @@ import { VenusSeriesPage } from './pages/VenusSeries';
 import { VeronaSeriesPage } from './pages/VeronaSeries';
 import { DorenWhiteSeriesPage } from './pages/DorenWhiteSeries';
 import { DorenGoldenSeriesPage } from './pages/DorenGoldenSeries';
+import { CircuitBreakerPage } from './pages/CircuitBreaker';
+import { CircuitBreakerSPPage } from './pages/CircuitBreakerSP';
+import { CircuitBreakerDPPage } from './pages/CircuitBreakerDP';
+import { CircuitBreakerTPPage } from './pages/CircuitBreakerTP';
 import { VipGoldenSeriesPage } from './pages/VipGoldenSeries';
 import { VipWhiteSeriesPage } from './pages/VipWhiteSeries';
 import { OppleSeriesPage } from './pages/OppleSeries';
@@ -61,6 +65,13 @@ function App() {
           <Route path="products/switch-socket/gang-switch-socket/opple-series/:slug" element={<ProductDetailPage />} />
           <Route path="products/switch-socket/piano-switch-socket" element={<PianoSwitchSocket />} />
           <Route path="products/switch-socket/piano-switch-socket/:slug" element={<ProductDetailPage />} />
+          <Route path="products/circuit-breakers" element={<CircuitBreakerPage />} />
+          <Route path="products/circuit-breakers/sp-circuit-breaker" element={<CircuitBreakerSPPage />} />
+          <Route path="products/circuit-breakers/sp-circuit-breaker/:slug" element={<ProductDetailPage />} />
+          <Route path="products/circuit-breakers/dp-circuit-breaker" element={<CircuitBreakerDPPage />} />
+          <Route path="products/circuit-breakers/dp-circuit-breaker/:slug" element={<ProductDetailPage />} />
+          <Route path="products/circuit-breakers/tp-circuit-breaker" element={<CircuitBreakerTPPage />} />
+          <Route path="products/circuit-breakers/tp-circuit-breaker/:slug" element={<ProductDetailPage />} />
           <Route path="manufacturing" element={<Placeholder title="Manufacturing" />} />
           <Route path="industries" element={<Placeholder title="Industries" />} />
           <Route path="about" element={<AboutUsPage />} />
