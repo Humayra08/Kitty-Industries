@@ -12,6 +12,10 @@ export interface SpecRow {
 }
 
 export const modelSpecSheet: Record<string, SpecRow[]> = {
+  "BS 100W - BS 500W": [{ label: "Color", value: "White" }, { label: "Available Sizes", value: "100mm, 150mm, 200mm, 250mm, 300mm, 350mm, 400mm, 450mm, 500mm" }],
+  "BS 100B - BS 500B": [{ label: "Color", value: "Black" }, { label: "Available Sizes", value: "100mm, 150mm, 200mm, 250mm, 300mm, 350mm, 400mm, 450mm, 500mm" }],
+  "CR-4mm - CR-25mm": [{ label: "Type", value: "K-Type" }, { label: "Available Sizes", value: "4mm, 5mm, 6mm, 7mm, 8mm, 9mm, 10mm, 12mm, 14mm, 16mm, 18mm, 20mm, 22mm, 25mm" }],
+  "CR-U-14mm - CR-U-25mm": [{ label: "Type", value: "U-Type" }, { label: "Available Sizes", value: "14mm, 16mm, 20mm, 25mm" }],
   "UNM4S6": [{ label: "Rating", value: "6A" }, { label: "Breaking Capacity", value: "6kA" }, { label: "Poles", value: "Single Pole" }],
   "UNM4S10": [{ label: "Rating", value: "10A" }, { label: "Breaking Capacity", value: "6kA" }, { label: "Poles", value: "Single Pole" }],
   "UNM4S16": [{ label: "Rating", value: "16A" }, { label: "Breaking Capacity", value: "6kA" }, { label: "Poles", value: "Single Pole" }],

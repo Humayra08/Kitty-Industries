@@ -21,9 +21,21 @@ import { CircuitBreakerPage } from './pages/CircuitBreaker';
 import { CircuitBreakerSPPage } from './pages/CircuitBreakerSP';
 import { CircuitBreakerDPPage } from './pages/CircuitBreakerDP';
 import { CircuitBreakerTPPage } from './pages/CircuitBreakerTP';
+<<<<<<< HEAD
+import { AccessoriesPage } from './pages/Accessories';
+import { CableTiePage } from './pages/CableTie';
+import { CableClipPage } from './pages/CableClip';
+import { SixPinSocketsPage } from './pages/SixPinSockets';
+import { PlugAdaptersPage } from './pages/PlugAdapters';
+import { ExtensionSocketPage } from './pages/ExtensionSocket';
+import { LampHoldersCeilingRosePage } from './pages/LampHoldersCeilingRose';
+import { SwitchBoxPage } from './pages/SwitchBox';
+import { FanCapacitorPage } from './pages/FanCapacitor';
+=======
 import { VipGoldenSeriesPage } from './pages/VipGoldenSeries';
 import { VipWhiteSeriesPage } from './pages/VipWhiteSeries';
 import { OppleSeriesPage } from './pages/OppleSeries';
+>>>>>>> 6c48a4f25b34c85b8f8ce3ceaff5ade00708e4bf
 
 // Placeholder components for other routes
 const Placeholder = ({ title }: { title: string }) => (
@@ -72,6 +84,23 @@ function App() {
           <Route path="products/circuit-breakers/dp-circuit-breaker/:slug" element={<ProductDetailPage />} />
           <Route path="products/circuit-breakers/tp-circuit-breaker" element={<CircuitBreakerTPPage />} />
           <Route path="products/circuit-breakers/tp-circuit-breaker/:slug" element={<ProductDetailPage />} />
+          <Route path="products/accessories" element={<AccessoriesPage />} />
+          <Route path="products/accessories/cable-tie" element={<CableTiePage />} />
+          <Route path="products/accessories/cable-tie/:slug" element={<ProductDetailPage />} />
+          <Route path="products/accessories/cable-clip" element={<CableClipPage />} />
+          <Route path="products/accessories/cable-clip/:slug" element={<ProductDetailPage />} />
+          <Route path="products/accessories/others/6-pin-sockets" element={<SixPinSocketsPage />} />
+          <Route path="products/accessories/others/6-pin-sockets/:slug" element={<ProductDetailPage />} />
+          <Route path="products/accessories/others/plug-adapters" element={<PlugAdaptersPage />} />
+          <Route path="products/accessories/others/plug-adapters/:slug" element={<ProductDetailPage />} />
+          <Route path="products/accessories/others/extension-socket" element={<ExtensionSocketPage />} />
+          <Route path="products/accessories/others/extension-socket/:slug" element={<ProductDetailPage />} />
+          <Route path="products/accessories/others/lamp-holders-ceiling-rose" element={<LampHoldersCeilingRosePage />} />
+          <Route path="products/accessories/others/lamp-holders-ceiling-rose/:slug" element={<ProductDetailPage />} />
+          <Route path="products/accessories/others/switch-box" element={<SwitchBoxPage />} />
+          <Route path="products/accessories/others/switch-box/:slug" element={<ProductDetailPage />} />
+          <Route path="products/accessories/others/fan-capacitor" element={<FanCapacitorPage />} />
+          <Route path="products/accessories/others/fan-capacitor/:slug" element={<ProductDetailPage />} />
           <Route path="manufacturing" element={<Placeholder title="Manufacturing" />} />
           <Route path="industries" element={<Placeholder title="Industries" />} />
           <Route path="about" element={<AboutUsPage />} />
