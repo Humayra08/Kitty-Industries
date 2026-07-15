@@ -31,7 +31,7 @@ export const Footer = () => {
   return (
     <footer className="text-white" style={{ backgroundColor: '#BF2E2B' }}>
       <div className="container mx-auto px-4 md:px-6 pt-6 pb-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {/* Logo & Description */}
           <div className="lg:col-span-1 flex flex-col">
@@ -43,7 +43,7 @@ export const Footer = () => {
               />
             </Link>
             <p className="text-white/70 text-sm md:text-sm mb-5 leading-relaxed">
-              Your trusted partner for premium switches, accessories & lighting solutions.
+              Powering Everyday Life
             </p>
             <div className="flex items-center gap-3 mt-auto">
               {[Facebook, Linkedin, Youtube, Instagram].map((Icon, i) => (
@@ -66,7 +66,6 @@ export const Footer = () => {
                 { name: 'Home', path: '/' },
                 { name: 'About Us', path: '/about' },
                 { name: 'Board of Directors', path: '/board-of-directors' },
-                { name: 'Mission & Vission', path: '/mission-vision' },
                 { name: 'Products', path: '/products' },
                 { name: 'Gallery', path: '/gallery' },
               ].map((item) => (
@@ -89,25 +88,16 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Our Group */}
-          <div className="lg:col-span-1">
-            <h4 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Our Group</h4>
-            <ul className="space-y-2 text-white/70 text-sm">
-              {['Our Board Members', 'Our Team'].map((item) => (
-                <li key={item}>
-                  <Link to="/" className="hover:text-white transition-colors">{item}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Contact Us */}
           <div className="lg:col-span-1">
             <h4 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Contact Us</h4>
             <div className="space-y-3 text-white/70 text-sm">
-              <div className="flex items-center gap-2.5">
-                <Phone className="w-3.5 h-3.5 text-white/60 flex-shrink-0" />
-                <span className="text-sm">+880 1234 567890</span>
+              <div className="flex items-start gap-2.5">
+                <Phone className="w-3.5 h-3.5 text-white/60 flex-shrink-0 mt-0.5" />
+                <span className="text-sm">
+                  +880 2222 280084<br />
+                  +880 2222 282188
+                </span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-3.5 h-3.5 text-white/60 flex-shrink-0" />
@@ -117,7 +107,7 @@ export const Footer = () => {
                 <MapPin className="w-3.5 h-3.5 text-white/60 flex-shrink-0 mt-0.5" />
                 <span>
                   <strong className="text-white/90">Head Office:</strong> Rosemont Tower (6th floor),<br/>
-                  House # 148, Road # 13, Block # E,<br/>
+                  House # 148, Road # 13/B, Block # E,<br/>
                   Banani, Dhaka-1213<br/><br/>
                   <strong className="text-white/90">Factory:</strong> Taiyubpur, Ashulia,<br/>
                   Savar, Dhaka

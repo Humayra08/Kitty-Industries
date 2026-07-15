@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Layout } from './components/layout/Layout';
 import { Home } from './pages/Home';
+import { ProductsPage } from './pages/Products';
 import { ContactUs } from './pages/ContactUs';
 import { AboutUsPage } from './pages/AboutUs';
 import { Gallery } from './pages/Gallery';
@@ -56,7 +57,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="products" element={<Placeholder title="Products" />} />
+          <Route path="products" element={<ProductsPage />} />
           <Route path="products/switch-socket" element={<SwitchSocketPage />} />
           <Route path="products/switch-socket/gang-switch-socket" element={<GangSwitchSocket />} />
           <Route path="products/switch-socket/gang-switch-socket/art-series" element={<ArtSeriesPage />} />
