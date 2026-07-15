@@ -25,7 +25,7 @@ const contactInfo = [
   {
     Icon: Phone,
     label: "Phone",
-    lines: ["+880 2 5504 0812-14", "+880 1700 000 000"],
+    lines: ["+880 2222 280084", "+880 2222 282188"],
   },
   {
     Icon: Mail,
@@ -37,7 +37,7 @@ const contactInfo = [
     label: "Address",
     lines: [
       "Head Office: Rosemont Tower (6th floor),",
-      "House # 148, Road # 13, Block # E,",
+      "House # 148, Road # 13/B, Block # E,",
       "Banani, Dhaka-1213",
       "Factory: Taiyubpur, Ashulia, Savar, Dhaka",
     ],
@@ -317,7 +317,7 @@ export const ContactUs = () => {
             {/* Map fills full container, pointed at head office (Banani) */}
             <iframe
               title="Kitty Industries Head Office"
-              src="https://maps.google.com/maps?q=House+148,+Road+13,+Block+E,+Banani,+Dhaka+1213,+Bangladesh&output=embed&z=16"
+              src="https://maps.google.com/maps?q=House+148,+Road+13B,+Block+E,+Banani,+Dhaka+1213,+Bangladesh&output=embed&z=16"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -344,7 +344,7 @@ export const ContactUs = () => {
                 We welcome you to visit our office and experience our commitment to quality and innovation.
               </p>
               <a
-                href="https://maps.google.com/?q=House+148,+Road+13,+Block+E,+Banani,+Dhaka+1213,+Bangladesh"
+                href="https://maps.google.com/?q=House+148,+Road+13B,+Block+E,+Banani,+Dhaka+1213,+Bangladesh"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-red-600 text-red-600 hover:bg-red-600 hover:text-white font-semibold text-xs rounded-lg transition-all duration-200 cursor-pointer w-fit"
@@ -365,7 +365,7 @@ export const ContactUs = () => {
                 We welcome you to visit our office and experience our commitment to quality and innovation.
               </p>
               <a
-                href="https://maps.google.com/?q=House+148,+Road+13,+Block+E,+Banani,+Dhaka+1213,+Bangladesh"
+                href="https://maps.google.com/?q=House+148,+Road+13B,+Block+E,+Banani,+Dhaka+1213,+Bangladesh"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-red-600 text-red-600 hover:bg-red-600 hover:text-white font-semibold text-xs rounded-lg transition-all duration-200 cursor-pointer w-fit"

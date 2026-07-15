@@ -47,7 +47,7 @@ export const AboutUs = () => {
   }, []);
 
   return (
-    <section className="bg-[#f8f8f8] overflow-hidden pt-24 pb-16">
+    <section className="bg-[#f8f8f8] overflow-hidden pt-14 sm:pt-20 md:pt-24 pb-10 sm:pb-16">
       <div className="container mx-auto px-6 md:px-10 w-full max-w-7xl">
 
         {/* Top two-column layout */}
@@ -57,15 +57,15 @@ export const AboutUs = () => {
           <div className="flex flex-col">
             {/* ABOUT US label */}
             <div className="mb-5">
-              <span className="text-red-600 font-bold text-2xl tracking-[0.10em] uppercase">
+              <span className="text-red-600 font-bold text-xl sm:text-2xl tracking-[0.10em] uppercase">
                 ABOUT US
               </span>
               <div className="w-8 h-0.5 bg-red-600 mt-1.5" />
             </div>
 
             {/* Heading — smaller and faded */}
-            <h2 className="text-2xl md:text-xl font-bold text-gray-400 leading-snug tracking-tight mb-10">
-              Building Connections,<br />Powering Progress
+            <h2 className="text-sm sm:text-base md:text-lg font-bold text-gray-400 leading-snug tracking-tight mb-10 whitespace-nowrap">
+              Innovation. Quality. Trust
             </h2>
 
             {/* Building illustration */}
@@ -91,7 +91,7 @@ export const AboutUs = () => {
           {/* Centered label with single line */}
           <div className="flex items-center gap-6 mb-10">
             <div className="flex-1 h-px bg-red-200" />
-            <h3 className="text-red-600 font-bold text-2xl tracking-[0.08em] uppercase whitespace-nowrap">
+            <h3 className="text-red-600 font-bold text-base sm:text-xl md:text-2xl tracking-[0.08em] uppercase whitespace-nowrap">
               AT A GLANCE
             </h3>
             <div className="flex-1 h-px bg-red-200" />

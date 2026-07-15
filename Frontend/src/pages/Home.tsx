@@ -40,8 +40,8 @@ export const Home = () => {
                 <p className="text-red-600 font-bold text-lg sm:text-2xl tracking-widest uppercase">Accreditations</p>
                 <div className="h-0.5 w-8 bg-red-600 mt-2 mb-4" />
               </div>
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-400 leading-snug mb-4">
-                Certified. Compliant.<br />Trusted.
+              <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-400 leading-snug tracking-tight mb-4 whitespace-nowrap">
+                Certified.&nbsp;&nbsp;Compliant.&nbsp;&nbsp;Trusted.
               </h3>
               <p className="text-gray-500 text-sm sm:text-base leading-relaxed max-w-md">
                 Our commitment to quality and safety is backed by national and international certifications that ensure reliability, compliance, and peace of mind.
@@ -86,7 +86,7 @@ export const Home = () => {
         <div className="relative container mx-auto px-4 md:px-6 text-center max-w-3xl">
           <p className="text-red-600 font-bold text-lg sm:text-2xl tracking-widest uppercase">Sister Concerns</p>
           <div className="h-0.5 w-8 bg-red-600 mx-auto mt-2 mb-4" />
-          <p className="text-sm font-semibold text-gray-400 tracking-wide">
+          <p className="text-xs sm:text-sm md:text-base font-bold text-gray-400 leading-snug tracking-tight whitespace-nowrap">
             One Vision.&nbsp;&nbsp;Many Strengths.&nbsp;&nbsp;Greater Impact.
           </p>
         </div>
@@ -108,7 +108,7 @@ export const Home = () => {
           >
             <div
               className="flex items-center"
-              style={{ animation: 'marquee-ltr 30s linear infinite', width: 'max-content' }}
+              style={{ animation: 'marquee-ltr 30s linear infinite', width: 'max-content', willChange: 'transform', backfaceVisibility: 'hidden' }}
             >
               {/* 4 copies for a seamless gap-free loop */}
               {[...Array(4)].flatMap((_, set) =>
@@ -118,11 +118,16 @@ export const Home = () => {
                   { src: '/Nandan.jpg',  alt: 'Nandan' },
                   { src: '/VINNYA.jpg',  alt: 'Vinnya' },
                 ].map((logo, i) => (
-                  <div key={`${set}-${i}`} className="flex-shrink-0 mx-10 flex items-center justify-center">
+                  <div
+                    key={`${set}-${i}`}
+                    className={`flex-shrink-0 mx-10 flex items-center justify-center ${logo.alt === 'Kwality' ? 'h-24 md:h-32' : 'h-16 md:h-20'}`}
+                  >
                     <img
                       src={logo.src}
                       alt={logo.alt}
-                      className={`w-auto object-contain ${logo.alt === 'Kwality' ? 'h-24 md:h-32' : 'h-16 md:h-20'}`}
+                      width={160}
+                      height={128}
+                      className="w-auto h-full object-contain"
                     />
                   </div>
                 ))
