@@ -10,6 +10,8 @@ import { dorenGoldenSeriesCatalog } from './series/dorenGoldenSeries';
 import { vipGoldenSeriesCatalog } from './series/vipGoldenSeries';
 import { vipWhiteSeriesCatalog } from './series/vipWhiteSeries';
 import { oppleSeriesCatalog } from './series/oppleSeries';
+import { zhilikWhiteSeriesCatalog } from './series/zhilikWhite';
+import { zhilikGoldenSeriesCatalog } from './series/zhilikGolden';
 import { pianoIconSeriesCatalog } from './series/pianoIconSeries';
 import { circuitBreakerSPCatalog } from './series/circuitBreakerSP';
 import { circuitBreakerDPCatalog } from './series/circuitBreakerDP';
@@ -44,6 +46,8 @@ export const allCatalogProducts: CatalogProduct[] = [
   ...vipGoldenSeriesCatalog,
   ...vipWhiteSeriesCatalog,
   ...oppleSeriesCatalog,
+  ...zhilikWhiteSeriesCatalog,
+  ...zhilikGoldenSeriesCatalog,
   ...pianoIconSeriesCatalog,
   ...circuitBreakerSPCatalog,
   ...circuitBreakerDPCatalog,

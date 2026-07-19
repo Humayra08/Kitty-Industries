@@ -96,7 +96,48 @@ const buildTechnicalInfo = (product: CatalogProduct) => [
   { label: 'Standards', value: 'International Quality Standards' },
 ];
 
-const buildDescription = (product: CatalogProduct) => {
+/** Names of the cycle-count spec rows, in the order they should be checked, mapped to how they read in prose. */
+const CYCLE_LABELS: { label: string; noun: string }[] = [
+  { label: 'Switching', noun: 'switching' },
+  { label: 'Plugging', noun: 'plug-in' },
+  { label: 'Rotation', noun: 'rotation' },
+];
+
+/** Builds the second, materials/performance paragraph from the product's own spec rows (real data, not a shared template) so it differs by product and by category (switch vs. socket vs. LED vs. breaker vs. accessory). */
+const buildMaterialsParagraph = (specs: { label: string; value: string }[]) => {
+  const specValue = (label: string) => specs.find((s) => s.label === label)?.value;
+
+  const caseMaterial = specValue('Case Material') ?? specValue('Material');
+  const componentMaterial = specValue('Component Material');
+  const cycle = CYCLE_LABELS.map(({ label, noun }) => ({ noun, value: specValue(label) })).find((c) => c.value);
+  const power = specValue('Power') ?? specValue('AC Power');
+  const lumen = specValue('Lumen');
+  const breakingCapacity = specValue('Breaking Capacity');
+
+  const sentences: string[] = [];
+
+  if (caseMaterial && componentMaterial) {
+    sentences.push(
+      `Manufactured with high quality ${caseMaterial} material and premium ${componentMaterial.toLowerCase()} components, it ensures excellent conductivity, durability and corrosion resistance.`,
+    );
+  } else if (caseMaterial) {
+    sentences.push(`Manufactured with high quality ${caseMaterial} material, it is built for durability and long-term reliability.`);
+  }
+
+  if (cycle) {
+    sentences.push(`With more than ${cycle.value} ${cycle.noun} cycles, it is the perfect choice for residential, commercial and industrial applications.`);
+  } else if (power && lumen) {
+    sentences.push(`Delivering ${power} at ${lumen} of output, it offers bright, energy-efficient illumination suited to residential, commercial and industrial spaces.`);
+  } else if (breakingCapacity) {
+    sentences.push(`With a breaking capacity of ${breakingCapacity}, it delivers reliable overload and short-circuit protection for residential and light-commercial installations.`);
+  } else if (!sentences.length) {
+    sentences.push('Built to a high standard of finish, it is the perfect choice for residential, commercial and industrial applications.');
+  }
+
+  return sentences.join(' ');
+};
+
+const buildDescription = (product: CatalogProduct, specs: { label: string; value: string }[]) => {
   const traits: string[] = [];
   if (product.features.includes('With Neon')) traits.push('a neon power indicator');
   if (product.features.includes('Fan Speed Control')) traits.push('smooth multi-speed fan control');
@@ -107,7 +148,7 @@ const buildDescription = (product: CatalogProduct) => {
 
   return [
     `The KITTY ${product.seriesName} ${product.title} is designed to deliver superior safety, durability and performance with a premium finish.${traitText} Ideal for modern homes, offices and commercial spaces.`,
-    'Manufactured with high quality PC Virgin material and premium brass components, it ensures excellent conductivity, durability and corrosion resistance. With more than 40,000 switching cycles, it is the perfect choice for residential, commercial and industrial applications.',
+    buildMaterialsParagraph(specs),
   ];
 };
 
@@ -155,7 +196,7 @@ export const ProductDetailPage = () => {
 
   const specs = buildSpecs(product);
   const technicalInfo = buildTechnicalInfo(product);
-  const description = buildDescription(product);
+  const description = buildDescription(product, specs);
 
   const related = getRelatedCatalogProducts(product);
   const relatedTotalPages = Math.max(1, Math.ceil(related.length / relatedPerPage));
@@ -287,7 +328,7 @@ export const ProductDetailPage = () => {
                         className="group relative aspect-[4/5] bg-white border border-gray-100 rounded-2xl p-4 flex flex-col shadow-sm hover:shadow-[0_10px_24px_-10px_rgba(220,38,38,0.18)] hover:-translate-y-1 transition-all duration-300"
                       >
                         <div className="w-full flex-1 min-h-0">
-                          <img src={item.imageSrc} alt={item.title} className="w-full h-full object-contain" />
+                          <img src={item.thumbSrc} alt={item.title} loading="lazy" decoding="async" className="w-full h-full object-contain" />
                         </div>
 
                         <div className="w-full h-px bg-gray-200/50 my-2" />
