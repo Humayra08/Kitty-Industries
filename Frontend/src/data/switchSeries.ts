@@ -21,7 +21,7 @@ export const switchSeriesList: SwitchSeries[] = [
   { name: 'DOREN SERIES GOLDEN', cardImage: cardImage('https://res.cloudinary.com/dcdo4venk/image/upload/v1784012948/doren_golden_1_amy1xa.png') },
   { name: 'DOREN SERIES WHITE', cardImage: cardImage('https://res.cloudinary.com/dcdo4venk/image/upload/v1784013238/doren_white_1_qt8mk2.png') },
   { name: 'GLORIA SERIES', cardImage: cardImage('https://res.cloudinary.com/dcdo4venk/image/upload/v1784012093/banner2_1_yk1f9b.png') },
-  { name: 'OPPLE SERIES' },
+  { name: 'OPPLE SERIES', cardImage: cardImage('https://res.cloudinary.com/dcdo4venk/image/upload/v1784440267/opple_banner_ze31eh.png') },
   { name: 'VENUS SERIES', cardImage: cardImage('https://res.cloudinary.com/dcdo4venk/image/upload/v1784011194/banner_1_k6hxht.png') },
   { name: 'VERONA SERIES', cardImage: cardImage('https://res.cloudinary.com/dcdo4venk/image/upload/v1784013936/verona_1_cs0vpd.png') },
   { name: 'VIP SERIES GOLDEN', cardImage: cardImage('https://res.cloudinary.com/dcdo4venk/image/upload/v1784023708/vip_golden_1_uwzwzr.png') },

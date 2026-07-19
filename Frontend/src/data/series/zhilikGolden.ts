@@ -1,0 +1,142 @@
+import { buildSeriesCatalog, type CatalogProduct, type RawSeriesProduct, type SeriesConfig } from '../catalog';
+
+export const zhilikGoldenSeriesConfig: SeriesConfig = {
+  seriesName: 'Zhilik Series Golden',
+  seriesPath: '/products/switch-socket/gang-switch-socket/zhilik-series-golden',
+  categoryName: 'Gang Switch Socket',
+  categoryPath: '/products/switch-socket/gang-switch-socket',
+  imageFolder: '',
+};
+
+const rawZhilikGoldenSeriesProducts: RawSeriesProduct[] = [
+  {
+    id: 1,
+    title: '1 GANG 1 WAY SWITCH',
+    subtitle: '1 Gang 1 Way Switch',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784442608/1_GANG_1_WAY_SWITCH._ZLG2021_cgfitd.png',
+    modelNo: 'ZLG2021',
+    productType: '1 Gang Switch',
+    features: ['With Switch'],
+  },
+  {
+    id: 2,
+    title: '2 GANG 1 WAY SWITCH',
+    subtitle: '2 Gang 1 Way Switch',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784442608/2_GANG_1_WAY_SWITCH._ZLG2022_luvbj5.png',
+    modelNo: 'ZLG2022',
+    productType: '2 Gang Switch',
+    features: ['With Switch'],
+  },
+  {
+    id: 3,
+    title: '3 GANG 1 WAY SWITCH',
+    subtitle: '3 Gang 1 Way Switch',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784442597/3_GANG_1_WAY_SWITCH._ZLG2023_y3whhr.png',
+    modelNo: 'ZLG2023',
+    productType: '3 Gang Switch',
+    features: ['With Switch'],
+  },
+  {
+    id: 4,
+    title: '4 GANG 1 WAY SWITCH',
+    subtitle: '4 Gang 1 Way Switch',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784442601/4_GANG_1_WAY_SWITCH._ZLG2024_mnj5qx.png',
+    modelNo: 'ZLG2024',
+    productType: '4 Gang Switch',
+    features: ['With Switch'],
+  },
+  {
+    id: 5,
+    title: 'FAN SPEED CONTROLLER',
+    subtitle: 'Fan Speed Controller',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784442580/FAN_SPEED_CONTROLLER._ZLG20M3_dqvsic.png',
+    modelNo: 'ZLG20M3',
+    productType: 'Fan Speed Controller',
+    features: ['With Switch', 'Fan Speed Control'],
+  },
+  {
+    id: 6,
+    title: '2PIN & 13A 5PIN UNIVERSAL SOCKET',
+    subtitle: 'Universal Socket with Neon',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784442596/2PIN___13A_5PIN_UNIVERSAL_SOCKET._ZLG2513_njztnp.png',
+    modelNo: 'ZLG2513',
+    socketType: 'Universal Socket',
+    features: ['With Neon', 'With Switch'],
+  },
+  {
+    id: 7,
+    title: '13A 3PIN UNIVERSAL SOCKET',
+    subtitle: 'Universal Socket',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784442601/13A_3PIN_UNIVERSAL_SOCKET._ZLG2013_l29abz.png',
+    modelNo: 'ZLG2013',
+    socketType: 'Universal Socket',
+    features: ['With Switch'],
+  },
+  {
+    id: 8,
+    title: '15A 3PIN ROUND SOCKET',
+    subtitle: 'Round Socket',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784442595/15A_3PIN_ROUND_SOCKET._ZLG2015_qyjwme.png',
+    modelNo: 'ZLG2015',
+    socketType: 'Round Socket',
+    features: ['With Switch'],
+  },
+  {
+    id: 9,
+    title: '16A 2PIN UNIVERSAL SOCKET',
+    subtitle: 'Universal Socket',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784442599/16A_2PIN_UNIVERSAL_SOCKET._ZLG2016_k44ika.png',
+    modelNo: 'ZLG2016',
+    socketType: 'Universal Socket',
+    features: ['With Switch'],
+  },
+  {
+    id: 10,
+    title: '20A DP SWITCH WITH NEON',
+    subtitle: 'DP Switch with Neon',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784442581/20A_DP_SWITCH_WITH_NEON._ZLG2020L_tjy0ah.png',
+    modelNo: 'ZLG2020L',
+    features: ['With Neon'],
+  },
+  {
+    id: 11,
+    title: 'BELL PUSH SWITCH',
+    subtitle: 'Bell Push Switch',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784442578/BELLPUSH_SWITCH._ZLG2050_issnlo.png',
+    modelNo: 'ZLG2050',
+    features: ['With Switch'],
+  },
+  {
+    id: 12,
+    title: 'TELEPHONE SOCKET',
+    subtitle: 'Telephone Socket',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784442580/TELEPHONE_SOCKET._ZLG2028TU_btwmn8.png',
+    modelNo: 'ZLG2028TU',
+    socketType: 'Telephone Socket',
+    features: [],
+  },
+  {
+    id: 13,
+    title: 'TV/DISH SOCKET',
+    subtitle: 'Television / Dish Socket',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784442581/TV_DISH_SOCKET._ZLG2030TV_xugf9q.png',
+    modelNo: 'ZLG2030TV',
+    socketType: 'TV / Dish Socket',
+    features: [],
+  },
+  {
+    id: 14,
+    title: 'DATA/INTERNET SOCKET',
+    subtitle: 'Internet / Data Socket',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784442575/DATA_INTERNET_SOCKET._ZLG-TU-CAT5_fzwa4x.png',
+    modelNo: 'ZLG-TU-CAT5',
+    socketType: 'Internet/Data Socket',
+    features: [],
+  },
+];
+
+export const zhilikGoldenSeriesProductTypes = ['1 Gang Switch', '2 Gang Switch', '3 Gang Switch', '4 Gang Switch', 'Fan Speed Controller'];
+export const zhilikGoldenSeriesSocketTypes = ['Universal Socket', 'Round Socket', 'Telephone Socket', 'TV / Dish Socket', 'Internet/Data Socket'];
+export const zhilikGoldenSeriesFeatureList = ['With Neon', 'With Switch', 'Fan Speed Control'];
+
+export const zhilikGoldenSeriesCatalog: CatalogProduct[] = buildSeriesCatalog(rawZhilikGoldenSeriesProducts, zhilikGoldenSeriesConfig);

@@ -1,10 +1,10 @@
 const boardMembers = [
   {
-    name: 'Mr. Hasan Mahmud',
+    name: 'Mr. Rashed Mahmud',
     title: 'Chairman',
     company: 'KITTY Industries Ltd.',
-    photo: '/BOD/Hasan Mahmud.png',
-    bio: "Mr. Hasan Mahmud is the Chairman of KITTY Industries Ltd. He holds extensive experience in business leadership and strategic management. Under his guidance, the company continues to grow with strength, innovation, and integrity.",
+    photo: 'https://res.cloudinary.com/dcdo4venk/image/upload/f_auto,q_auto,w_500,dpr_auto/v1784439016/Rashed_Mahmud_ex8r9t.png',
+    bio: "Mr. Rashed Mahmud is the Chairman of KITTY Industries Ltd. He holds a Bachelor of Commerce in Finance and an MBA from the University of Dhaka. He oversees international procurement, finance and strategic growth.",
     roles: [
       { title: 'Chairman', company: 'Nandan Kanon Housing Ltd.' },
       { title: 'Chairman', company: 'NBP Kwality Chemical Industries Ltd.' },
@@ -12,25 +12,25 @@ const boardMembers = [
     ],
   },
   {
-    name: 'Mr. Rashed Mahmud',
+    name: 'Mr. Hasan Mahmud',
     title: 'Managing Director',
     company: 'KITTY Industries Ltd.',
-    photo: '/BOD/Rashed Mahmud.png',
-    bio: "Mr. Rashed Mahmud is the Managing Director of KITTY Industries Ltd. He holds a Bachelor of Commerce in Finance and an MBA from the University of Dhaka. He oversees international procurement, business development, finance, and overall group operations.",
+    photo: 'https://res.cloudinary.com/dcdo4venk/image/upload/f_auto,q_auto,w_500,dpr_auto/v1784439015/Hasan_Mahmud_s79p31.png',
+    bio: "Mr. Hasan Mahmud is the Managing Director of KITTY Industries Ltd. He holds a Bachelor in Marine Engineering from Chittagong Marine Academy. He is responsible for factory production, global supply chain management and overall group operations.",
     roles: [
-      { title: 'Chairman', company: 'Nandan Kanon Housing Ltd.' },
       { title: 'Managing Director', company: 'NBP Kwality Chemical Industries Ltd.' },
       { title: 'Managing Director', company: 'TAK Chemical Industries Ltd.' },
+      { title: 'Director', company: 'Nandan Kanon Housing Ltd.' },
     ],
   },
   {
     name: 'Mr. Shahed Mahmud',
     title: 'Director',
     company: 'KITTY Industries Ltd.',
-    photo: '/BOD/Shahed Mahmud.png',
-    bio: "Mr. Shahed Mahmud is a Director of KITTY Industries Ltd. He plays a key role in supporting the company's strategic initiatives and operational excellence with his experience and commitment.",
+    photo: 'https://res.cloudinary.com/dcdo4venk/image/upload/f_auto,q_auto,w_500,dpr_auto/v1784439015/Shahed_Mahmud_bsnk05.png',
+    bio: "Mr. Shahed Mahmud is the Director of KITTY Industries Ltd. He holds a Bachelor of Commerce in Marketing and an MBA from the University of Dhaka. He oversees marketing, sales and other support functions.",
     roles: [
-      { title: 'Director', company: 'Nandan Kanon Housing Ltd.' },
+      { title: 'Managing Director', company: 'Nandan Kanon Housing Ltd.' },
       { title: 'Director', company: 'NBP Kwality Chemical Industries Ltd.' },
       { title: 'Director', company: 'TAK Chemical Industries Ltd.' },
     ],
@@ -106,6 +106,8 @@ export const BoardOfDirectorsPage = () => {
                 <img
                   src={member.photo}
                   alt={member.name}
+                  loading="lazy"
+                  decoding="async"
                   className="relative w-full h-auto"
                 />
               </div>

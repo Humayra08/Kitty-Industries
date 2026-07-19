@@ -306,8 +306,10 @@ export const ProductCatalogPage = ({ breadcrumbs, heroTitle, heroDescription, pr
                 >
                   <div className={viewMode === 'grid' ? 'w-full aspect-[4/3] mb-2' : 'w-24 h-24 flex-shrink-0'}>
                     <img
-                      src={product.imageSrc}
+                      src={product.thumbSrc}
                       alt={product.title}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-contain"
                     />
                   </div>

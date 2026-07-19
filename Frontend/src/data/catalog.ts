@@ -9,6 +9,8 @@ export interface CatalogProduct {
   title: string;
   subtitle: string;
   imageSrc: string;
+  /** Smaller Cloudinary derivative for catalog grids / related-product cards, where the full 1000px zoom image is overkill. */
+  thumbSrc: string;
   modelNo: string;
   seriesName: string;
   seriesPath: string;
@@ -66,11 +68,22 @@ const isUrl = (image: string) => /^https?:\/\//i.test(image);
  * photo down to its actual content bounding box first, then `c_pad` re-centers
  * that trimmed content into a uniform square on a white backdrop, so every product
  * fills its box consistently regardless of how the original was framed.
+ *
+ * Two sizes are generated from the same multi-MB originals: a 1000px version for
+ * the zoomable product-detail image, and a 400px thumbnail for catalog grids and
+ * related-product cards, which only ever render at a few hundred px wide. Requesting
+ * the 1000px derivative everywhere (as before) meant grid views transferred and
+ * decoded ~4-6x more image data than they displayed, and — on series pages that get
+ * little traffic — asked Cloudinary to resize the full original on every cache miss
+ * instead of a pre-shrunk one, which is what made low-traffic categories (e.g.
+ * accessories, circuit breakers) feel noticeably slower to load than high-traffic
+ * ones (e.g. switches) whose derivatives stay warm in cache.
  */
-const CLOUDINARY_TRANSFORM = 'e_trim/c_pad,w_1000,h_1000,b_white/f_auto,q_auto';
+const CLOUDINARY_ZOOM_TRANSFORM = 'e_trim/c_pad,w_1000,h_1000,b_white/f_auto,q_auto';
+const CLOUDINARY_THUMB_TRANSFORM = 'e_trim/c_pad,w_400,h_400,b_white/f_auto,q_auto';
 
-const optimizeImageUrl = (url: string): string =>
-  url.includes('res.cloudinary.com') ? url.replace('/image/upload/', `/image/upload/${CLOUDINARY_TRANSFORM}/`) : url;
+const applyCloudinaryTransform = (url: string, transform: string): string =>
+  url.includes('res.cloudinary.com') ? url.replace('/image/upload/', `/image/upload/${transform}/`) : url;
 
 /** Maps a series' raw product list into the shared CatalogProduct shape. */
 export const buildSeriesCatalog = (products: RawSeriesProduct[], config: SeriesConfig): CatalogProduct[] =>
@@ -78,7 +91,8 @@ export const buildSeriesCatalog = (products: RawSeriesProduct[], config: SeriesC
     slug: slugify(p.title),
     title: p.title,
     subtitle: p.subtitle,
-    imageSrc: isUrl(p.image) ? optimizeImageUrl(p.image) : `${config.imageFolder}/${p.image}`,
+    imageSrc: isUrl(p.image) ? applyCloudinaryTransform(p.image, CLOUDINARY_ZOOM_TRANSFORM) : `${config.imageFolder}/${p.image}`,
+    thumbSrc: isUrl(p.image) ? applyCloudinaryTransform(p.image, CLOUDINARY_THUMB_TRANSFORM) : `${config.imageFolder}/${p.image}`,
     modelNo: p.modelNo ?? getModelNo(p.image),
     seriesName: config.seriesName,
     seriesPath: config.seriesPath,

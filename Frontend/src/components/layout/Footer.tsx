@@ -46,10 +46,17 @@ export const Footer = () => {
               Powering Everyday Life
             </p>
             <div className="flex items-center gap-3 mt-auto">
-              {[Facebook, Linkedin, Youtube, Instagram].map((Icon, i) => (
+              {[
+                { Icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61561913519526' },
+                { Icon: Linkedin, href: 'https://www.linkedin.com/company/kitty-industries-ltd/' },
+                { Icon: Youtube, href: '#' },
+                { Icon: Instagram, href: '#' },
+              ].map(({ Icon, href }, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-7 h-7 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/20 transition-colors duration-200"
                 >
                   <Icon className="w-3.5 h-3.5 text-white/80" />

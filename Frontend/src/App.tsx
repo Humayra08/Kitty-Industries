@@ -43,6 +43,8 @@ import { LedSpotLightPage } from './pages/LedSpotLight';
 import { VipGoldenSeriesPage } from './pages/VipGoldenSeries';
 import { VipWhiteSeriesPage } from './pages/VipWhiteSeries';
 import { OppleSeriesPage } from './pages/OppleSeries';
+import { ZhilikWhiteSeriesPage } from './pages/ZhilikWhiteSeries';
+import { ZhilikGoldenSeriesPage } from './pages/ZhilikGoldenSeries';
 
 // Placeholder components for other routes
 const Placeholder = ({ title }: { title: string }) => (
@@ -82,6 +84,10 @@ function App() {
           <Route path="products/switch-socket/gang-switch-socket/vip-series-white/:slug" element={<ProductDetailPage />} />
           <Route path="products/switch-socket/gang-switch-socket/opple-series" element={<OppleSeriesPage />} />
           <Route path="products/switch-socket/gang-switch-socket/opple-series/:slug" element={<ProductDetailPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/zhilik-series-white" element={<ZhilikWhiteSeriesPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/zhilik-series-white/:slug" element={<ProductDetailPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/zhilik-series-golden" element={<ZhilikGoldenSeriesPage />} />
+          <Route path="products/switch-socket/gang-switch-socket/zhilik-series-golden/:slug" element={<ProductDetailPage />} />
           <Route path="products/switch-socket/piano-switch-socket" element={<PianoSwitchSocket />} />
           <Route path="products/switch-socket/piano-switch-socket/:slug" element={<ProductDetailPage />} />
           <Route path="products/circuit-breakers" element={<CircuitBreakerPage />} />
