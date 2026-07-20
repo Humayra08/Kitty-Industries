@@ -33,14 +33,18 @@ jobs:
         run: npm run build
 
       - name: Deploy to public_html via FTP
-        uses: appleboy/ftp-action@master
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local_dir: ./Frontend/dist/
-          server_dir: ./
-          dangerous_clean_slate: true
+          local-dir: ./Frontend/dist/
+          server-dir: ./
+          # dangerous-clean-slate is intentionally NOT used: it wipes
+          # server-dir entirely, ignoring `exclude`, which would delete
+          # .well-known/ and cgi-bin/. Default (non-dangerous) mode still
+          # removes stale files via its own state file, it just never
+          # touches paths outside what it deployed/excluded.
           exclude: |
             **/.well-known/**
             **/cgi-bin/**
