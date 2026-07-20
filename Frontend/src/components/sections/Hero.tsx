@@ -1,7 +1,67 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Play } from 'lucide-react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { ArrowRight, Play, X } from 'lucide-react';
+
+const PROMO_VIDEO_ID = 'vwV3DxYYgys';
+
+const VideoModal = ({ onClose }: { onClose: () => void }) => {
+  useEffect(() => {
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [onClose]);
+
+  return (
+    <motion.div
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/85 backdrop-blur-sm p-4 sm:p-6"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      onClick={onClose}
+    >
+      <motion.div
+        className="relative w-full max-w-4xl"
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.95 }}
+        transition={{ duration: 0.2 }}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          onClick={onClose}
+          aria-label="Close video"
+          className="absolute -top-10 right-0 sm:-right-2 flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20"
+        >
+          <X className="h-5 w-5" />
+        </button>
+
+        <div className="w-full overflow-hidden rounded-xl sm:rounded-2xl shadow-2xl aspect-video bg-black">
+          <iframe
+            className="h-full w-full"
+            src={`https://www.youtube-nocookie.com/embed/${PROMO_VIDEO_ID}?autoplay=1&rel=0&modestbranding=1&vq=hd1080`}
+            title="KITTY Industries Promo Video"
+            allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+            allowFullScreen
+          />
+        </div>
+      </motion.div>
+    </motion.div>
+  );
+};
 
 export const Hero = () => {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+
   return (
     <section className="relative w-full min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-5rem)] bg-black overflow-hidden">
       {/* Background video */}
@@ -62,7 +122,10 @@ export const Hero = () => {
                 <ArrowRight className="h-4 w-4" />
               </Link>
 
-              <button className="inline-flex items-center gap-2.5 rounded-lg border border-white/25 bg-white/10 px-5 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white/20">
+              <button
+                onClick={() => setIsVideoOpen(true)}
+                className="inline-flex items-center gap-2.5 rounded-lg border border-white/25 bg-white/10 px-5 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white/20"
+              >
                 <span className="flex h-6 w-6 items-center justify-center rounded-full border border-white">
                   <Play className="h-3 w-3 fill-white" />
                 </span>
@@ -72,6 +135,10 @@ export const Hero = () => {
           </div>
         </div>
       </div>
+
+      <AnimatePresence>
+        {isVideoOpen && <VideoModal onClose={() => setIsVideoOpen(false)} />}
+      </AnimatePresence>
     </section>
   );
 };

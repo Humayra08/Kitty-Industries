@@ -10,7 +10,6 @@ export const CableClipPage = () => (
   <ProductCatalogPage
     breadcrumbs={[
       { label: 'Home', to: '/' },
-      { label: 'Accessories', to: '/products/accessories' },
       { label: 'Cable Clip' },
     ]}
     heroTitle="Cable Clip"

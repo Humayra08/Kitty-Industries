@@ -10,7 +10,6 @@ export const CableTiePage = () => (
   <ProductCatalogPage
     breadcrumbs={[
       { label: 'Home', to: '/' },
-      { label: 'Accessories', to: '/products/accessories' },
       { label: 'Cable Tie' },
     ]}
     heroTitle="Cable Tie"

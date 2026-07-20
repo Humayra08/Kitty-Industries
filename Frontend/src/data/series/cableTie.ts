@@ -2,9 +2,9 @@ import { buildSeriesCatalog, type CatalogProduct, type RawSeriesProduct, type Se
 
 export const cableTieConfig: SeriesConfig = {
   seriesName: 'Cable Tie',
-  seriesPath: '/products/accessories/cable-tie',
-  categoryName: 'Accessories',
-  categoryPath: '/products/accessories',
+  seriesPath: '/products/cable-tie',
+  categoryName: 'Cable Tie',
+  categoryPath: '/products/cable-tie',
   imageFolder: '',
 };
 

@@ -32,16 +32,6 @@ const categories = [
     path: '/products/accessories/others/fan-capacitor',
     image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784039406/KITTY_FAN_CAPACITOR_3.5uf_qnsxnn.png',
   },
-  {
-    title: 'Cable Tie',
-    path: '/products/accessories/cable-tie',
-    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784024923/WHITE_CABLE_TIE_100MM_150MM_200MM_250MM_300MM_350MM_400MM_450MM_500MM_tsdrtm.png',
-  },
-  {
-    title: 'Cable Clip',
-    path: '/products/accessories/cable-clip',
-    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784025022/K_TYPE_CABLE_CLIP_r4etug.png',
-  },
 ];
 
 export const AccessoriesPage = () => {
