@@ -213,8 +213,12 @@ export const ProductDetailPage = () => {
             <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
             <Link to="/products" className="hover:text-red-600 transition-colors">Products</Link>
             <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
-            <Link to={product.categoryPath} className="hover:text-red-600 transition-colors">{product.categoryName}</Link>
-            <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
+            {product.categoryPath !== product.seriesPath && (
+              <>
+                <Link to={product.categoryPath} className="hover:text-red-600 transition-colors">{product.categoryName}</Link>
+                <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
+              </>
+            )}
             <Link to={product.seriesPath} className="hover:text-red-600 transition-colors">{product.seriesName}</Link>
             <ChevronRight className="w-3.5 h-3.5 text-gray-400" />
             <span className="text-red-600 font-semibold">{product.subtitle}</span>

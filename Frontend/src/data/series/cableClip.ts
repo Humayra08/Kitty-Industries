@@ -2,9 +2,9 @@ import { buildSeriesCatalog, type CatalogProduct, type RawSeriesProduct, type Se
 
 export const cableClipConfig: SeriesConfig = {
   seriesName: 'Cable Clip',
-  seriesPath: '/products/accessories/cable-clip',
-  categoryName: 'Accessories',
-  categoryPath: '/products/accessories',
+  seriesPath: '/products/cable-clip',
+  categoryName: 'Cable Clip',
+  categoryPath: '/products/cable-clip',
   imageFolder: '',
 };
 

@@ -26,6 +26,18 @@ const categories = [
     image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784031624/Others_Banner_vtb9le.png',
     description: 'A complete range of electrical accessories and add-ons.',
   },
+  {
+    title: 'Cable Tie',
+    path: '/products/cable-tie',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784024923/WHITE_CABLE_TIE_100MM_150MM_200MM_250MM_300MM_350MM_400MM_450MM_500MM_tsdrtm.png',
+    description: 'Durable nylon cable ties in a full range of sizes.',
+  },
+  {
+    title: 'Cable Clip',
+    path: '/products/cable-clip',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784025022/K_TYPE_CABLE_CLIP_r4etug.png',
+    description: 'K-Type and U-Type cable clips for secure mounting.',
+  },
 ];
 
 export const ProductsPage = () => {

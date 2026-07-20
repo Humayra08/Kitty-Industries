@@ -98,10 +98,10 @@ function App() {
           <Route path="products/circuit-breakers/tp-circuit-breaker" element={<CircuitBreakerTPPage />} />
           <Route path="products/circuit-breakers/tp-circuit-breaker/:slug" element={<ProductDetailPage />} />
           <Route path="products/accessories" element={<AccessoriesPage />} />
-          <Route path="products/accessories/cable-tie" element={<CableTiePage />} />
-          <Route path="products/accessories/cable-tie/:slug" element={<ProductDetailPage />} />
-          <Route path="products/accessories/cable-clip" element={<CableClipPage />} />
-          <Route path="products/accessories/cable-clip/:slug" element={<ProductDetailPage />} />
+          <Route path="products/cable-tie" element={<CableTiePage />} />
+          <Route path="products/cable-tie/:slug" element={<ProductDetailPage />} />
+          <Route path="products/cable-clip" element={<CableClipPage />} />
+          <Route path="products/cable-clip/:slug" element={<ProductDetailPage />} />
           <Route path="products/accessories/others/6-pin-sockets" element={<SixPinSocketsPage />} />
           <Route path="products/accessories/others/6-pin-sockets/:slug" element={<ProductDetailPage />} />
           <Route path="products/accessories/others/plug-adapters" element={<PlugAdaptersPage />} />

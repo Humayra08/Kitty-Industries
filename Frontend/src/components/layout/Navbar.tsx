@@ -9,6 +9,8 @@ const productDropdownItems = [
   { name: 'Switch & Socket', path: '/products/switch-socket' },
   { name: 'Circuit Breakers', path: '/products/circuit-breakers' },
   { name: 'Accessories', path: '/products/accessories' },
+  { name: 'Cable Tie', path: '/products/cable-tie' },
+  { name: 'Cable Clip', path: '/products/cable-clip' },
 ];
 
 const navLinks = [
