@@ -7,7 +7,7 @@ const categories = [
     path: '/products/circuit-breakers/sp-circuit-breaker',
     icon: (
       <img
-        src="https://res.cloudinary.com/dcdo4venk/image/upload/v1784022065/UNM4S63_xgioor.png"
+        src="https://res.cloudinary.com/dcdo4venk/image/upload/v1784652458/IMG_1372_ewsozr.png"
         alt="SP Circuit Breaker"
         className="w-full h-full object-contain drop-shadow-md scale-150"
       />
@@ -29,7 +29,7 @@ const categories = [
     path: '/products/circuit-breakers/tp-circuit-breaker',
     icon: (
       <img
-        src="https://res.cloudinary.com/dcdo4venk/image/upload/v1784022298/UNM4T63_cy4eem.png"
+        src="https://res.cloudinary.com/dcdo4venk/image/upload/v1784022292/IMG_1375_n2c5mp.png"
         alt="TP Circuit Breaker"
         className="w-full h-full object-contain drop-shadow-md scale-150"
       />
