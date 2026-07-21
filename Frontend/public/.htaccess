@@ -2,9 +2,8 @@
   RewriteEngine On
   RewriteBase /
 
-  # Don't rewrite requests for real files/folders (JS, CSS, images, etc.)
-  RewriteCond %{REQUEST_FILENAME} -f [OR]
-  RewriteCond %{REQUEST_FILENAME} -d
+  # Don't rewrite requests for real files (JS, CSS, images, etc.)
+  RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^ - [L]
 
   # Everything else goes to index.html so React Router can handle it
