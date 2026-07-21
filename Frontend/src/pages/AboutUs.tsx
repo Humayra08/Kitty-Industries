@@ -74,14 +74,23 @@ export const AboutUsPage = () => {
             <p className="text-white font-bold text-xs tracking-[0.22em] uppercase mb-2">About Us</p>
             <div className="h-0.5 w-8 bg-white" />
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight max-w-2xl mb-5">
-            Building Connections,<br />Powering Progress
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight max-w-2xl mb-5">
+            <span className="text-white block">Powering</span>
+            <span className="block">
+              <span
+                className="bg-clip-text text-transparent"
+                style={{ backgroundImage: 'linear-gradient(135deg, #ff5252 0%, #ff0000 55%, #e60000 100%)' }}
+              >
+                Everyday
+              </span>
+              <span className="text-white"> Life</span>
+            </span>
           </h1>
-          <p className="text-white/80 text-base leading-loose max-w-sm">
+          {/* <p className="text-white/80 text-base leading-loose max-w-sm">
             Delivering trusted electrical solutions<br />
             that power homes, businesses,<br />
             and industries across Bangladesh.
-          </p>
+          </p> */}
         </div>
       </section>
 
@@ -96,7 +105,7 @@ export const AboutUsPage = () => {
                 <div className="w-8 h-0.5 bg-red-600 mt-1.5" />
               </div>
               <h2 className="text-2xl md:text-2xl font-bold text-gray-400 leading-snug tracking-tight mb-10">
-                Building Connections,<br />Powering Progress
+                Powering<br />Everyday Life
               </h2>
               <div className="relative mt-auto -ml-8">
                 <img

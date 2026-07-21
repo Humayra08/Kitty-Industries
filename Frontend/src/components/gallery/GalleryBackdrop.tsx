@@ -24,7 +24,7 @@ export const GalleryBackdrop = () => (
     <img
       src="/celebration.png"
       alt=""
-      className="absolute -top-2 right-3 w-16 sm:top-0 sm:right-4 sm:w-24 lg:top-4 lg:right-[6%] lg:w-[300px] lg:max-w-[36vw]"
+      className="absolute top-6 right-4 w-16 sm:top-10 sm:right-8 sm:w-24 lg:top-4 lg:right-[6%] lg:w-[300px] lg:max-w-[36vw]"
     />
   </div>
 );
