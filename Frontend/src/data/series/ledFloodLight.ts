@@ -12,7 +12,7 @@ export const ledFloodLightConfig: SeriesConfig = {
 const rawLedFloodLightProducts: RawSeriesProduct[] = [
   {
     id: 1,
-    title: 'KITTY MATRIX LED FLOOD LIGHT 50W',
+    title: 'KITTY MATRIX LED FLOOD LIGHT',
     subtitle: 'IP65 Water Proof',
     image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784046013/KITTY_MATRIX_LED_FLOOD_LIGHT._KTCL-FL50A-50W_nccwfz.png',
     modelNo: 'KTCL-FL50A-50W',

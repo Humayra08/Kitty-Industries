@@ -99,10 +99,10 @@ const rawDorenGoldenSeriesProducts: RawSeriesProduct[] = [
   },
   {
     id: 11,
-    title: '13A 5PIN UNIVERSAL SOCKET',
+    title: '13A 9PIN UNIVERSAL SOCKET',
     subtitle: 'Universal Socket with Neon',
     image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783852892/13A_9PIN_UNIVERSAL_SOCKET._DG2850_jnswaq.png',
-    modelNo: 'DG285',
+    modelNo: 'DG2850',
     socketType: 'Universal Socket',
     features: ['With Neon'],
   },
