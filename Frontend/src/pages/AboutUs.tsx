@@ -74,7 +74,7 @@ export const AboutUsPage = () => {
             <p className="text-white font-bold text-xs tracking-[0.22em] uppercase mb-2">About Us</p>
             <div className="h-0.5 w-8 bg-white" />
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight max-w-2xl mb-5">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight max-w-2xl mb-5">
             <span className="text-white block">Powering</span>
             <span className="block">
               <span

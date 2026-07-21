@@ -65,7 +65,7 @@ export const BoardOfDirectorsPage = () => {
           {/* <p className="text-white font-semibold text-[8px] sm:text-xs uppercase mb-2 sm:mb-4" style={{ letterSpacing: '3px' }}>
             Leadership That Builds The Future
           </p> */}
-          <h1 className="text-white font-black text-lg sm:text-3xl md:text-5xl lg:text-6xl xl:text-[4.25rem] leading-[1.05] tracking-tight mb-3 sm:mb-6">
+          <h1 className="text-white font-black text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight mb-3 sm:mb-6">
             Board of<br />Directors
           </h1>
           <div className="h-1 w-[30px] sm:w-[60px] bg-white rounded-full mb-3 sm:mb-6" />
@@ -173,10 +173,10 @@ export const BoardOfDirectorsPage = () => {
                 </div>
                 <div className="space-y-5">
                   <p className="text-gray-500 text-sm md:text-[15px] leading-relaxed text-justify">
-                    At KITTY Industries Limited, we believe our greatest strength lies in our people. Over the years, we have built more than a company. We have built a family united by trust, dedication, and shared purpose. We are deeply grateful to our employees, distributors, partners, and customers, whose continued support has shaped our journey. Their passion and commitment inspire us to grow, innovate, and move forward together every day.
+                    At KITTY Industries Limited, we believe our greatest strength lies in our people. We are deeply grateful to our employees, distributors, partners, and customers, whose continued support has shaped our journey.
                   </p>
                   <p className="text-gray-500 text-sm md:text-[15px] leading-relaxed text-justify">
-                    As we look to the future, our goal is not only to build a stronger business, but also to create a lasting legacy, one that future generations will be proud to carry forward. Together, we remain committed to fostering meaningful relationships, making a positive impact, and contributing to the progress of Bangladesh.
+                    As we look to the future, our goal is not only to build a stronger business, but also to create a lasting legacy, one that future generations will be proud to carry forward. Together, we remain committed to fostering meaningful relationships, making a positive impact contributing to the progress of Bangladesh.
                   </p>
                   <p className="text-gray-500 font-bold text-sm md:text-[15px] leading-relaxed">
                     Because at <span className="text-red-600">KITTY</span>, we are more than a
