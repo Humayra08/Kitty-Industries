@@ -117,7 +117,7 @@ const rawDorenWhiteSeriesProducts: RawSeriesProduct[] = [
   },
   {
     id: 13,
-    title: '13A 5PIN UNIVERSAL SOCKET WITH SWITCH',
+    title: '13A 9PIN UNIVERSAL SOCKET WITH SWITCH',
     subtitle: 'Universal Socket with Neon',
     image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783851416/13A_9PIN_UNIVERSAL_SOCKET_WITH_SWITCH._DN2619_ouvfqp.png',
     modelNo: 'DN2619',

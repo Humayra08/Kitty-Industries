@@ -8,7 +8,6 @@ export const circuitBreakerTPConfig: SeriesConfig = {
   imageFolder: '',
 };
 
-// NOTE: UNM4T16, UNM4T25, UNM4T32, UNM4T40 are not yet added — pending Cloudinary URLs.
 const rawCircuitBreakerTPProducts: RawSeriesProduct[] = [
   {
     id: 1,
@@ -20,12 +19,48 @@ const rawCircuitBreakerTPProducts: RawSeriesProduct[] = [
     features: ['6kA Breaking Capacity'],
   },
   {
+    id: 4,
+    title: '16A TP CIRCUIT BREAKER',
+    subtitle: '6kA Breaking Capacity',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784022292/IMG_1375_n2c5mp.png',
+    modelNo: 'UNM4T16',
+    productType: '16A',
+    features: ['6kA Breaking Capacity'],
+  },
+  {
     id: 2,
     title: '20A TP CIRCUIT BREAKER',
     subtitle: '6kA Breaking Capacity',
     image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784022297/UNM4T20_bfii7f.png',
     modelNo: 'UNM4T20',
     productType: '20A',
+    features: ['6kA Breaking Capacity'],
+  },
+  {
+    id: 5,
+    title: '25A TP CIRCUIT BREAKER',
+    subtitle: '6kA Breaking Capacity',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784022292/IMG_1375_n2c5mp.png',
+    modelNo: 'UNM4T25',
+    productType: '25A',
+    features: ['6kA Breaking Capacity'],
+  },
+  {
+    id: 6,
+    title: '32A TP CIRCUIT BREAKER',
+    subtitle: '6kA Breaking Capacity',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784022292/IMG_1375_n2c5mp.png',
+    modelNo: 'UNM4T32',
+    productType: '32A',
+    features: ['6kA Breaking Capacity'],
+  },
+  {
+    id: 7,
+    title: '40A TP CIRCUIT BREAKER',
+    subtitle: '6kA Breaking Capacity',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784022292/IMG_1375_n2c5mp.png',
+    modelNo: 'UNM4T40',
+    productType: '40A',
     features: ['6kA Breaking Capacity'],
   },
   {
@@ -39,7 +74,7 @@ const rawCircuitBreakerTPProducts: RawSeriesProduct[] = [
   },
 ];
 
-export const circuitBreakerTPRatings = ['10A', '20A', '63A'];
+export const circuitBreakerTPRatings = ['10A', '16A', '20A', '25A', '32A', '40A', '63A'];
 export const circuitBreakerTPFeatureList = ['6kA Breaking Capacity'];
 
 export const circuitBreakerTPCatalog: CatalogProduct[] = buildSeriesCatalog(rawCircuitBreakerTPProducts, circuitBreakerTPConfig);

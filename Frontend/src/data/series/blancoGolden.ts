@@ -11,7 +11,7 @@ export const blancoGoldenSeriesConfig: SeriesConfig = {
 const rawBlancoGoldenSeriesProducts: RawSeriesProduct[] = [
   {
     id: 1,
-    title: '1 GANG SWITCH',
+    title: '1 GANG 1 WAY SWITCH',
     subtitle: '1 Gang Switch',
     image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757530/BG8111_ts08hw.png',
     modelNo: 'BG8111',
@@ -20,7 +20,7 @@ const rawBlancoGoldenSeriesProducts: RawSeriesProduct[] = [
   },
   {
     id: 2,
-    title: '2 GANG SWITCH',
+    title: '2 GANG 1 WAY SWITCH',
     subtitle: '2 Gang Switch',
     image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757529/BG8112_udbxkp.png',
     modelNo: 'BG8112',
@@ -29,7 +29,7 @@ const rawBlancoGoldenSeriesProducts: RawSeriesProduct[] = [
   },
   {
     id: 3,
-    title: '3 GANG SWITCH',
+    title: '3 GANG 1 WAY SWITCH',
     subtitle: '3 Gang Switch',
     image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757531/BG8113_akrcyn.png',
     modelNo: 'BG8113',
@@ -38,7 +38,7 @@ const rawBlancoGoldenSeriesProducts: RawSeriesProduct[] = [
   },
   {
     id: 4,
-    title: '4 GANG SWITCH',
+    title: '4 GANG 1 WAY SWITCH',
     subtitle: '4 Gang Switch',
     image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757531/BG8114_tcfe05.png',
     modelNo: 'BG8114',
@@ -55,7 +55,7 @@ const rawBlancoGoldenSeriesProducts: RawSeriesProduct[] = [
   },
   {
     id: 6,
-    title: 'WATER HEATER DP SWITCH WITH NEON',
+    title: '20A DP SWITCH WITH NEON',
     subtitle: 'DP Switch with Neon',
     image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757536/BG8120L_fszglu.png',
     modelNo: 'BG8120L',
@@ -72,7 +72,7 @@ const rawBlancoGoldenSeriesProducts: RawSeriesProduct[] = [
   },
   {
     id: 8,
-    title: 'UNIVERSAL SOCKET WITH SWITCH',
+    title: '16A 2PIN UNIVERSAL SOCKET',
     subtitle: 'Universal Socket',
     image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757547/BG8116-US_sbxwa9.png',
     modelNo: 'BG8116-US',
@@ -81,7 +81,7 @@ const rawBlancoGoldenSeriesProducts: RawSeriesProduct[] = [
   },
   {
     id: 9,
-    title: 'UNIVERSAL SOCKET SWITCH WITH NEON',
+    title: '13A 3PIN UNIVERSAL SOCKET WITH SWITCH',
     subtitle: 'Universal Socket with Neon',
     image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757528/BG8113S_swagud.png',
     modelNo: 'BG8113S',
@@ -90,7 +90,7 @@ const rawBlancoGoldenSeriesProducts: RawSeriesProduct[] = [
   },
   {
     id: 10,
-    title: 'ROUND SOCKET SWITCH WITH NEON',
+    title: '15A 3PIN ROUND SOCKET WITH SWITCH',
     subtitle: 'Round Socket with Neon',
     image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757534/BG8115S_ucdi7l.png',
     modelNo: 'BG8115S',
@@ -99,7 +99,7 @@ const rawBlancoGoldenSeriesProducts: RawSeriesProduct[] = [
   },
   {
     id: 11,
-    title: 'MULTI-PIN UNIVERSAL SOCKET WITH SWITCH',
+    title: '13A 9PIN SOCKET WITH SWITCH',
     subtitle: 'Universal Socket',
     image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757545/BG8125_f6adnd.png',
     modelNo: 'BG8125',
@@ -126,7 +126,7 @@ const rawBlancoGoldenSeriesProducts: RawSeriesProduct[] = [
   },
   {
     id: 14,
-    title: 'TELEPHONE SOCKET 4-WIRE',
+    title: 'TELEPHONE SOCKET',
     subtitle: 'Telephone Socket',
     image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757547/BG818-4TU_zpw6s8.png',
     modelNo: 'BG818-4TU',

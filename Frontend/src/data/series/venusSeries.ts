@@ -106,6 +106,15 @@ const rawVenusSeriesProducts: RawSeriesProduct[] = [
     features: ['With Switch', 'Fan Speed Control'],
   },
   {
+    id: 19,
+    title: 'FAN SPEED CONTROLLER WITH 2WAY SWITCH',
+    subtitle: 'Fan Speed Controller',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784649928/FAN_SPEED_CONTROLLER_WITH_2WAY_SWITCH._KW1V100-2M3_erin33.png',
+    modelNo: 'KW1V100-2M3',
+    productType: 'Fan Speed Controller',
+    features: ['With Switch', 'Fan Speed Control'],
+  },
+  {
     id: 12,
     title: '16A 2PIN UNIVERSAL SOCKET WITH SWITCH',
     subtitle: 'Universal Socket',

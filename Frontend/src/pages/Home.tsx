@@ -1,7 +1,6 @@
 import { Hero } from '../components/sections/Hero';
 import { AboutUs } from '../components/sections/AboutUs';
 import { ProductShowcase } from '../components/sections/ProductShowcase';
-import { Cog, Factory } from 'lucide-react';
 
 const accreditations = [
   {
@@ -15,14 +14,9 @@ const accreditations = [
     description: 'International Electrotechnical Commission',
   },
   {
-    icon: (
-      <div className="relative h-16 w-16 sm:h-20 sm:w-20 flex items-center justify-center text-red-600">
-        <Cog className="absolute inset-0 h-full w-full" strokeWidth={1.5} />
-        <Factory className="relative h-7 w-7 sm:h-8 sm:w-8" strokeWidth={1.75} />
-      </div>
-    ),
+    icon: <img src="/mist-logo.png" alt="MIST" className="h-16 w-16 sm:h-20 sm:w-20 object-contain" />,
     title: 'MIST',
-    description: 'Ministry of Industries Standards & Testing',
+    description: 'Military Institute of Science and Technology',
   },
 ];
 

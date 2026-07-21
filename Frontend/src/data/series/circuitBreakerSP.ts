@@ -8,7 +8,6 @@ export const circuitBreakerSPConfig: SeriesConfig = {
   imageFolder: '',
 };
 
-// NOTE: UNM4S25 and UNM4S40 are not yet added — pending Cloudinary URLs.
 const rawCircuitBreakerSPProducts: RawSeriesProduct[] = [
   {
     id: 1,
@@ -48,6 +47,15 @@ const rawCircuitBreakerSPProducts: RawSeriesProduct[] = [
   },
   {
     id: 5,
+    title: '25A SP CIRCUIT BREAKER',
+    subtitle: '6kA Breaking Capacity',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784652458/IMG_1372_ewsozr.png',
+    modelNo: 'UNM4S25',
+    productType: '25A',
+    features: ['6kA Breaking Capacity'],
+  },
+  {
+    id: 6,
     title: '32A SP CIRCUIT BREAKER',
     subtitle: '6kA Breaking Capacity',
     image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784022062/UNM4S32_rllksd.png',
@@ -56,7 +64,16 @@ const rawCircuitBreakerSPProducts: RawSeriesProduct[] = [
     features: ['6kA Breaking Capacity'],
   },
   {
-    id: 6,
+    id: 7,
+    title: '40A SP CIRCUIT BREAKER',
+    subtitle: '6kA Breaking Capacity',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784652458/IMG_1372_ewsozr.png',
+    modelNo: 'UNM4S40',
+    productType: '40A',
+    features: ['6kA Breaking Capacity'],
+  },
+  {
+    id: 8,
     title: '63A SP CIRCUIT BREAKER',
     subtitle: '6kA Breaking Capacity',
     image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784022065/UNM4S63_xgioor.png',
@@ -66,7 +83,7 @@ const rawCircuitBreakerSPProducts: RawSeriesProduct[] = [
   },
 ];
 
-export const circuitBreakerSPRatings = ['6A', '10A', '16A', '20A', '32A', '63A'];
+export const circuitBreakerSPRatings = ['6A', '10A', '16A', '20A', '25A', '32A', '40A', '63A'];
 export const circuitBreakerSPFeatureList = ['6kA Breaking Capacity'];
 
 export const circuitBreakerSPCatalog: CatalogProduct[] = buildSeriesCatalog(rawCircuitBreakerSPProducts, circuitBreakerSPConfig);

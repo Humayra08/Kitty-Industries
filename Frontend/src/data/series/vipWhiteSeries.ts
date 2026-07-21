@@ -117,7 +117,7 @@ const rawVipWhiteSeriesProducts: RawSeriesProduct[] = [
   },
   {
     id: 13,
-    title: '13A 5PIN UNIVERSAL SOCKET',
+    title: '13A 9PIN UNIVERSAL SOCKET',
     subtitle: 'Universal Socket with Neon',
     image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784021466/13A_9PIN_UNIVERSAL_SOCKETV8135_l8a8lr.png',
     modelNo: 'V8135',
