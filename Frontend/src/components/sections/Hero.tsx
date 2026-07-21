@@ -104,7 +104,7 @@ export const Hero = () => {
                 >
                   Everyday
                 </span>
-                <span className="text-white"> Life.</span>
+                <span className="text-white"> Life</span>
               </span>
             </h1>
 

@@ -30,7 +30,7 @@ const contactInfo = [
   {
     Icon: Mail,
     label: "Email",
-    lines: ["info@kittygroup.com.bd", "sales@kittygroup.com.bd"],
+    lines: ["info@kittyindustriesbd.com"],
   },
   {
     Icon: MapPin,
@@ -50,16 +50,13 @@ const contactInfo = [
   {
     Icon: Globe,
     label: "Website",
-    lines: ["www.kittygroup.com.bd"],
+    lines: ["www.kittyindustriesbd.com"],
   },
 ];
 
 const subjectOptions = [
   "Product Enquiry",
   "Distributorship",
-  "Partnership Proposal",
-  "Technical Support",
-  "Media & Press",
   "Other",
 ];
 
@@ -139,7 +136,7 @@ export const ContactUs = () => {
       setForm(INIT);
     } catch {
       setStatus("error");
-      setErr("Something went wrong. Please try again or email us directly at info@kittygroup.com.bd.");
+      setErr("Something went wrong. Please try again or email us directly at info@kittyindustriesbd.com.");
     }
   };
 
