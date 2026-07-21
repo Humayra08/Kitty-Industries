@@ -6,25 +6,11 @@ const categories = [
     title: 'Gang Switch Socket',
     path: '/products/switch-socket/gang-switch-socket',
     icon: (
-      <svg viewBox="0 0 140 140" className="w-full h-full drop-shadow-md">
-        <defs>
-          <linearGradient id="plate-gang" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#ffffff" />
-            <stop offset="100%" stopColor="#f2f2f2" />
-          </linearGradient>
-          <linearGradient id="paddle-gang" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#ffffff" />
-            <stop offset="100%" stopColor="#e9e9e9" />
-          </linearGradient>
-        </defs>
-        <rect x="8" y="8" width="124" height="124" rx="16" fill="url(#plate-gang)" stroke="#e0e0e0" strokeWidth="1.5" />
-        <rect x="26" y="30" width="38" height="78" rx="7" fill="url(#paddle-gang)" stroke="#d4d4d4" strokeWidth="1.5" />
-        <rect x="39" y="40" width="12" height="26" rx="3" fill="#1f2937" />
-        <rect x="76" y="30" width="38" height="78" rx="7" fill="url(#paddle-gang)" stroke="#d4d4d4" strokeWidth="1.5" />
-        <circle cx="95" cy="55" r="5" fill="#1f2937" />
-        <path d="M87 76 q8 -9 16 0" stroke="#1f2937" strokeWidth="3.5" fill="none" strokeLinecap="round" />
-        <path d="M87 90 q8 -9 16 0" stroke="#1f2937" strokeWidth="3.5" fill="none" strokeLinecap="round" />
-      </svg>
+      <img
+        src="https://res.cloudinary.com/dcdo4venk/image/upload/v1784658316/Gang_switch_banner_tg9li9.png"
+        alt="Gang Switch Socket"
+        className="w-full h-full object-contain rounded-2xl drop-shadow-md scale-125"
+      />
     ),
   },
   {
