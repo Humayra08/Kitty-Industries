@@ -115,6 +115,15 @@ const rawBlancoGoldenSeriesProducts: RawSeriesProduct[] = [
     socketType: 'Telephone Socket',
     features: [],
   },
+   {
+    id: 14,
+    title: 'DATA/INTERNET SOCKET',
+    subtitle: 'Internet / Data Socket',
+    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757547/BG818-4TU_zpw6s8.png',
+    modelNo: 'BG818-4TU',
+    socketType: 'Internet/Data Socket',
+    features: [],
+  },
   {
     id: 13,
     title: 'TELEVISION/DISH SOCKET SINGLE',
@@ -124,19 +133,11 @@ const rawBlancoGoldenSeriesProducts: RawSeriesProduct[] = [
     socketType: 'TV / Dish Socket',
     features: [],
   },
-  {
-    id: 14,
-    title: 'TELEPHONE SOCKET',
-    subtitle: 'Telephone Socket',
-    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1783757547/BG818-4TU_zpw6s8.png',
-    modelNo: 'BG818-4TU',
-    socketType: 'Telephone Socket',
-    features: [],
-  },
+ 
 ];
 
 export const blancoGoldenSeriesProductTypes = ['1 Gang Switch', '2 Gang Switch', '3 Gang Switch', '4 Gang Switch', 'Fan Speed Controller'];
-export const blancoGoldenSeriesSocketTypes = ['Universal Socket', 'Round Socket', 'Telephone Socket', 'TV / Dish Socket'];
+export const blancoGoldenSeriesSocketTypes = ['Universal Socket', 'Round Socket', 'Telephone Socket', 'TV / Dish Socket', 'Internet/Data Socket'];
 export const blancoGoldenSeriesFeatureList = ['With Neon', 'With Switch', 'Fan Speed Control'];
 
 export const blancoGoldenSeriesCatalog: CatalogProduct[] = buildSeriesCatalog(rawBlancoGoldenSeriesProducts, blancoGoldenSeriesConfig);
