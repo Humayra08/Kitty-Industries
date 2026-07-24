@@ -61,11 +61,11 @@ export const BoardOfDirectorsPage = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/10 to-transparent" />
 
-        <div className="relative z-10 h-full flex flex-col justify-center container mx-auto px-4 md:px-6">
+        <div className="relative z-10 h-full flex flex-col justify-center container mx-auto pl-2 pr-4 sm:px-4 md:px-6">
           {/* <p className="text-white font-semibold text-[8px] sm:text-xs uppercase mb-2 sm:mb-4" style={{ letterSpacing: '3px' }}>
             Leadership That Builds The Future
           </p> */}
-          <h1 className="text-white font-black text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight mb-3 sm:mb-6">
+          <h1 className="text-white font-black text-[1.375rem] sm:text-4xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tight mb-3 sm:mb-6">
             Board of<br />Directors
           </h1>
           <div className="h-1 w-[30px] sm:w-[60px] bg-white rounded-full mb-3 sm:mb-6" />
