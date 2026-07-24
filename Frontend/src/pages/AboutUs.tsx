@@ -57,7 +57,7 @@ export const AboutUsPage = () => {
       {/* ── Hero ──────────────────────────────────────────────────────── */}
       <section className="relative h-[480px] md:h-[560px] overflow-hidden">
         <img
-          src="/image.png"
+          src="https://res.cloudinary.com/dcdo4venk/image/upload/v1784893796/6c940d3a-1966-4c9a-aca9-009b0c466d56_leq350.jpg"
           alt="KITTY Industries"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
@@ -65,7 +65,7 @@ export const AboutUsPage = () => {
         <div
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(to right, rgba(120,10,10,0.97) 0%, rgba(180,20,20,0.90) 25%, rgba(192,57,43,0.72) 50%, rgba(192,57,43,0.28) 75%, rgba(192,57,43,0.08) 100%)',
+            background: 'linear-gradient(to right, rgba(120,10,10,0.75) 0%, rgba(180,20,20,0.55) 25%, rgba(192,57,43,0.40) 50%, rgba(192,57,43,0.15) 75%, rgba(192,57,43,0.0) 100%)',
           }}
         />
 

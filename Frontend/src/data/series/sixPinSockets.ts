@@ -17,6 +17,8 @@ const rawSixPinSocketsProducts: RawSeriesProduct[] = [
   { id: 6, title: 'TESLA 6 PIN UNIVERSAL SOCKET WITH NEON', subtitle: '6 Pin Socket', image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784031051/TESLA_6PIN_UNIVERSAL_SOCKET._TS628_h143il.png', modelNo: 'TS628', features: [] },
   { id: 7, title: 'CERAMIC COMBINED SOCKET (3X1) WITH NEON', subtitle: 'Combined Socket', image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784031080/Ceramic_Combined_Socket_3x1_with_neon._KT-3315_jdp6ru.png', modelNo: 'KT-3315', features: [] },
   { id: 8, title: 'ALPINE PLUS 5 PIN UNIVERSAL SOCKET', subtitle: 'With Neon', image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784031040/ALPINE_PLUS_5_PIN_UNIVERSAL_SOCKET_SWITCH_WITH_NEON._AP-500_u46d6f.png', modelNo: 'AP-500', features: [] },
+  { id: 9, title: 'ALPINE PLUS 15A AC SOCKET', subtitle: 'AC Socket', image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784894128/ALPINE_PLUS_15A_AC_SOCKET_pmio26.png', modelNo: 'AP-501', features: [] },
+  { id: 10, title: 'ALPINE PLUS 20A DP SWITCH', subtitle: 'DP Switch', image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784894128/ALPINE_PLUS_20A_DP_SWITCH._AP502_snyj7b.png', modelNo: 'AP-502', features: [] },
 ];
 
 export const sixPinSocketsCatalog: CatalogProduct[] = buildSeriesCatalog(rawSixPinSocketsProducts, sixPinSocketsConfig);
