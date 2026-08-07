@@ -5,37 +5,37 @@ const categories = [
   {
     title: 'LED Lighting',
     path: '/products/led-lighting',
-    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784045083/RADIANT_A_BULB_3W_5W_7W_9W_12W_15W_18W_B22_E27_cq1i21.png',
+    image: 'https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784045083/RADIANT_A_BULB_3W_5W_7W_9W_12W_15W_18W_B22_E27_cq1i21.png',
     description: 'Energy-efficient LED lighting solutions for every space.',
   },
   {
     title: 'Switch & Socket',
     path: '/products/switch-socket',
-    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784109829/Switch_Banner_rgnnha.png',
+    image: 'https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784109829/Switch_Banner_rgnnha.png',
     description: 'Stylish and durable switches & sockets for modern living.',
   },
   {
     title: 'Circuit Breakers',
     path: '/products/circuit-breakers',
-    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784025491/Circuit_Breaker_Banner_ttxreq.png',
+    image: 'https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784025491/Circuit_Breaker_Banner_ttxreq.png',
     description: 'Reliable protection for your electrical systems.',
   },
   {
     title: 'Accessories',
     path: '/products/accessories',
-    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784031624/Others_Banner_vtb9le.png',
+    image: 'https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784031624/Others_Banner_vtb9le.png',
     description: 'A complete range of electrical accessories and add-ons.',
   },
   {
     title: 'Cable Tie',
     path: '/products/cable-tie',
-    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784024923/WHITE_CABLE_TIE_100MM_150MM_200MM_250MM_300MM_350MM_400MM_450MM_500MM_tsdrtm.png',
+    image: 'https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784024923/WHITE_CABLE_TIE_100MM_150MM_200MM_250MM_300MM_350MM_400MM_450MM_500MM_tsdrtm.png',
     description: 'Durable nylon cable ties in a full range of sizes.',
   },
   {
     title: 'Cable Clip',
     path: '/products/cable-clip',
-    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784025022/K_TYPE_CABLE_CLIP_r4etug.png',
+    image: 'https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784025022/K_TYPE_CABLE_CLIP_r4etug.png',
     description: 'K-Type and U-Type cable clips for secure mounting.',
   },
 ];
@@ -47,7 +47,7 @@ export const ProductsPage = () => {
       <section className="relative bg-white pt-16 pb-44 sm:py-20 md:py-28 overflow-hidden">
         {/* Banner image (desktop/tablet) — right-aligned, shown mostly full, only lightly fading on its far (left) edge */}
         <img
-          src="https://res.cloudinary.com/dcdo4venk/image/upload/v1784110409/Product_Banner_oldyd8.png"
+          src="https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784110409/Product_Banner_oldyd8.png"
           alt=""
           aria-hidden="true"
           className="hidden sm:block absolute right-0 top-0 bottom-0 h-full w-[60%] md:w-[55%] object-cover object-right"
@@ -78,7 +78,7 @@ export const ProductsPage = () => {
 
         {/* Banner image (mobile) — flush with the bottom of the hero section, faded/blended on its top edge */}
         <img
-          src="https://res.cloudinary.com/dcdo4venk/image/upload/v1784110409/Product_Banner_oldyd8.png"
+          src="https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784110409/Product_Banner_oldyd8.png"
           alt=""
           aria-hidden="true"
           className="sm:hidden absolute inset-x-0 bottom-0 h-40 w-full object-cover object-bottom"

@@ -54,12 +54,17 @@ export interface SeriesConfig {
 const isUrl = (image: string) => /^https?:\/\//i.test(image);
 
 /**
- * Cloudinary-hosted source photos come straight off a phone camera (often 3000px+,
- * several MB each) — undersized for nothing, since they only ever render into a
- * thumbnail or a single product image. Inserting a transformation chain makes
- * Cloudinary serve a resized, auto-compressed, auto-format (WebP/AVIF) version
- * instead of the raw original, without needing to re-upload or store anything
- * locally. ~1000px is generous enough for the product-detail zoom view while still
+ * Migrated from Cloudinary to R2 (2026-08-08): Cloudinary generated these
+ * resized/trimmed/padded derivatives on the fly per the transform string in
+ * the URL. R2 has no equivalent, so each derivative was pre-baked once and
+ * stored as a static object under a key that mirrors the old transform path
+ * (see applyImageTransform below) — the "transform" is now just a path
+ * segment picking which pre-baked file to fetch, not a live operation.
+ *
+ * Original rationale, still accurate: source photos come straight off a
+ * phone camera (often 3000px+, several MB each) — undersized for nothing,
+ * since they only ever render into a thumbnail or a single product image.
+ * ~1000px is generous enough for the product-detail zoom view while still
  * cutting multi-MB originals down to tens of KB.
  *
  * The shoots are inconsistently framed — the product fills anywhere from ~9% to
@@ -69,21 +74,18 @@ const isUrl = (image: string) => /^https?:\/\//i.test(image);
  * that trimmed content into a uniform square on a white backdrop, so every product
  * fills its box consistently regardless of how the original was framed.
  *
- * Two sizes are generated from the same multi-MB originals: a 1000px version for
- * the zoomable product-detail image, and a 400px thumbnail for catalog grids and
- * related-product cards, which only ever render at a few hundred px wide. Requesting
- * the 1000px derivative everywhere (as before) meant grid views transferred and
- * decoded ~4-6x more image data than they displayed, and — on series pages that get
- * little traffic — asked Cloudinary to resize the full original on every cache miss
- * instead of a pre-shrunk one, which is what made low-traffic categories (e.g.
- * accessories, circuit breakers) feel noticeably slower to load than high-traffic
- * ones (e.g. switches) whose derivatives stay warm in cache.
+ * Two sizes are stored per photo: a 1000px version for the zoomable
+ * product-detail image, and a 400px thumbnail for catalog grids and
+ * related-product cards, which only ever render at a few hundred px wide —
+ * serving the 1000px version everywhere would mean grid views transfer and
+ * decode ~4-6x more image data than they display.
  */
-const CLOUDINARY_ZOOM_TRANSFORM = 'e_trim/c_pad,w_1000,h_1000,b_white/f_auto,q_auto';
-const CLOUDINARY_THUMB_TRANSFORM = 'e_trim/c_pad,w_400,h_400,b_white/f_auto,q_auto';
+const R2_BASE = 'https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev';
+const IMAGE_ZOOM_TRANSFORM = 'e_trim/c_pad,w_1000,h_1000,b_white/f_auto,q_auto';
+const IMAGE_THUMB_TRANSFORM = 'e_trim/c_pad,w_400,h_400,b_white/f_auto,q_auto';
 
-const applyCloudinaryTransform = (url: string, transform: string): string =>
-  url.includes('res.cloudinary.com') ? url.replace('/image/upload/', `/image/upload/${transform}/`) : url;
+const applyImageTransform = (url: string, transform: string): string =>
+  url.startsWith(R2_BASE) ? url.replace(`${R2_BASE}/`, `${R2_BASE}/${transform}/`) : url;
 
 /** Maps a series' raw product list into the shared CatalogProduct shape. */
 export const buildSeriesCatalog = (products: RawSeriesProduct[], config: SeriesConfig): CatalogProduct[] =>
@@ -91,8 +93,8 @@ export const buildSeriesCatalog = (products: RawSeriesProduct[], config: SeriesC
     slug: slugify(p.title),
     title: p.title,
     subtitle: p.subtitle,
-    imageSrc: isUrl(p.image) ? applyCloudinaryTransform(p.image, CLOUDINARY_ZOOM_TRANSFORM) : `${config.imageFolder}/${p.image}`,
-    thumbSrc: isUrl(p.image) ? applyCloudinaryTransform(p.image, CLOUDINARY_THUMB_TRANSFORM) : `${config.imageFolder}/${p.image}`,
+    imageSrc: isUrl(p.image) ? applyImageTransform(p.image, IMAGE_ZOOM_TRANSFORM) : `${config.imageFolder}/${p.image}`,
+    thumbSrc: isUrl(p.image) ? applyImageTransform(p.image, IMAGE_THUMB_TRANSFORM) : `${config.imageFolder}/${p.image}`,
     modelNo: p.modelNo ?? getModelNo(p.image),
     seriesName: config.seriesName,
     seriesPath: config.seriesPath,

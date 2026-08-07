@@ -71,7 +71,7 @@ export const Hero = () => {
         muted
         playsInline
         className="absolute inset-0 z-0 h-full w-full object-cover"
-        src="https://res.cloudinary.com/dcdo4venk/video/upload/q_auto,f_auto/v1783166575/Kitty_hero_lzupmy.mp4"
+        src="https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/q_auto,f_auto/v1783166575/Kitty_hero_lzupmy.mp4"
       />
 
       {/* Red gradient overlay — left-heavy so the headline stays readable */}

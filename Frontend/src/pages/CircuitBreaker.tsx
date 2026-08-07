@@ -7,7 +7,7 @@ const categories = [
     path: '/products/circuit-breakers/sp-circuit-breaker',
     icon: (
       <img
-        src="https://res.cloudinary.com/dcdo4venk/image/upload/v1784652458/IMG_1372_ewsozr.png"
+        src="https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784652458/IMG_1372_ewsozr.png"
         alt="SP Circuit Breaker"
         className="w-full h-full object-contain drop-shadow-md scale-150"
       />
@@ -18,7 +18,7 @@ const categories = [
     path: '/products/circuit-breakers/dp-circuit-breaker',
     icon: (
       <img
-        src="https://res.cloudinary.com/dcdo4venk/image/upload/v1784022270/UNM4D63_byroim.png"
+        src="https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784022270/UNM4D63_byroim.png"
         alt="DP Circuit Breaker"
         className="w-full h-full object-contain drop-shadow-md scale-150"
       />
@@ -29,7 +29,7 @@ const categories = [
     path: '/products/circuit-breakers/tp-circuit-breaker',
     icon: (
       <img
-        src="https://res.cloudinary.com/dcdo4venk/image/upload/v1784022292/IMG_1375_n2c5mp.png"
+        src="https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784022292/IMG_1375_n2c5mp.png"
         alt="TP Circuit Breaker"
         className="w-full h-full object-contain drop-shadow-md scale-150"
       />
@@ -78,7 +78,7 @@ export const CircuitBreakerPage = () => {
 
             {/* Right Content - Banner */}
             <img
-              src="https://res.cloudinary.com/dcdo4venk/image/upload/v1784025491/Circuit_Breaker_Banner_ttxreq.png"
+              src="https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784025491/Circuit_Breaker_Banner_ttxreq.png"
               alt="KITTY Circuit Breaker Collection"
               className="w-full h-auto drop-shadow-xl -mt-6 sm:-mt-8"
             />

@@ -5,42 +5,42 @@ const categories = [
   {
     title: 'A Bulb',
     path: '/products/led-lighting/a-bulb',
-    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784045083/RADIANT_A_BULB_3W_5W_7W_9W_12W_15W_18W_B22_E27_cq1i21.png',
+    image: 'https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784045083/RADIANT_A_BULB_3W_5W_7W_9W_12W_15W_18W_B22_E27_cq1i21.png',
   },
   {
     title: 'T Bulb',
     path: '/products/led-lighting/t-bulb',
-    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784046684/KITTY_T_BULB_SHOP_LIGHT_30W_40W_50W_lfpk6x.png',
+    image: 'https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784046684/KITTY_T_BULB_SHOP_LIGHT_30W_40W_50W_lfpk6x.png',
   },
   {
     title: 'Solar DC Bulb',
     path: '/products/led-lighting/solar-dc-bulb',
-    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784046833/LED_SOLAR_DC_BULB_5W_7W_9W_B22_E27_i6s4br.png',
+    image: 'https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784046833/LED_SOLAR_DC_BULB_5W_7W_9W_B22_E27_i6s4br.png',
   },
   {
     title: 'Emergency (AC/DC) Bulb',
     path: '/products/led-lighting/emergency-bulb',
-    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784045692/LED_EMERGENCY_AC_DC_BULB_18W_rwbztg.png',
+    image: 'https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784045692/LED_EMERGENCY_AC_DC_BULB_18W_rwbztg.png',
   },
   {
     title: 'Linear Tube (Batten) Light',
     path: '/products/led-lighting/linear-tube-batten-light',
-    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784046977/DECO_LED_LINEAR_TUBE_-10W-20W-40W_lobhfu.png',
+    image: 'https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784046977/DECO_LED_LINEAR_TUBE_-10W-20W-40W_lobhfu.png',
   },
   {
     title: 'Flood Light',
     path: '/products/led-lighting/flood-light',
-    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784046013/KITTY_MATRIX_LED_FLOOD_LIGHT._KTCL-FL50A-50W_nccwfz.png',
+    image: 'https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784046013/KITTY_MATRIX_LED_FLOOD_LIGHT._KTCL-FL50A-50W_nccwfz.png',
   },
   {
     title: 'Down Light',
     path: '/products/led-lighting/down-light',
-    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784046194/KITTY_PANELUX_2_IN_1_DOWNLIGHT_12W_qcobqc.png',
+    image: 'https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784046194/KITTY_PANELUX_2_IN_1_DOWNLIGHT_12W_qcobqc.png',
   },
   {
     title: 'Spot Light',
     path: '/products/led-lighting/spot-light',
-    image: 'https://res.cloudinary.com/dcdo4venk/image/upload/v1784046371/KITTY_CLASSIC_SPOT_LIGHT_12W_eobpeb.png',
+    image: 'https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784046371/KITTY_CLASSIC_SPOT_LIGHT_12W_eobpeb.png',
   },
 ];
 

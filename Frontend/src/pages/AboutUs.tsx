@@ -57,7 +57,7 @@ export const AboutUsPage = () => {
       {/* ── Hero ──────────────────────────────────────────────────────── */}
       <section className="relative h-[480px] md:h-[560px] overflow-hidden">
         <img
-          src="https://res.cloudinary.com/dcdo4venk/image/upload/v1784893796/6c940d3a-1966-4c9a-aca9-009b0c466d56_leq350.jpg"
+          src="https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784893796/6c940d3a-1966-4c9a-aca9-009b0c466d56_leq350.jpg"
           alt="KITTY Industries"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />

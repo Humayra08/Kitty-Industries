@@ -3,7 +3,7 @@ const boardMembers = [
     name: 'Mr. Rashed Mahmud',
     title: 'Chairman',
     company: 'KITTY Industries Ltd.',
-    photo: 'https://res.cloudinary.com/dcdo4venk/image/upload/f_auto,q_auto,w_500,dpr_auto/v1784439016/Rashed_Mahmud_ex8r9t.png',
+    photo: 'https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/f_auto,q_auto,w_500,dpr_auto/v1784439016/Rashed_Mahmud_ex8r9t.png',
     bio: "Mr. Rashed Mahmud is the Chairman of KITTY Industries Ltd. He holds a Bachelor of Commerce in Finance and an MBA from the University of Dhaka. He oversees international procurement, finance and strategic growth.",
     roles: [
       { title: 'Chairman', company: 'Nandan Kanon Housing Ltd.' },
@@ -15,7 +15,7 @@ const boardMembers = [
     name: 'Mr. Hasan Mahmud',
     title: 'Managing Director',
     company: 'KITTY Industries Ltd.',
-    photo: 'https://res.cloudinary.com/dcdo4venk/image/upload/f_auto,q_auto,w_500,dpr_auto/v1784439015/Hasan_Mahmud_s79p31.png',
+    photo: 'https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/f_auto,q_auto,w_500,dpr_auto/v1784439015/Hasan_Mahmud_s79p31.png',
     bio: "Mr. Hasan Mahmud is the Managing Director of KITTY Industries Ltd. He holds a Bachelor in Marine Engineering from Chittagong Marine Academy. He is responsible for factory production, global supply chain management and overall group operations.",
     roles: [
       { title: 'Managing Director', company: 'NBP Kwality Chemical Industries Ltd.' },
@@ -27,7 +27,7 @@ const boardMembers = [
     name: 'Mr. Shahed Mahmud',
     title: 'Director',
     company: 'KITTY Industries Ltd.',
-    photo: 'https://res.cloudinary.com/dcdo4venk/image/upload/f_auto,q_auto,w_500,dpr_auto/v1784439015/Shahed_Mahmud_bsnk05.png',
+    photo: 'https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/f_auto,q_auto,w_500,dpr_auto/v1784439015/Shahed_Mahmud_bsnk05.png',
     bio: "Mr. Shahed Mahmud is the Director of KITTY Industries Ltd. He holds a Bachelor of Commerce in Marketing and an MBA from the University of Dhaka. He oversees marketing, sales and other support functions.",
     roles: [
       { title: 'Managing Director', company: 'Nandan Kanon Housing Ltd.' },
