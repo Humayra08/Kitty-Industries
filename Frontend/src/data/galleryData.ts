@@ -1,12 +1,12 @@
 // ─── Gallery data ────────────────────────────────────────────────────────────
-// Real photos served from Cloudinary (see Frontend/.env for account info).
+// Real photos served from R2 (migrated from Cloudinary 2026-08-08).
 // `span` controls the bento grid sizing: "large" = 2x2, "wide" = 2x1, omit for 1x1.
-// Thumbnails are cropped via Cloudinary transformations so every tile lines up
-// cleanly regardless of the source photo's original aspect ratio.
+// Thumbnails are pre-baked crops (mirroring Cloudinary's old transform paths) so every
+// tile lines up cleanly regardless of the source photo's original aspect ratio.
 
-const CLOUD_BASE = "https://res.cloudinary.com/dcdo4venk/image/upload";
+const CLOUD_BASE = "https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev";
 
-// Inserts a Cloudinary transformation string between "/upload/" and the asset path.
+// Inserts a transform-path segment between the base and the asset path.
 const cld = (path: string, transform: string) => `${CLOUD_BASE}/${transform}/${path}`;
 
 const SQUARE = "w_800,h_800,c_fill,g_auto,q_auto,f_auto";

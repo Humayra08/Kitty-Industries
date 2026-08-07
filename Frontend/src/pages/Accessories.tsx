@@ -6,37 +6,37 @@ const categories = [
     title: "6 Pin Sockets & DP Switches",
     path: "/products/accessories/others/6-pin-sockets",
     image:
-      "https://res.cloudinary.com/dcdo4venk/image/upload/v1784031041/HTC_6PIN_UNIVERSAL_SOCKET._HTC7525_qjeymz.png",
+      "https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784031041/HTC_6PIN_UNIVERSAL_SOCKET._HTC7525_qjeymz.png",
   },
   {
     title: "Extension Socket",
     path: "/products/accessories/others/extension-socket",
     image:
-      "https://res.cloudinary.com/dcdo4venk/image/upload/v1784031083/EXTENSION_SOCKET_5WAY_2PIN_WHITE_r2gzsq.png",
+      "https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784031083/EXTENSION_SOCKET_5WAY_2PIN_WHITE_r2gzsq.png",
   },
   {
     title: "Lamp Holders & Ceiling Rose",
     path: "/products/accessories/others/lamp-holders-ceiling-rose",
     image:
-      "https://res.cloudinary.com/dcdo4venk/image/upload/v1784031093/Round_Decorative_Lamp_Holder_KRCH-01G_uretwk.png",
+      "https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784031093/Round_Decorative_Lamp_Holder_KRCH-01G_uretwk.png",
   },
   {
     title: "Plug & Adapters",
     path: "/products/accessories/others/plug-adapters",
     image:
-      "https://res.cloudinary.com/dcdo4venk/image/upload/v1784031010/10A_2PIN_MULTI_ADAPTER_SOCKET_WITH_FUSE._7896_jjwfke.png",
+      "https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784031010/10A_2PIN_MULTI_ADAPTER_SOCKET_WITH_FUSE._7896_jjwfke.png",
   },
   {
     title: "Switch Box",
     path: "/products/accessories/others/switch-box",
     image:
-      "https://res.cloudinary.com/dcdo4venk/image/upload/v1784031046/L1_DISTRIBUTION_BOX._KL-1_q1uiuz.png",
+      "https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784031046/L1_DISTRIBUTION_BOX._KL-1_q1uiuz.png",
   },
   {
     title: "Fan Capacitor",
     path: "/products/accessories/others/fan-capacitor",
     image:
-      "https://res.cloudinary.com/dcdo4venk/image/upload/v1784039406/KITTY_FAN_CAPACITOR_3.5uf_qnsxnn.png",
+      "https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784039406/KITTY_FAN_CAPACITOR_3.5uf_qnsxnn.png",
   },
 ];
 
@@ -101,7 +101,7 @@ export const AccessoriesPage = () => {
 
             {/* Right Content - Banner */}
             <img
-              src="https://res.cloudinary.com/dcdo4venk/image/upload/v1784031624/Others_Banner_vtb9le.png"
+              src="https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784031624/Others_Banner_vtb9le.png"
               alt="KITTY Accessories Collection"
               className="w-full h-auto drop-shadow-xl"
             />

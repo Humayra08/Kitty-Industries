@@ -7,7 +7,7 @@ const categories = [
     path: '/products/switch-socket/gang-switch-socket',
     icon: (
       <img
-        src="https://res.cloudinary.com/dcdo4venk/image/upload/v1784658316/Gang_switch_banner_tg9li9.png"
+        src="https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784658316/Gang_switch_banner_tg9li9.png"
         alt="Gang Switch Socket"
         className="w-full h-full object-contain rounded-2xl drop-shadow-md scale-125"
       />
@@ -18,7 +18,7 @@ const categories = [
     path: '/products/switch-socket/piano-switch-socket',
     icon: (
       <img
-        src="https://res.cloudinary.com/dcdo4venk/image/upload/v1784020531/Piano_Banner_ggeuzd.png"
+        src="https://pub-a013ba46066c48fc9b39d74fe917f7b7.r2.dev/v1784020531/Piano_Banner_ggeuzd.png"
         alt="Piano Switch Socket"
         className="w-full h-full object-contain rounded-2xl drop-shadow-md scale-125"
       />
